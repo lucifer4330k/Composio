@@ -1,0 +1,122 @@
+{
+  "name": "Audit sample A",
+  "checked_at": "2026-11-23",
+  "auditor": "Claude Code (AI) driving the in-app browser and direct page fetches. Not a human check.",
+  "method": "14 apps drawn with random.Random(20261123) from the 94 non-high-risk apps, plus 6 a-priori high-risk apps (ambiguous identity or brief-flagged hints). Each field checked against the vendor's live docs, opened fresh (not the pipeline cache). A field is left out when the auditor could not establish the truth.",
+  "apps": {
+    "4": {"app": "Attio", "fields": {
+      "public_api_status": {"value": "available", "url": "https://docs.attio.com/rest-api/guides/authentication"},
+      "authentication_methods": {"primary": ["OAuth2", "API key"], "acceptable_extra": ["Bearer/access token", "HMAC/signed request"], "url": "https://docs.attio.com/rest-api/guides/authentication", "note": "OAuth 2.0 auth-code flow or a workspace API key"},
+      "developer_access": {"value": "self_serve_free", "url": "https://attio.com/pricing", "note": "Free plan; developer API and webhooks listed as platform features"},
+      "official_mcp_status": {"value": "yes", "url": "https://docs.attio.com/mcp/overview"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/attio"}}},
+    "10": {"app": "DealCloud", "fields": {
+      "public_api_status": {"value": "restricted", "url": "https://api.docs.dealcloud.com/", "note": "docs public; credentials only for DealCloud (Intapp) customers"},
+      "authentication_methods": {"primary": ["OAuth2", "API key"], "acceptable_extra": ["Bearer/access token"], "url": "https://api.docs.dealcloud.com/docs/token", "note": "OAuth2 client-credentials using client_id + apiKey"},
+      "developer_access": {"value": "partner_or_sales", "url": "https://api.docs.dealcloud.com/docs/apikeys", "note": "API keys are generated inside a customer's DealCloud site; no free/self-serve tier"},
+      "official_mcp_status": {"value": "yes", "url": "https://api.docs.dealcloud.com/", "note": "docs nav has an MCP section (Getting Started, AI Clients, Available Tools)"},
+      "existing_composio_toolkit": {"value": "no", "url": "https://composio.dev/toolkits/dealcloud"}}},
+    "12": {"app": "Intercom", "fields": {
+      "public_api_status": {"value": "available", "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"},
+      "authentication_methods": {"primary": ["OAuth2", "Bearer/access token"], "acceptable_extra": ["API key", "HMAC/signed request", "JWT"], "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication"},
+      "developer_access": {"value": "self_serve_free", "url": "https://developers.intercom.com/docs/build-an-integration/getting-started", "note": "Development workspaces are free"},
+      "official_mcp_status": {"value": "yes", "url": "https://developers.intercom.com/docs/guides/mcp"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/intercom"}}},
+    "13": {"app": "Freshdesk", "fields": {
+      "public_api_status": {"value": "available", "url": "https://developers.freshdesk.com/api/"},
+      "authentication_methods": {"primary": ["API key"], "acceptable_extra": ["Basic"], "url": "https://developers.freshdesk.com/api/", "note": "personal API key sent as HTTP Basic username"},
+      "developer_access": {"value": "self_serve_trial", "url": "https://developers.freshdesk.com/api/", "note": "trial accounts get 50 calls/min"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/freshdesk"}}},
+    "21": {"app": "Slack", "fields": {
+      "public_api_status": {"value": "available", "url": "https://docs.slack.dev/"},
+      "authentication_methods": {"primary": ["OAuth2"], "acceptable_extra": ["Bearer/access token", "HMAC/signed request", "API key"], "url": "https://docs.slack.dev/authentication"},
+      "developer_access": {"value": "self_serve_free", "url": "https://api.slack.com/apps", "note": "anyone can create an app in a free workspace"},
+      "official_mcp_status": {"value": "yes", "url": "https://docs.slack.dev/ai/slack-mcp-server/"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/slack"}}},
+    "23": {"app": "Zoho Cliq", "fields": {
+      "public_api_status": {"value": "available", "url": "https://www.zoho.com/cliq/help/restapi/v2/"},
+      "authentication_methods": {"primary": ["OAuth2"], "acceptable_extra": ["Bearer/access token"], "url": "https://www.zoho.com/cliq/help/restapi/v2/", "note": "REST API follows OAuth 2.0 only"},
+      "developer_access": {"value": "self_serve_free", "url": "https://www.zoho.com/cliq/help/restapi/v2/", "note": "client registered self-serve in Zoho API console; Cliq has a free plan"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/zoho_cliq"}}},
+    "24": {"app": "Lark (Larksuite)", "fields": {
+      "public_api_status": {"value": "available", "url": "https://open.larksuite.com/document/"},
+      "authentication_methods": {"primary": ["OAuth2", "Bearer/access token"], "acceptable_extra": ["API key", "HMAC/signed request"], "url": "https://github.com/larksuite/lark-openapi-mcp", "note": "App ID + App Secret -> tenant_access_token; OAuth 2.0 for user_access_token"},
+      "developer_access": {"value": "self_serve_free", "url": "https://github.com/larksuite/lark-openapi-mcp", "note": "create an app in the open platform console"},
+      "official_mcp_status": {"value": "yes", "url": "https://github.com/larksuite/lark-openapi-mcp"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/lark"}}},
+    "49": {"app": "Amazon Selling Partner", "fields": {
+      "public_api_status": {"value": "available", "url": "https://developer-docs.amazon.com/sp-api/"},
+      "authentication_methods": {"primary": ["OAuth2"], "acceptable_extra": ["Bearer/access token", "HMAC/signed request"], "url": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer", "note": "Login with Amazon (LWA) OAuth"},
+      "developer_access": {"value": "approval_required", "url": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer", "note": "Amazon evaluates the Developer Profile and may grant or deny access"},
+      "existing_composio_toolkit": {"value": "no", "url": "https://composio.dev/toolkits/amazon", "note": "slug redirects to an e-commerce category page, not a toolkit"}}},
+    "51": {"app": "DataForSEO", "fields": {
+      "public_api_status": {"value": "available", "url": "https://docs.dataforseo.com/v3/auth/"},
+      "authentication_methods": {"primary": ["Basic"], "acceptable_extra": ["API key"], "url": "https://docs.dataforseo.com/v3/auth/", "note": "Basic authentication is the only way; API login/password from dashboard"},
+      "developer_access": {"value": "self_serve_trial", "url": "https://docs.dataforseo.com/v3/auth/", "note": "free account, then pay-as-you-go"},
+      "official_mcp_status": {"value": "yes", "url": "https://github.com/dataforseo/mcp-server-typescript"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/dataforseo"}}},
+    "65": {"app": "Supabase", "fields": {
+      "public_api_status": {"value": "available", "url": "https://supabase.com/docs/guides/api/api-keys"},
+      "authentication_methods": {"primary": ["API key"], "acceptable_extra": ["Bearer/access token", "JWT", "OAuth2"], "url": "https://supabase.com/docs/guides/api/api-keys"},
+      "developer_access": {"value": "self_serve_free", "url": "https://supabase.com/pricing"},
+      "official_mcp_status": {"value": "yes", "url": "https://supabase.com/docs/guides/getting-started/mcp"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/supabase"}}},
+    "71": {"app": "Notion", "fields": {
+      "public_api_status": {"value": "available", "url": "https://developers.notion.com/docs/authorization"},
+      "authentication_methods": {"primary": ["OAuth2", "Bearer/access token"], "acceptable_extra": ["API key"], "url": "https://developers.notion.com/docs/authorization", "note": "internal integration token / PAT, or OAuth 2.0 for public integrations"},
+      "developer_access": {"value": "self_serve_free", "url": "https://developers.notion.com/docs/authorization"},
+      "official_mcp_status": {"value": "yes", "url": "https://developers.notion.com/docs/mcp"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/notion"}}},
+    "73": {"app": "Linear", "fields": {
+      "public_api_status": {"value": "available", "url": "https://linear.app/developers"},
+      "authentication_methods": {"primary": ["OAuth2", "API key"], "acceptable_extra": ["Bearer/access token", "HMAC/signed request"], "url": "https://linear.app/developers/oauth-2-0-authentication"},
+      "developer_access": {"value": "self_serve_free", "url": "https://linear.app/developers"},
+      "official_mcp_status": {"value": "yes", "url": "https://linear.app/docs/mcp"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/linear"}}},
+    "75": {"app": "Asana", "fields": {
+      "public_api_status": {"value": "available", "url": "https://developers.asana.com/docs/authentication"},
+      "authentication_methods": {"primary": ["OAuth2", "Bearer/access token"], "acceptable_extra": ["API key", "JWT"], "url": "https://developers.asana.com/docs/authentication", "note": "OAuth, personal access tokens; OIDC on top of OAuth"},
+      "developer_access": {"value": "self_serve_free", "url": "https://developers.asana.com/docs/authentication", "note": "free personal plan + developer sandbox"},
+      "official_mcp_status": {"value": "yes", "url": "https://developers.asana.com/docs/using-asanas-mcp-server"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/asana"}}},
+    "87": {"app": "Xero", "fields": {
+      "public_api_status": {"value": "available", "url": "https://developer.xero.com/documentation/"},
+      "authentication_methods": {"primary": ["OAuth2"], "acceptable_extra": ["Bearer/access token", "HMAC/signed request", "JWT"], "url": "https://developer.xero.com/documentation/guides/oauth2/overview/"},
+      "developer_access": {"value": "self_serve_free", "url": "https://developer.xero.com/documentation/getting-started-guide/", "note": "free developer account with demo company"},
+      "official_mcp_status": {"value": "yes", "url": "https://github.com/XeroAPI/xero-mcp-server"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/xero"}}},
+    "84": {"app": "Paygent Connect", "fields": {
+      "public_api_status": {"value": "unknown", "url": "https://www.bing.com/search?q=%22Paygent+Connect%22+NMI", "note": "identity unresolved: paygent.in, gopaygent.com, paygent.ai and NMI 'Bill Connect' all plausible; no product called Paygent Connect confirmed"},
+      "developer_access": {"value": "unknown", "url": "https://www.bing.com/search?q=%22Paygent+Connect%22+NMI"},
+      "existing_composio_toolkit": {"value": "no", "url": "https://composio.dev/toolkits/paygent"}}},
+    "50": {"app": "fanbasis", "fields": {
+      "public_api_status": {"value": "available", "url": "https://apidocs.fan/", "note": "fanbasis.com redirects to commas.com: 'FanBasis is now Commas'"},
+      "authentication_methods": {"primary": ["API key"], "acceptable_extra": ["Bearer/access token"], "url": "https://apidocs.fan/quick-start", "note": "API key from dashboard Account -> API Keys"},
+      "developer_access": {"value": "self_serve_free", "url": "https://apidocs.fan/quick-start", "note": "self-serve account + sandbox environment"},
+      "official_mcp_status": {"value": "yes", "url": "https://apidocs.fan/", "note": "docs have an MCP section"},
+      "existing_composio_toolkit": {"value": "no", "url": "https://composio.dev/toolkits/fanbasis"}}},
+    "85": {"app": "iPayX", "fields": {
+      "public_api_status": {"value": "available", "url": "https://www.ipayx.ai/developers", "note": "/docs from the brief hint is a 404; developer docs live at /developers"},
+      "authentication_methods": {"primary": ["API key"], "acceptable_extra": ["Bearer/access token"], "url": "https://www.ipayx.ai/developers", "note": "Authorization: Bearer ipx_live_..."},
+      "developer_access": {"value": "self_serve_free", "url": "https://www.ipayx.ai/developers", "note": "Get API key / sandbox; free allowance of 3 audits per month"},
+      "official_mcp_status": {"value": "yes", "url": "https://www.ipayx.ai/developers", "note": "mcp.ipayx.ai, says it is listed on the MCP Registry"},
+      "existing_composio_toolkit": {"value": "no", "url": "https://composio.dev/toolkits/ipayx"}}},
+    "92": {"app": "Otter AI", "fields": {
+      "public_api_status": {"value": "restricted", "url": "https://help.otter.ai/hc/en-us/search?query=API", "note": "Public API for Enterprise customers; contact account manager"},
+      "authentication_methods": {"primary": ["API key"], "acceptable_extra": ["Bearer/access token", "OAuth2"], "url": "https://help.otter.ai/hc/en-us/search?query=API"},
+      "developer_access": {"value": "partner_or_sales", "url": "https://help.otter.ai/hc/en-us/search?query=API"},
+      "official_mcp_status": {"value": "yes", "url": "https://help.otter.ai/hc/en-us/search?query=MCP", "note": "Otter MCP Server at mcp.otter.ai"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/otter_ai_mcp", "note": "audit truth corrected 2026-11-23: first audit checked slugs otter/otter_ai only (404); the Composio SDK catalog lists otter_ai_mcp (Provider MCP, 3 tools) and its public page returns 200"}}},
+    "94": {"app": "Consensus", "fields": {
+      "public_api_status": {"value": "available", "url": "https://consensus.app/home/api/"},
+      "authentication_methods": {"primary": ["API key"], "acceptable_extra": ["OAuth2", "Bearer/access token"], "url": "https://consensus.app/home/api/", "note": "x-api-key header"},
+      "developer_access": {"value": "self_serve_free", "url": "https://consensus.app/home/api/", "note": "'Create API key' self-serve"},
+      "official_mcp_status": {"value": "yes", "url": "https://consensus.app/home/api/", "note": "mcp.consensus.app"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/consensus"}}},
+    "91": {"app": "NotebookLM", "fields": {
+      "public_api_status": {"value": "available", "url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks", "note": "Enterprise-only REST API (v1alpha, preview); consumer NotebookLM has no API"},
+      "authentication_methods": {"primary": ["OAuth2"], "acceptable_extra": ["Bearer/access token"], "url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks", "note": "Google Cloud user access token"},
+      "developer_access": {"value": "paid_plan", "url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks", "note": "requires an active NotebookLM Enterprise license"},
+      "existing_composio_toolkit": {"value": "yes", "url": "https://composio.dev/toolkits/notebook_lm", "note": "audit truth corrected 2026-11-23: first audit checked slug notebooklm only (404); the Composio SDK catalog lists notebook_lm (11 tools) and its public page returns 200"}}}
+  }
+}

@@ -1,0 +1,1000 @@
+{
+ "reviewer": "Claude Code review agent (AI, this session). Not a human review.",
+ "checked_at": "2026-11-24",
+ "frozen_at": "2026-11-24",
+ "rule": "Hold-out sample B (ids 7,8,9,19,42,44,52,54,66,72) is excluded and audited only after this file is frozen. Sample A values come from data/audit.json, so final-stage accuracy on sample A is not an independent measure.",
+ "apps": {
+  "1": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "disputed by the automated second pass; the source page confirms self-serve credentials",
+     "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "3": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "disputed by the automated second pass; the source page confirms self-serve credentials",
+     "url": "https://pipedrive.readme.io/docs/marketplace-creating-a-proper-app",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "4": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2",
+      "API key"
+     ],
+     "reason": "audit sample A: OAuth 2.0 auth-code flow or a workspace API key",
+     "url": "https://docs.attio.com/rest-api/guides/authentication",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: Free plan; developer API and webhooks listed as platform features",
+     "url": "https://attio.com/pricing",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://docs.attio.com/mcp/overview",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "10": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "restricted",
+     "reason": "audit sample A: docs public; credentials only for DealCloud (Intapp) customers",
+     "url": "https://api.docs.dealcloud.com/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2",
+      "API key"
+     ],
+     "reason": "audit sample A: OAuth2 client-credentials using client_id + apiKey",
+     "url": "https://api.docs.dealcloud.com/docs/token",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "partner_or_sales",
+     "reason": "audit sample A: API keys are generated inside a customer's DealCloud site; no free/self-serve tier",
+     "url": "https://api.docs.dealcloud.com/docs/apikeys",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: docs nav has an MCP section (Getting Started, AI Clients, Available Tools)",
+     "url": "https://api.docs.dealcloud.com/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "11": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_trial",
+     "reason": "development uses a Zendesk trial or a sponsored account",
+     "url": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "12": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2",
+      "Bearer/access token"
+     ],
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: Development workspaces are free",
+     "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developers.intercom.com/docs/guides/mcp",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "13": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developers.freshdesk.com/api/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "API key"
+     ],
+     "reason": "audit sample A: personal API key sent as HTTP Basic username",
+     "url": "https://developers.freshdesk.com/api/",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_trial",
+     "reason": "audit sample A: trial accounts get 50 calls/min",
+     "url": "https://developers.freshdesk.com/api/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "21": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://docs.slack.dev/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2"
+     ],
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://docs.slack.dev/authentication",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: anyone can create an app in a free workspace",
+     "url": "https://api.slack.com/apps",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "23": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2"
+     ],
+     "reason": "audit sample A: REST API follows OAuth 2.0 only",
+     "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: client registered self-serve in Zoho API console; Cliq has a free plan",
+     "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "24": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://open.larksuite.com/document/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2",
+      "Bearer/access token"
+     ],
+     "reason": "audit sample A: App ID + App Secret -> tenant_access_token; OAuth 2.0 for user_access_token",
+     "url": "https://github.com/larksuite/lark-openapi-mcp",
+     "source_type": "official_github"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: create an app in the open platform console",
+     "url": "https://github.com/larksuite/lark-openapi-mcp",
+     "source_type": "official_github"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://github.com/larksuite/lark-openapi-mcp",
+     "source_type": "official_github"
+    },
+    "product_description": {
+     "value": "Lark (Larksuite): team collaboration suite (messaging, docs, calendar) with the Lark Developer open platform.",
+     "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+     "url": "https://open.larksuite.com/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "26": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "anyone can create an app and bot token in the developer portal; verification applies only to larger bots",
+     "url": "https://discord.com/developers/docs/quick-start/getting-started",
+     "source_type": "official_docs",
+     "excerpt": "Step 1: Creating an app ... Reset Token to generate a new bot token"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2",
+      "Bearer/access token"
+     ],
+     "reason": "OAuth2 for user auth, bot token for bot calls; the JWT hit was page noise",
+     "url": "https://discord.com/developers/docs/quick-start/getting-started",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "27": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "bot token from BotFather, no approval",
+     "url": "https://core.telegram.org/bots/tutorial",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "Bearer/access token"
+     ],
+     "reason": "bot token sent in the request URL; the OAuth2 hit is not Bot API auth",
+     "url": "https://core.telegram.org/bots/tutorial",
+     "source_type": "official_docs",
+     "excerpt": "https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getMe"
+    }
+   }
+  },
+  "28": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "Cloud API get-started: create a Meta app, generate an access token, send a test message",
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "test messages need only a Meta developer account and a temporary access token (production needs business verification)",
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+     "source_type": "official_docs",
+     "excerpt": "Click Generate access token to generate a temporary access token to send a test message"
+    },
+    "authentication_methods": {
+     "value": [
+      "Bearer/access token"
+     ],
+     "reason": "access token in the Authorization header",
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+     "source_type": "official_docs"
+    },
+    "product_description": {
+     "value": "WhatsApp Business Platform: Cloud API for businesses to send and receive WhatsApp messages.",
+     "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+     "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "32": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "authentication_methods": {
+     "value": [
+      "OAuth2"
+     ],
+     "reason": "Marketing API uses Facebook Login access tokens (OAuth2)",
+     "url": "https://developers.facebook.com/docs/marketing-api/get-started/authorization",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "approval_required",
+     "reason": "apps request permissions through App Review; Full Access needs a usage threshold",
+     "url": "https://developers.facebook.com/docs/marketing-api/get-started/authorization",
+     "source_type": "official_docs",
+     "excerpt": "During App Review, your app must also request specific permissions and features"
+    },
+    "product_description": {
+     "value": "Meta Ads: Marketing API for creating and managing ads and reporting on Facebook and Instagram.",
+     "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+     "url": "https://developers.facebook.com/docs/marketing-api/get-started/authorization",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "36": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "disputed by the automated second pass; the source page confirms self-serve credentials",
+     "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "39": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "authentication_methods": {
+     "value": [
+      "OAuth2"
+     ],
+     "reason": "Threads API uses OAuth user access tokens",
+     "url": "https://developers.facebook.com/docs/threads/get-started",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "approval_required",
+     "reason": "permissions for users without an app role must pass App Review",
+     "url": "https://developers.facebook.com/docs/threads/get-started",
+     "source_type": "official_docs",
+     "excerpt": "each permission must first be approved through the App Review process"
+    },
+    "product_description": {
+     "value": "Threads (Meta): API for publishing posts and reading replies and insights on Threads.",
+     "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+     "url": "https://developers.facebook.com/docs/threads/get-started",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "48": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "register an OAuth application yourself",
+     "url": "https://gumroad.com/api",
+     "source_type": "official_docs",
+     "excerpt": "To start using the API, you'll need to register your OAuth application"
+    }
+   }
+  },
+  "49": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developer-docs.amazon.com/sp-api/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2"
+     ],
+     "reason": "audit sample A: Login with Amazon (LWA) OAuth",
+     "url": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "approval_required",
+     "reason": "audit sample A: Amazon evaluates the Developer Profile and may grant or deny access",
+     "url": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "50": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: fanbasis.com redirects to commas.com: 'FanBasis is now Commas'",
+     "url": "https://apidocs.fan/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "API key"
+     ],
+     "reason": "audit sample A: API key from dashboard Account -> API Keys",
+     "url": "https://apidocs.fan/quick-start",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: self-serve account + sandbox environment",
+     "url": "https://apidocs.fan/quick-start",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: docs have an MCP section",
+     "url": "https://apidocs.fan/",
+     "source_type": "official_docs"
+    },
+    "product_description": {
+     "value": "fanbasis (now Commas): API to collect payments and manage subscriptions; docs at apidocs.fan.",
+     "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+     "url": "https://apidocs.fan/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "51": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://docs.dataforseo.com/v3/auth/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "Basic"
+     ],
+     "reason": "audit sample A: Basic authentication is the only way; API login/password from dashboard",
+     "url": "https://docs.dataforseo.com/v3/auth/",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_trial",
+     "reason": "audit sample A: free account, then pay-as-you-go",
+     "url": "https://docs.dataforseo.com/v3/auth/",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://github.com/dataforseo/mcp-server-typescript",
+     "source_type": "official_github"
+    }
+   }
+  },
+  "53": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "paid_plan",
+     "reason": "API is available on eligible paid plans; other plans get limited free test queries",
+     "url": "https://docs.ahrefs.com/docs/api/reference/introduction",
+     "source_type": "official_docs",
+     "excerpt": "Ahrefs API is available on eligible paid plans"
+    }
+   }
+  },
+  "58": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "unavailable",
+     "reason": "Sherlock is an open-source CLI that searches usernames across sites; no hosted API",
+     "url": "https://github.com/sherlock-project/sherlock",
+     "source_type": "official_github"
+    },
+    "developer_access": {
+     "value": "not_applicable",
+     "reason": "no API credentials exist; installed locally",
+     "url": "https://github.com/sherlock-project/sherlock",
+     "source_type": "official_github"
+    },
+    "authentication_methods": {
+     "value": [],
+     "reason": "no auth: local tool",
+     "url": "https://github.com/sherlock-project/sherlock",
+     "source_type": "official_github"
+    },
+    "api_types": {
+     "value": [
+      "CLI"
+     ],
+     "reason": "local command-line tool",
+     "url": "https://github.com/sherlock-project/sherlock",
+     "source_type": "official_github"
+    }
+   }
+  },
+  "62": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "disputed by the automated second pass; the source page confirms self-serve credentials",
+     "url": "https://vercel.com/docs/rest-api",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "65": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://supabase.com/docs/guides/api/api-keys",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "API key"
+     ],
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://supabase.com/docs/guides/api/api-keys",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://supabase.com/pricing",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://supabase.com/docs/guides/getting-started/mcp",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "67": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "product_description": {
+     "value": "Snowflake: cloud data platform for warehousing, SQL analytics and data sharing.",
+     "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+     "url": "https://docs.snowflake.com/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "71": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developers.notion.com/docs/authorization",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2",
+      "Bearer/access token"
+     ],
+     "reason": "audit sample A: internal integration token / PAT, or OAuth 2.0 for public integrations",
+     "url": "https://developers.notion.com/docs/authorization",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developers.notion.com/docs/authorization",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developers.notion.com/docs/mcp",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "73": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://linear.app/developers",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2",
+      "API key"
+     ],
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://linear.app/developers/oauth-2-0-authentication",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://linear.app/developers",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://linear.app/docs/mcp",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "74": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "Jira has a free plan (up to 10 users); OAuth apps are created in the self-serve developer console",
+     "url": "https://www.atlassian.com/software/jira/pricing",
+     "source_type": "official_site",
+     "excerpt": "Free forever for 10 users $0"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2",
+      "Basic"
+     ],
+     "reason": "OAuth 2.0 (3LO) apps, or HTTP Basic with account email + API token; JWT/API-key/Bearer hits were not separate methods",
+     "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+     "source_type": "official_docs",
+     "excerpt": "basic authentication with an Atlassian account email address and API token"
+    }
+   }
+  },
+  "75": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developers.asana.com/docs/authentication",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2",
+      "Bearer/access token"
+     ],
+     "reason": "audit sample A: OAuth, personal access tokens; OIDC on top of OAuth",
+     "url": "https://developers.asana.com/docs/authentication",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: free personal plan + developer sandbox",
+     "url": "https://developers.asana.com/docs/authentication",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "77": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "disputed by the automated second pass; the source page confirms self-serve credentials",
+     "url": "https://developer.clickup.com/docs/authentication",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "78": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "documented REST API v1",
+     "url": "https://coda.io/developers/apis/v1",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "API available to all users free of charge, in free and paid workspaces",
+     "url": "https://coda.io/developers/apis/v1",
+     "source_type": "official_docs",
+     "excerpt": "API available to all of our users free of charge, in both free and paid workspaces"
+    },
+    "authentication_methods": {
+     "value": [
+      "Bearer/access token"
+     ],
+     "reason": "API token as Bearer header",
+     "url": "https://coda.io/developers/apis/v1",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "81": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "disputed by the automated second pass; the source page confirms self-serve credentials",
+     "url": "https://docs.stripe.com/keys",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "84": {
+   "status": "reviewed_unresolved",
+   "checked_at": "2026-11-24",
+   "fields": {}
+  },
+  "85": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: /docs from the brief hint is a 404; developer docs live at /developers",
+     "url": "https://www.ipayx.ai/developers",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "API key"
+     ],
+     "reason": "audit sample A: Authorization: Bearer ipx_live_...",
+     "url": "https://www.ipayx.ai/developers",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: Get API key / sandbox; free allowance of 3 audits per month",
+     "url": "https://www.ipayx.ai/developers",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: mcp.ipayx.ai, says it is listed on the MCP Registry",
+     "url": "https://www.ipayx.ai/developers",
+     "source_type": "official_docs"
+    },
+    "product_description": {
+     "value": "iPayX Protocol: FINTRAC-registered FX forensic audit layer with developer docs.",
+     "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+     "url": "https://ipayx.ai/docs",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "87": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developer.xero.com/documentation/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2"
+     ],
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: free developer account with demo company",
+     "url": "https://developer.xero.com/documentation/getting-started-guide/",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://github.com/XeroAPI/xero-mcp-server",
+     "source_type": "official_github"
+    }
+   }
+  },
+  "90": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "product_description": {
+     "value": "PitchBook: private-market data provider; the brief lists its research API (pricing page blocked automated reading).",
+     "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+     "url": "https://pitchbook.com/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "91": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: Enterprise-only REST API (v1alpha, preview); consumer NotebookLM has no API",
+     "url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "OAuth2"
+     ],
+     "reason": "audit sample A: Google Cloud user access token",
+     "url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "paid_plan",
+     "reason": "audit sample A: requires an active NotebookLM Enterprise license",
+     "url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "92": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "restricted",
+     "reason": "audit sample A: Public API for Enterprise customers; contact account manager",
+     "url": "https://help.otter.ai/hc/en-us/search?query=API",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "API key"
+     ],
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://help.otter.ai/hc/en-us/search?query=API",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "partner_or_sales",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://help.otter.ai/hc/en-us/search?query=API",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: Otter MCP Server at mcp.otter.ai",
+     "url": "https://help.otter.ai/hc/en-us/search?query=MCP",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "94": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "available",
+     "reason": "audit sample A: checked against the live vendor page",
+     "url": "https://consensus.app/home/api/",
+     "source_type": "official_docs"
+    },
+    "authentication_methods": {
+     "value": [
+      "API key"
+     ],
+     "reason": "audit sample A: x-api-key header",
+     "url": "https://consensus.app/home/api/",
+     "source_type": "official_docs"
+    },
+    "developer_access": {
+     "value": "self_serve_free",
+     "reason": "audit sample A: 'Create API key' self-serve",
+     "url": "https://consensus.app/home/api/",
+     "source_type": "official_docs"
+    },
+    "official_mcp_status": {
+     "value": "yes",
+     "reason": "audit sample A: mcp.consensus.app",
+     "url": "https://consensus.app/home/api/",
+     "source_type": "official_docs"
+    }
+   }
+  },
+  "98": {
+   "status": "reviewed",
+   "checked_at": "2026-11-24",
+   "fields": {
+    "public_api_status": {
+     "value": "unavailable",
+     "reason": "Mermaid CLI is an open-source command-line renderer (mmdc); no hosted API",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "source_type": "official_github"
+    },
+    "developer_access": {
+     "value": "not_applicable",
+     "reason": "no API credentials exist; installed locally",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "source_type": "official_github"
+    },
+    "authentication_methods": {
+     "value": [],
+     "reason": "no auth: local tool",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "source_type": "official_github"
+    },
+    "api_types": {
+     "value": [
+      "CLI"
+     ],
+     "reason": "local command-line tool",
+     "url": "https://github.com/mermaid-js/mermaid-cli",
+     "source_type": "official_github"
+    }
+   }
+  }
+ }
+}

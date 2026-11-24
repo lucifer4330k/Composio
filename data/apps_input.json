@@ -1,0 +1,1411 @@
+{
+  "source": "https://composio.notion.site/AI-Product-Ops-Intern-The-take-home-assignment-391f261a6dfe80e9946bee899d3a3762",
+  "extracted_at": "2026-11-23",
+  "note": "app_name, category and hint are verbatim from the brief tables. official_hosts and seed_urls are human-curated helpers.",
+  "apps": [
+    {
+      "id": 1,
+      "app_name": "Salesforce",
+      "category": "CRM and Sales",
+      "hint": "salesforce.com",
+      "official_hosts": [
+        "salesforce.com",
+        "force.com",
+        "github.com/salesforce",
+        "github.com/salesforcecli"
+      ],
+      "seed_urls": [
+        "https://developer.salesforce.com/docs/apis"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 2,
+      "app_name": "HubSpot",
+      "category": "CRM and Sales",
+      "hint": "hubspot.com",
+      "official_hosts": [
+        "hubspot.com",
+        "github.com/HubSpot",
+        "github.com/hubspot"
+      ],
+      "seed_urls": [
+        "https://developers.hubspot.com/docs/api/overview"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 3,
+      "app_name": "Pipedrive",
+      "category": "CRM and Sales",
+      "hint": "pipedrive.com",
+      "official_hosts": [
+        "pipedrive.com",
+        "github.com/pipedrive"
+      ],
+      "seed_urls": [
+        "https://developers.pipedrive.com/docs/api/v1"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 4,
+      "app_name": "Attio",
+      "category": "CRM and Sales",
+      "hint": "attio.com",
+      "official_hosts": [
+        "attio.com",
+        "github.com/attio"
+      ],
+      "seed_urls": [
+        "https://docs.attio.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 5,
+      "app_name": "Twenty",
+      "category": "CRM and Sales",
+      "hint": "twenty.com (open-source CRM)",
+      "official_hosts": [
+        "twenty.com",
+        "github.com/twentyhq"
+      ],
+      "seed_urls": [
+        "https://twenty.com/developers"
+      ],
+      "disambiguation": "Open-source CRM twenty.com (twentyhq)."
+    },
+    {
+      "id": 6,
+      "app_name": "Podio",
+      "category": "CRM and Sales",
+      "hint": "podio.com",
+      "official_hosts": [
+        "podio.com",
+        "github.com/podio"
+      ],
+      "seed_urls": [
+        "https://developers.podio.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 7,
+      "app_name": "Zoho CRM",
+      "category": "CRM and Sales",
+      "hint": "zoho.com/crm",
+      "official_hosts": [
+        "zoho.com",
+        "github.com/zoho"
+      ],
+      "seed_urls": [
+        "https://www.zoho.com/crm/developer/docs/api/v8/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 8,
+      "app_name": "Close",
+      "category": "CRM and Sales",
+      "hint": "close.com",
+      "official_hosts": [
+        "close.com",
+        "github.com/closeio"
+      ],
+      "seed_urls": [
+        "https://developer.close.com/"
+      ],
+      "disambiguation": "The CRM at close.com (Close.io), not the generic word."
+    },
+    {
+      "id": 9,
+      "app_name": "Copper",
+      "category": "CRM and Sales",
+      "hint": "copper.com",
+      "official_hosts": [
+        "copper.com"
+      ],
+      "seed_urls": [
+        "https://developer.copper.com/"
+      ],
+      "disambiguation": "Copper CRM (copper.com), formerly ProsperWorks."
+    },
+    {
+      "id": 10,
+      "app_name": "DealCloud",
+      "category": "CRM and Sales",
+      "hint": "api.docs.dealcloud.com",
+      "official_hosts": [
+        "dealcloud.com",
+        "intapp.com"
+      ],
+      "seed_urls": [
+        "https://api.docs.dealcloud.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 11,
+      "app_name": "Zendesk",
+      "category": "Support and Helpdesk",
+      "hint": "zendesk.com",
+      "official_hosts": [
+        "zendesk.com",
+        "github.com/zendesk"
+      ],
+      "seed_urls": [
+        "https://developer.zendesk.com/api-reference/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 12,
+      "app_name": "Intercom",
+      "category": "Support and Helpdesk",
+      "hint": "intercom.com",
+      "official_hosts": [
+        "intercom.com",
+        "github.com/intercom"
+      ],
+      "seed_urls": [
+        "https://developers.intercom.com/docs"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 13,
+      "app_name": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "hint": "freshdesk.com",
+      "official_hosts": [
+        "freshdesk.com",
+        "freshworks.com",
+        "github.com/freshworks"
+      ],
+      "seed_urls": [
+        "https://developers.freshdesk.com/api/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 14,
+      "app_name": "Front",
+      "category": "Support and Helpdesk",
+      "hint": "front.com",
+      "official_hosts": [
+        "front.com",
+        "frontapp.com",
+        "github.com/frontapp"
+      ],
+      "seed_urls": [
+        "https://dev.frontapp.com/reference/introduction"
+      ],
+      "disambiguation": "Front customer-communication platform (front.com / frontapp.com)."
+    },
+    {
+      "id": 15,
+      "app_name": "Pylon",
+      "category": "Support and Helpdesk",
+      "hint": "usepylon.com",
+      "official_hosts": [
+        "usepylon.com"
+      ],
+      "seed_urls": [
+        "https://docs.usepylon.com/pylon-docs/developer/api"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 16,
+      "app_name": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "hint": "liveagent.com",
+      "official_hosts": [
+        "liveagent.com",
+        "qualityunit.com"
+      ],
+      "seed_urls": [],
+      "disambiguation": ""
+    },
+    {
+      "id": 17,
+      "app_name": "Plain",
+      "category": "Support and Helpdesk",
+      "hint": "plain.com",
+      "official_hosts": [
+        "plain.com",
+        "github.com/team-plain"
+      ],
+      "seed_urls": [
+        "https://www.plain.com/docs"
+      ],
+      "disambiguation": "Plain support platform at plain.com, not the adjective."
+    },
+    {
+      "id": 18,
+      "app_name": "Help Scout",
+      "category": "Support and Helpdesk",
+      "hint": "helpscout.com",
+      "official_hosts": [
+        "helpscout.com",
+        "helpscout.net",
+        "github.com/helpscout"
+      ],
+      "seed_urls": [
+        "https://developer.helpscout.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 19,
+      "app_name": "Gorgias",
+      "category": "Support and Helpdesk",
+      "hint": "gorgias.com",
+      "official_hosts": [
+        "gorgias.com"
+      ],
+      "seed_urls": [
+        "https://developers.gorgias.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 20,
+      "app_name": "Gladly",
+      "category": "Support and Helpdesk",
+      "hint": "gladly.com",
+      "official_hosts": [
+        "gladly.com"
+      ],
+      "seed_urls": [
+        "https://developer.gladly.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 21,
+      "app_name": "Slack",
+      "category": "Communications and Messaging",
+      "hint": "slack.com",
+      "official_hosts": [
+        "slack.com",
+        "slack.dev",
+        "github.com/slackapi"
+      ],
+      "seed_urls": [
+        "https://api.slack.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 22,
+      "app_name": "Twilio",
+      "category": "Communications and Messaging",
+      "hint": "twilio.com",
+      "official_hosts": [
+        "twilio.com",
+        "github.com/twilio",
+        "github.com/twilio-labs"
+      ],
+      "seed_urls": [
+        "https://www.twilio.com/docs/usage/api"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 23,
+      "app_name": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "hint": "zoho.com/cliq",
+      "official_hosts": [
+        "zoho.com",
+        "github.com/zoho"
+      ],
+      "seed_urls": [
+        "https://www.zoho.com/cliq/help/restapi/v2/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 24,
+      "app_name": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "hint": "open.larksuite.com",
+      "official_hosts": [
+        "larksuite.com",
+        "feishu.cn",
+        "github.com/larksuite"
+      ],
+      "seed_urls": [
+        "https://open.larksuite.com/document/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 25,
+      "app_name": "Pumble",
+      "category": "Communications and Messaging",
+      "hint": "pumble.com",
+      "official_hosts": [
+        "pumble.com",
+        "cake.com"
+      ],
+      "seed_urls": [],
+      "disambiguation": ""
+    },
+    {
+      "id": 26,
+      "app_name": "Discord",
+      "category": "Communications and Messaging",
+      "hint": "discord.com",
+      "official_hosts": [
+        "discord.com",
+        "github.com/discord"
+      ],
+      "seed_urls": [
+        "https://discord.com/developers/docs/intro"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 27,
+      "app_name": "Telegram",
+      "category": "Communications and Messaging",
+      "hint": "core.telegram.org",
+      "official_hosts": [
+        "telegram.org"
+      ],
+      "seed_urls": [
+        "https://core.telegram.org/bots/api",
+        "https://core.telegram.org/api"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 28,
+      "app_name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "hint": "developers.facebook.com/docs/whatsapp",
+      "official_hosts": [
+        "developers.facebook.com/docs/whatsapp",
+        "whatsapp.com",
+        "business.whatsapp.com",
+        "github.com/WhatsApp"
+      ],
+      "seed_urls": [
+        "https://developers.facebook.com/docs/whatsapp/cloud-api"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 29,
+      "app_name": "Aircall",
+      "category": "Communications and Messaging",
+      "hint": "aircall.io",
+      "official_hosts": [
+        "aircall.io",
+        "github.com/aircall"
+      ],
+      "seed_urls": [
+        "https://developer.aircall.io/api-references/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 30,
+      "app_name": "Vonage",
+      "category": "Communications and Messaging",
+      "hint": "developer.vonage.com",
+      "official_hosts": [
+        "vonage.com",
+        "github.com/Vonage"
+      ],
+      "seed_urls": [
+        "https://developer.vonage.com/en/api"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 31,
+      "app_name": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "developers.google.com/google-ads",
+      "official_hosts": [
+        "developers.google.com/google-ads",
+        "ads.google.com",
+        "support.google.com/google-ads",
+        "github.com/googleads"
+      ],
+      "seed_urls": [
+        "https://developers.google.com/google-ads/api/docs/start"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 32,
+      "app_name": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "developers.facebook.com/docs/marketing-apis",
+      "official_hosts": [
+        "developers.facebook.com/docs/marketing-api",
+        "developers.facebook.com/docs/marketing-apis",
+        "facebook.com/business",
+        "github.com/facebook"
+      ],
+      "seed_urls": [
+        "https://developers.facebook.com/docs/marketing-apis"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 33,
+      "app_name": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "learn.microsoft.com/linkedin/marketing",
+      "official_hosts": [
+        "learn.microsoft.com/en-us/linkedin",
+        "learn.microsoft.com/linkedin",
+        "linkedin.com",
+        "github.com/linkedin"
+      ],
+      "seed_urls": [
+        "https://learn.microsoft.com/en-us/linkedin/marketing/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 34,
+      "app_name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "highlevel.stoplight.io",
+      "official_hosts": [
+        "highlevel.stoplight.io",
+        "gohighlevel.com",
+        "leadconnectorhq.com",
+        "github.com/GoHighLevel"
+      ],
+      "seed_urls": [
+        "https://highlevel.stoplight.io/",
+        "https://marketplace.gohighlevel.com/docs/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 35,
+      "app_name": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "mailchimp.com/developer",
+      "official_hosts": [
+        "mailchimp.com",
+        "github.com/mailchimp"
+      ],
+      "seed_urls": [
+        "https://mailchimp.com/developer/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 36,
+      "app_name": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "developers.klaviyo.com",
+      "official_hosts": [
+        "klaviyo.com",
+        "github.com/klaviyo"
+      ],
+      "seed_urls": [
+        "https://developers.klaviyo.com/en"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 37,
+      "app_name": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "systeme.io (funnel builder)",
+      "official_hosts": [
+        "systeme.io"
+      ],
+      "seed_urls": [],
+      "disambiguation": ""
+    },
+    {
+      "id": 38,
+      "app_name": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "developers.pinterest.com",
+      "official_hosts": [
+        "pinterest.com",
+        "github.com/pinterest"
+      ],
+      "seed_urls": [
+        "https://developers.pinterest.com/docs/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 39,
+      "app_name": "Threads (Meta)",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "developers.facebook.com/docs/threads",
+      "official_hosts": [
+        "developers.facebook.com/docs/threads",
+        "threads.net",
+        "threads.com"
+      ],
+      "seed_urls": [
+        "https://developers.facebook.com/docs/threads"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 40,
+      "app_name": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "sendgrid.com",
+      "official_hosts": [
+        "sendgrid.com",
+        "twilio.com/docs/sendgrid",
+        "github.com/sendgrid"
+      ],
+      "seed_urls": [
+        "https://www.twilio.com/docs/sendgrid/api-reference"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 41,
+      "app_name": "Shopify",
+      "category": "Ecommerce",
+      "hint": "shopify.dev",
+      "official_hosts": [
+        "shopify.dev",
+        "shopify.com",
+        "github.com/Shopify"
+      ],
+      "seed_urls": [
+        "https://shopify.dev/docs/api"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 42,
+      "app_name": "WooCommerce",
+      "category": "Ecommerce",
+      "hint": "woocommerce.com/document/woocommerce-rest-api",
+      "official_hosts": [
+        "woocommerce.com",
+        "woocommerce.github.io",
+        "github.com/woocommerce"
+      ],
+      "seed_urls": [
+        "https://woocommerce.com/document/woocommerce-rest-api/",
+        "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 43,
+      "app_name": "BigCommerce",
+      "category": "Ecommerce",
+      "hint": "developer.bigcommerce.com",
+      "official_hosts": [
+        "bigcommerce.com",
+        "github.com/bigcommerce"
+      ],
+      "seed_urls": [
+        "https://developer.bigcommerce.com/docs/start"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 44,
+      "app_name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "hint": "developer.salesforce.com/docs/commerce",
+      "official_hosts": [
+        "developer.salesforce.com/docs/commerce",
+        "salesforce.com",
+        "github.com/SalesforceCommerceCloud"
+      ],
+      "seed_urls": [
+        "https://developer.salesforce.com/docs/commerce/commerce-api/overview"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 45,
+      "app_name": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "hint": "developer.adobe.com/commerce",
+      "official_hosts": [
+        "developer.adobe.com/commerce",
+        "business.adobe.com",
+        "experienceleague.adobe.com",
+        "github.com/magento"
+      ],
+      "seed_urls": [
+        "https://developer.adobe.com/commerce/webapi/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 46,
+      "app_name": "Squarespace",
+      "category": "Ecommerce",
+      "hint": "developers.squarespace.com",
+      "official_hosts": [
+        "squarespace.com"
+      ],
+      "seed_urls": [
+        "https://developers.squarespace.com/commerce-apis/overview"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 47,
+      "app_name": "Ecwid",
+      "category": "Ecommerce",
+      "hint": "api-docs.ecwid.com",
+      "official_hosts": [
+        "ecwid.com",
+        "lightspeedhq.com",
+        "github.com/Ecwid"
+      ],
+      "seed_urls": [
+        "https://api-docs.ecwid.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 48,
+      "app_name": "Gumroad",
+      "category": "Ecommerce",
+      "hint": "gumroad.com/api",
+      "official_hosts": [
+        "gumroad.com",
+        "github.com/antiwork"
+      ],
+      "seed_urls": [
+        "https://gumroad.com/api"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 49,
+      "app_name": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "hint": "developer-docs.amazon.com/sp-api",
+      "official_hosts": [
+        "developer-docs.amazon.com/sp-api",
+        "developer-docs.amazon.com",
+        "sellercentral.amazon.com",
+        "github.com/amzn"
+      ],
+      "seed_urls": [
+        "https://developer-docs.amazon.com/sp-api/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 50,
+      "app_name": "fanbasis",
+      "category": "Ecommerce",
+      "hint": "fanbasis.com",
+      "official_hosts": [
+        "fanbasis.com"
+      ],
+      "seed_urls": [],
+      "disambiguation": ""
+    },
+    {
+      "id": 51,
+      "app_name": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "hint": "docs.dataforseo.com",
+      "official_hosts": [
+        "dataforseo.com",
+        "github.com/dataforseo"
+      ],
+      "seed_urls": [
+        "https://docs.dataforseo.com/v3/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 52,
+      "app_name": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "hint": "seranking.com/api",
+      "official_hosts": [
+        "seranking.com"
+      ],
+      "seed_urls": [
+        "https://seranking.com/api/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 53,
+      "app_name": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "hint": "ahrefs.com/api",
+      "official_hosts": [
+        "ahrefs.com",
+        "github.com/ahrefs"
+      ],
+      "seed_urls": [
+        "https://ahrefs.com/api",
+        "https://docs.ahrefs.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 54,
+      "app_name": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "hint": "docs.mrscraper.com",
+      "official_hosts": [
+        "mrscraper.com"
+      ],
+      "seed_urls": [
+        "https://docs.mrscraper.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 55,
+      "app_name": "Apify",
+      "category": "Data, SEO and Scraping",
+      "hint": "docs.apify.com",
+      "official_hosts": [
+        "apify.com",
+        "github.com/apify"
+      ],
+      "seed_urls": [
+        "https://docs.apify.com/api/v2"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 56,
+      "app_name": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "hint": "firecrawl.dev",
+      "official_hosts": [
+        "firecrawl.dev",
+        "github.com/mendableai",
+        "github.com/firecrawl"
+      ],
+      "seed_urls": [
+        "https://docs.firecrawl.dev/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 57,
+      "app_name": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "hint": "brightdata.com",
+      "official_hosts": [
+        "brightdata.com",
+        "github.com/brightdata",
+        "github.com/luminati-io"
+      ],
+      "seed_urls": [
+        "https://docs.brightdata.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 58,
+      "app_name": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "hint": "github.com/sherlock-project/sherlock",
+      "official_hosts": [
+        "github.com/sherlock-project",
+        "sherlockproject.xyz"
+      ],
+      "seed_urls": [
+        "https://github.com/sherlock-project/sherlock"
+      ],
+      "disambiguation": "sherlock-project OSINT username search CLI, not other 'Sherlock' products."
+    },
+    {
+      "id": 59,
+      "app_name": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "hint": "waterfall.io (contact/company intel)",
+      "official_hosts": [
+        "waterfall.io"
+      ],
+      "seed_urls": [],
+      "disambiguation": ""
+    },
+    {
+      "id": 60,
+      "app_name": "Clay",
+      "category": "Data, SEO and Scraping",
+      "hint": "clay.com",
+      "official_hosts": [
+        "clay.com"
+      ],
+      "seed_urls": [],
+      "disambiguation": "Clay data-enrichment platform clay.com."
+    },
+    {
+      "id": 61,
+      "app_name": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.github.com/rest",
+      "official_hosts": [
+        "github.com",
+        "docs.github.com"
+      ],
+      "seed_urls": [
+        "https://docs.github.com/en/rest"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 62,
+      "app_name": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "vercel.com/docs/rest-api",
+      "official_hosts": [
+        "vercel.com",
+        "github.com/vercel"
+      ],
+      "seed_urls": [
+        "https://vercel.com/docs/rest-api"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 63,
+      "app_name": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.netlify.com/api",
+      "official_hosts": [
+        "netlify.com",
+        "github.com/netlify"
+      ],
+      "seed_urls": [
+        "https://docs.netlify.com/api/get-started/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 64,
+      "app_name": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "developers.cloudflare.com/api",
+      "official_hosts": [
+        "cloudflare.com",
+        "github.com/cloudflare"
+      ],
+      "seed_urls": [
+        "https://developers.cloudflare.com/api/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 65,
+      "app_name": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "supabase.com/docs",
+      "official_hosts": [
+        "supabase.com",
+        "github.com/supabase",
+        "github.com/supabase-community"
+      ],
+      "seed_urls": [
+        "https://supabase.com/docs/reference/api/introduction"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 66,
+      "app_name": "Neo4j",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "neo4j.com/docs/api",
+      "official_hosts": [
+        "neo4j.com",
+        "github.com/neo4j",
+        "github.com/neo4j-contrib"
+      ],
+      "seed_urls": [
+        "https://neo4j.com/docs/api/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 67,
+      "app_name": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.snowflake.com",
+      "official_hosts": [
+        "snowflake.com",
+        "github.com/Snowflake-Labs",
+        "github.com/snowflakedb"
+      ],
+      "seed_urls": [
+        "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 68,
+      "app_name": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "mongodb.com/docs/atlas/api",
+      "official_hosts": [
+        "mongodb.com",
+        "github.com/mongodb",
+        "github.com/mongodb-js"
+      ],
+      "seed_urls": [
+        "https://www.mongodb.com/docs/atlas/api/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 69,
+      "app_name": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.datadoghq.com/api",
+      "official_hosts": [
+        "datadoghq.com",
+        "github.com/DataDog"
+      ],
+      "seed_urls": [
+        "https://docs.datadoghq.com/api/latest/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 70,
+      "app_name": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.sentry.io/api",
+      "official_hosts": [
+        "sentry.io",
+        "github.com/getsentry"
+      ],
+      "seed_urls": [
+        "https://docs.sentry.io/api/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 71,
+      "app_name": "Notion",
+      "category": "Productivity and Project Management",
+      "hint": "developers.notion.com",
+      "official_hosts": [
+        "notion.com",
+        "notion.so",
+        "github.com/makenotion"
+      ],
+      "seed_urls": [
+        "https://developers.notion.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 72,
+      "app_name": "Airtable",
+      "category": "Productivity and Project Management",
+      "hint": "airtable.com/developers",
+      "official_hosts": [
+        "airtable.com",
+        "github.com/Airtable"
+      ],
+      "seed_urls": [
+        "https://airtable.com/developers/web/api/introduction"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 73,
+      "app_name": "Linear",
+      "category": "Productivity and Project Management",
+      "hint": "developers.linear.app",
+      "official_hosts": [
+        "linear.app",
+        "github.com/linear"
+      ],
+      "seed_urls": [
+        "https://linear.app/developers"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 74,
+      "app_name": "Jira",
+      "category": "Productivity and Project Management",
+      "hint": "developer.atlassian.com",
+      "official_hosts": [
+        "atlassian.com",
+        "github.com/atlassian"
+      ],
+      "seed_urls": [
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 75,
+      "app_name": "Asana",
+      "category": "Productivity and Project Management",
+      "hint": "developers.asana.com",
+      "official_hosts": [
+        "asana.com",
+        "github.com/Asana"
+      ],
+      "seed_urls": [
+        "https://developers.asana.com/docs"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 76,
+      "app_name": "Monday.com",
+      "category": "Productivity and Project Management",
+      "hint": "developer.monday.com",
+      "official_hosts": [
+        "monday.com",
+        "github.com/mondaycom"
+      ],
+      "seed_urls": [
+        "https://developer.monday.com/api-reference/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 77,
+      "app_name": "ClickUp",
+      "category": "Productivity and Project Management",
+      "hint": "clickup.com/api",
+      "official_hosts": [
+        "clickup.com",
+        "github.com/clickup"
+      ],
+      "seed_urls": [
+        "https://developer.clickup.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 78,
+      "app_name": "Coda",
+      "category": "Productivity and Project Management",
+      "hint": "coda.io/developers",
+      "official_hosts": [
+        "coda.io",
+        "github.com/coda"
+      ],
+      "seed_urls": [
+        "https://coda.io/developers/apis/v1"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 79,
+      "app_name": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "hint": "smartsheet.com/developers",
+      "official_hosts": [
+        "smartsheet.com",
+        "github.com/smartsheet",
+        "github.com/smartsheet-platform"
+      ],
+      "seed_urls": [
+        "https://developers.smartsheet.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 80,
+      "app_name": "Harvest",
+      "category": "Productivity and Project Management",
+      "hint": "harvestapp.com (help.getharvest.com/api-v2)",
+      "official_hosts": [
+        "harvestapp.com",
+        "getharvest.com",
+        "github.com/harvesthq"
+      ],
+      "seed_urls": [
+        "https://help.getharvest.com/api-v2/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 81,
+      "app_name": "Stripe",
+      "category": "Finance and Fintech",
+      "hint": "stripe.com/docs/api",
+      "official_hosts": [
+        "stripe.com",
+        "github.com/stripe"
+      ],
+      "seed_urls": [
+        "https://docs.stripe.com/api"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 82,
+      "app_name": "Plaid",
+      "category": "Finance and Fintech",
+      "hint": "plaid.com/docs",
+      "official_hosts": [
+        "plaid.com",
+        "github.com/plaid"
+      ],
+      "seed_urls": [
+        "https://plaid.com/docs/"
+      ],
+      "disambiguation": "Plaid fintech (plaid.com)."
+    },
+    {
+      "id": 83,
+      "app_name": "Binance",
+      "category": "Finance and Fintech",
+      "hint": "binance-docs.github.io",
+      "official_hosts": [
+        "binance.com",
+        "binance-docs.github.io",
+        "github.com/binance"
+      ],
+      "seed_urls": [
+        "https://developers.binance.com/docs/binance-spot-api-docs"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 84,
+      "app_name": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "hint": "paygent (NMI-powered)",
+      "official_hosts": [],
+      "seed_urls": [],
+      "disambiguation": "Brief hint says 'NMI-powered'. Identity is ambiguous (Paygent is also a Japanese PSP); no official domain is assumed."
+    },
+    {
+      "id": 85,
+      "app_name": "iPayX",
+      "category": "Finance and Fintech",
+      "hint": "ipayx.ai/docs",
+      "official_hosts": [
+        "ipayx.ai"
+      ],
+      "seed_urls": [
+        "https://ipayx.ai/docs"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 86,
+      "app_name": "QuickBooks",
+      "category": "Finance and Fintech",
+      "hint": "developer.intuit.com",
+      "official_hosts": [
+        "intuit.com",
+        "github.com/intuit"
+      ],
+      "seed_urls": [
+        "https://developer.intuit.com/app/developer/qbo/docs/get-started"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 87,
+      "app_name": "Xero",
+      "category": "Finance and Fintech",
+      "hint": "developer.xero.com",
+      "official_hosts": [
+        "xero.com",
+        "github.com/XeroAPI"
+      ],
+      "seed_urls": [
+        "https://developer.xero.com/documentation/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 88,
+      "app_name": "Brex",
+      "category": "Finance and Fintech",
+      "hint": "developer.brex.com",
+      "official_hosts": [
+        "brex.com",
+        "github.com/brexhq"
+      ],
+      "seed_urls": [
+        "https://developer.brex.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 89,
+      "app_name": "Ramp",
+      "category": "Finance and Fintech",
+      "hint": "docs.ramp.com",
+      "official_hosts": [
+        "ramp.com",
+        "github.com/ramp-public"
+      ],
+      "seed_urls": [
+        "https://docs.ramp.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 90,
+      "app_name": "PitchBook",
+      "category": "Finance and Fintech",
+      "hint": "pitchbook.com (research API)",
+      "official_hosts": [
+        "pitchbook.com"
+      ],
+      "seed_urls": [],
+      "disambiguation": ""
+    },
+    {
+      "id": 91,
+      "app_name": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "hint": "cloud.google.com/gemini (Enterprise API)",
+      "official_hosts": [
+        "cloud.google.com",
+        "notebooklm.google",
+        "notebooklm.google.com",
+        "support.google.com/notebooklm",
+        "blog.google"
+      ],
+      "seed_urls": [],
+      "disambiguation": ""
+    },
+    {
+      "id": 92,
+      "app_name": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "hint": "help.otter.ai (MCP server)",
+      "official_hosts": [
+        "otter.ai"
+      ],
+      "seed_urls": [
+        "https://help.otter.ai/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 93,
+      "app_name": "Fathom",
+      "category": "AI, Research and Media-native",
+      "hint": "fathom.video",
+      "official_hosts": [
+        "fathom.video",
+        "fathom.ai"
+      ],
+      "seed_urls": [],
+      "disambiguation": ""
+    },
+    {
+      "id": 94,
+      "app_name": "Consensus",
+      "category": "AI, Research and Media-native",
+      "hint": "consensus.app (OAuth requested)",
+      "official_hosts": [
+        "consensus.app"
+      ],
+      "seed_urls": [],
+      "disambiguation": "Consensus AI academic search consensus.app."
+    },
+    {
+      "id": 95,
+      "app_name": "Reducto",
+      "category": "AI, Research and Media-native",
+      "hint": "reducto.ai (document parsing)",
+      "official_hosts": [
+        "reducto.ai",
+        "github.com/reductoai"
+      ],
+      "seed_urls": [
+        "https://docs.reducto.ai/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 96,
+      "app_name": "Devin",
+      "category": "AI, Research and Media-native",
+      "hint": "docs.devin.ai (MCP)",
+      "official_hosts": [
+        "devin.ai",
+        "cognition.ai",
+        "github.com/CognitionAI"
+      ],
+      "seed_urls": [
+        "https://docs.devin.ai/"
+      ],
+      "disambiguation": "Devin AI software engineer by Cognition (devin.ai)."
+    },
+    {
+      "id": 97,
+      "app_name": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "hint": "higgsfield.ai/cli (content suite)",
+      "official_hosts": [
+        "higgsfield.ai",
+        "github.com/higgsfield-ai"
+      ],
+      "seed_urls": [
+        "https://higgsfield.ai/cli"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 98,
+      "app_name": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "hint": "github.com/mermaid-js/mermaid-cli",
+      "official_hosts": [
+        "github.com/mermaid-js",
+        "mermaid.js.org",
+        "mermaid.ai"
+      ],
+      "seed_urls": [
+        "https://github.com/mermaid-js/mermaid-cli"
+      ],
+      "disambiguation": "mermaid-js diagram renderer CLI, NOT the MERMAID coral-reef data platform."
+    },
+    {
+      "id": 99,
+      "app_name": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "hint": "transcriptapi.com",
+      "official_hosts": [
+        "transcriptapi.com"
+      ],
+      "seed_urls": [
+        "https://transcriptapi.com/"
+      ],
+      "disambiguation": ""
+    },
+    {
+      "id": 100,
+      "app_name": "Grain",
+      "category": "AI, Research and Media-native",
+      "hint": "grain.com (meeting notes)",
+      "official_hosts": [
+        "grain.com",
+        "grain.co"
+      ],
+      "seed_urls": [],
+      "disambiguation": "Grain meeting-notes app grain.com."
+    }
+  ]
+}

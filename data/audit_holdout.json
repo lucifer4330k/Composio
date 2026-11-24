@@ -1,0 +1,325 @@
+{
+  "name": "Hold-out sample B",
+  "checked_at": "2026-11-24",
+  "auditor": "Claude Code (AI) fetching the vendor pages fresh through a reader proxy (not the pipeline cache). Not a human check.",
+  "method": "10 apps drawn with random.Random(20261123) and set aside before any extractor tuning or review. Audited only after data/review_adjudications.json was frozen (sha256 192487032ff3692eddf2aefa529f3350a0fbde123875021fbec3324e79244d44); no pipeline rule or review value was changed afterwards. A field is left out when the auditor could not establish the truth (GitHub blocked the reader for the Salesforce Commerce Cloud MCP check). 2026-11-24, after this audit: one-line descriptions were added to the review for 8 apps outside sample B (product_description is not an audited field), and blockers are now reconciled with the final access value. No audited field and no sample-B record changed. Review file sha256 after the change: a783f2316dec16464e59ff77d5d99c07a6f676ece36db758ca475d98c2d11f89.",
+  "review_frozen_sha256": "192487032ff3692eddf2aefa529f3350a0fbde123875021fbec3324e79244d44",
+  "apps": {
+    "7": {
+      "app": "Zoho CRM",
+      "fields": {
+        "public_api_status": {
+          "value": "available",
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+        },
+        "authentication_methods": {
+          "primary": [
+            "OAuth2"
+          ],
+          "acceptable_extra": [
+            "Bearer/access token"
+          ],
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+          "note": "OAuth 2.0 grant, then Zoho-oauthtoken access tokens"
+        },
+        "developer_access": {
+          "value": "self_serve_free",
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+          "note": "Sign Up For Free; API limits documented per edition including free"
+        },
+        "official_mcp_status": {
+          "value": "yes",
+          "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+          "note": "Zoho CRM MCP overview page"
+        },
+        "existing_composio_toolkit": {
+          "value": "yes",
+          "url": "https://composio.dev/toolkits/zoho"
+        }
+      }
+    },
+    "8": {
+      "app": "Close",
+      "fields": {
+        "public_api_status": {
+          "value": "available",
+          "url": "https://developer.close.com/api/overview/api-key-authentication"
+        },
+        "authentication_methods": {
+          "primary": [
+            "API key",
+            "OAuth2"
+          ],
+          "acceptable_extra": [
+            "Basic",
+            "Bearer/access token"
+          ],
+          "url": "https://developer.close.com/api/overview/oauth-authentication",
+          "note": "API key (sent via HTTP Basic) or OAuth"
+        },
+        "developer_access": {
+          "value": "self_serve_trial",
+          "url": "https://www.close.com/pricing",
+          "note": "Try Close free; paid plans after trial"
+        },
+        "official_mcp_status": {
+          "value": "yes",
+          "url": "https://help.close.com/integrations/close-mcp-server"
+        },
+        "existing_composio_toolkit": {
+          "value": "yes",
+          "url": "https://composio.dev/toolkits/close"
+        }
+      }
+    },
+    "9": {
+      "app": "Copper",
+      "fields": {
+        "public_api_status": {
+          "value": "available",
+          "url": "https://developer.copper.com/introduction/authentication.html"
+        },
+        "authentication_methods": {
+          "primary": [
+            "API key",
+            "OAuth2"
+          ],
+          "acceptable_extra": [
+            "Bearer/access token"
+          ],
+          "url": "https://developer.copper.com/introduction/authentication.html",
+          "note": "API keys from System settings > API Keys, or OAuth2.0"
+        },
+        "developer_access": {
+          "value": "self_serve_trial",
+          "url": "https://www.copper.com/pricing",
+          "note": "Start free, no credit card required"
+        },
+        "official_mcp_status": {
+          "value": "yes",
+          "url": "https://www.copper.com/mcp",
+          "note": "Copper MCP for Claude"
+        },
+        "existing_composio_toolkit": {
+          "value": "yes",
+          "url": "https://composio.dev/toolkits/copper"
+        }
+      }
+    },
+    "19": {
+      "app": "Gorgias",
+      "fields": {
+        "public_api_status": {
+          "value": "available",
+          "url": "https://developers.gorgias.com/docs/authentication"
+        },
+        "authentication_methods": {
+          "primary": [
+            "API key",
+            "OAuth2"
+          ],
+          "acceptable_extra": [
+            "Basic",
+            "Bearer/access token"
+          ],
+          "url": "https://developers.gorgias.com/docs/authentication",
+          "note": "Private app -> API key; public app -> OAuth2"
+        },
+        "developer_access": {
+          "value": "self_serve_trial",
+          "url": "https://www.gorgias.com/signup",
+          "note": "7-day trial, all features, no credit card"
+        },
+        "existing_composio_toolkit": {
+          "value": "yes",
+          "url": "https://composio.dev/toolkits/gorgias"
+        }
+      }
+    },
+    "42": {
+      "app": "WooCommerce",
+      "fields": {
+        "public_api_status": {
+          "value": "available",
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+        },
+        "authentication_methods": {
+          "primary": [
+            "API key"
+          ],
+          "acceptable_extra": [
+            "Basic",
+            "HMAC/signed request"
+          ],
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+          "note": "consumer key + secret, sent via Basic auth (HTTPS) or OAuth 1.0a signatures"
+        },
+        "developer_access": {
+          "value": "self_serve_free",
+          "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+          "note": "open-source plugin; keys are generated in your own store admin"
+        },
+        "official_mcp_status": {
+          "value": "yes",
+          "url": "https://developer.woocommerce.com/docs/features/mcp/",
+          "note": "WooCommerce MCP integration docs"
+        },
+        "existing_composio_toolkit": {
+          "value": "no",
+          "url": "https://composio.dev/toolkits/woocommerce",
+          "note": "404; absent from the SDK catalog"
+        }
+      }
+    },
+    "44": {
+      "app": "Salesforce Commerce Cloud",
+      "fields": {
+        "public_api_status": {
+          "value": "restricted",
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html",
+          "note": "documented publicly, but calls run against a B2C Commerce customer realm"
+        },
+        "authentication_methods": {
+          "primary": [
+            "OAuth2"
+          ],
+          "acceptable_extra": [
+            "JWT",
+            "Bearer/access token"
+          ],
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+          "note": "OAuth 2.1 scopes; access token is a JWT"
+        },
+        "developer_access": {
+          "value": "partner_or_sales",
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html",
+          "note": "needs a licensed customer realm"
+        },
+        "existing_composio_toolkit": {
+          "value": "no",
+          "url": "https://composio.dev/toolkits/salesforce_commerce_cloud",
+          "note": "404; absent from the SDK catalog"
+        }
+      }
+    },
+    "52": {
+      "app": "SE Ranking",
+      "fields": {
+        "public_api_status": {
+          "value": "available",
+          "url": "https://seranking.com/api.html"
+        },
+        "authentication_methods": {
+          "primary": [
+            "API key"
+          ],
+          "url": "https://seranking.com/api.html"
+        },
+        "developer_access": {
+          "value": "paid_plan",
+          "url": "https://seranking.com/api.html",
+          "note": "API included in every paid plan or a pay-as-you-go API plan from $50"
+        },
+        "official_mcp_status": {
+          "value": "yes",
+          "url": "https://seranking.com/api/integrations/mcp/"
+        },
+        "existing_composio_toolkit": {
+          "value": "no",
+          "url": "https://composio.dev/toolkits/se_ranking",
+          "note": "404; absent from the SDK catalog"
+        }
+      }
+    },
+    "54": {
+      "app": "MrScraper",
+      "fields": {
+        "public_api_status": {
+          "value": "available",
+          "url": "https://docs.mrscraper.com/docs/getting-started/overview"
+        },
+        "authentication_methods": {
+          "primary": [
+            "Bearer/access token"
+          ],
+          "acceptable_extra": [
+            "API key"
+          ],
+          "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+          "note": "API token"
+        },
+        "developer_access": {
+          "value": "self_serve_free",
+          "url": "https://mrscraper.com/pricing",
+          "note": "Scraper Free: 1,000 tokens/month, no credit card"
+        },
+        "official_mcp_status": {
+          "value": "yes",
+          "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+        },
+        "existing_composio_toolkit": {
+          "value": "yes",
+          "url": "https://composio.dev/toolkits/mrscraper"
+        }
+      }
+    },
+    "66": {
+      "app": "Neo4j",
+      "fields": {
+        "public_api_status": {
+          "value": "available",
+          "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/"
+        },
+        "authentication_methods": {
+          "primary": [
+            "Basic"
+          ],
+          "acceptable_extra": [
+            "Bearer/access token"
+          ],
+          "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "note": "Both basic and bearer authentication are supported"
+        },
+        "official_mcp_status": {
+          "value": "yes",
+          "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+          "note": "Neo4j Labs MCP servers"
+        },
+        "existing_composio_toolkit": {
+          "value": "yes",
+          "url": "https://composio.dev/toolkits/neo4j"
+        }
+      }
+    },
+    "72": {
+      "app": "Airtable",
+      "fields": {
+        "public_api_status": {
+          "value": "available",
+          "url": "https://airtable.com/developers/web/api/authentication"
+        },
+        "authentication_methods": {
+          "primary": [
+            "Bearer/access token",
+            "OAuth2"
+          ],
+          "url": "https://airtable.com/developers/web/api/authentication",
+          "note": "personal access tokens or OAuth access tokens; legacy api_key not supported"
+        },
+        "developer_access": {
+          "value": "self_serve_free",
+          "url": "https://airtable.com/pricing"
+        },
+        "official_mcp_status": {
+          "value": "yes",
+          "url": "https://airtable.com/developers/agents/mcp/getting-started"
+        },
+        "existing_composio_toolkit": {
+          "value": "yes",
+          "url": "https://composio.dev/toolkits/airtable"
+        }
+      }
+    }
+  },
+  "post_audit_changes": "2026-11-24, after this audit: one-line descriptions were added to the review for 8 apps outside sample B (product_description is not an audited field), and blockers are now reconciled with the final access value. No audited field and no sample-B record changed. Review file sha256 after the change: a783f2316dec16464e59ff77d5d99c07a6f676ece36db758ca475d98c2d11f89."
+}

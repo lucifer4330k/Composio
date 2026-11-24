@@ -1,0 +1,7 @@
+httpx==0.28.1
+beautifulsoup4>=4.12
+pydantic==2.14.4
+langgraph==1.2.24
+python-dotenv>=1.0
+composio==0.34.0  # optional at runtime: used only when COMPOSIO_API_KEY is set
+pytest>=8

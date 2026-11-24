@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Toolkit Readiness</title>
+<meta name="description" content="100 apps researched by an evidence-first agent: auth, self-serve vs gated access, API surface, MCP and Composio coverage, buildability — with verification.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Layout: a floating glass control layer (nav pill, explorer toolbar) over a content layer whose signature is the 100-key board. */
+:root{
+  --ground:#E4E9EF; --plate:#FFFFFF; --plate-2:#F3F6F9; --ink:#121A24; --ink-2:#465163; --ink-3:#687386; --rule:#D3DAE3; --rule-2:#E9EEF3;
+  --link:#1F4FD8;
+  --ready:#0C7C5E; --access:#A65A00; --limited:#6542BF; --none:#8B95A3; --bad:#B3261E;
+  --ready-bg:#DDF1E9; --access-bg:#F8E8D2; --limited-bg:#EAE3F8; --unknown-bg:#E7EBF0; --bad-bg:#F8DEDC;
+  --key-ready:#0C7C5E; --key-access:#A65A00; --key-limited:#6542BF; --key-unknown:#C9D1DB; --key-unknown-ink:#2B3442; --key-ink:#FFFFFF;
+  --glass-tint:#F7F9FC; --glass-edge:rgba(255,255,255,.75); --glass-hi:rgba(255,255,255,.9); --glass-lo:rgba(18,26,36,.06); --glass-shadow:rgba(18,26,36,.14);
+  --display:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif; --text:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  --r-key:7px; --r-plate:14px; --r-ctl:10px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#0E151E; --plate:#151E29; --plate-2:#1A2531; --ink:#E6ECF3; --ink-2:#AEB9C7; --ink-3:#8692A2; --rule:#28333F; --rule-2:#1F2935;
+  --link:#86A8FF;
+  --ready:#3FC497; --access:#EBA24A; --limited:#AE95F0; --none:#738092; --bad:#F2867D;
+  --ready-bg:#12352A; --access-bg:#3A2911; --limited-bg:#2A2347; --unknown-bg:#1F2935; --bad-bg:#3D1D1B;
+  --key-unknown:#2A3644; --key-unknown-ink:#C9D3DF;
+  --glass-tint:#1B2533; --glass-edge:rgba(255,255,255,.14); --glass-hi:rgba(255,255,255,.16); --glass-lo:rgba(0,0,0,.35); --glass-shadow:rgba(0,0,0,.45);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ground:#0E151E; --plate:#151E29; --plate-2:#1A2531; --ink:#E6ECF3; --ink-2:#AEB9C7; --ink-3:#8692A2; --rule:#28333F; --rule-2:#1F2935;
+  --link:#86A8FF;
+  --ready:#3FC497; --access:#EBA24A; --limited:#AE95F0; --none:#738092; --bad:#F2867D;
+  --ready-bg:#12352A; --access-bg:#3A2911; --limited-bg:#2A2347; --unknown-bg:#1F2935; --bad-bg:#3D1D1B;
+  --key-unknown:#2A3644; --key-unknown-ink:#C9D3DF;
+  --glass-tint:#1B2533; --glass-edge:rgba(255,255,255,.14); --glass-hi:rgba(255,255,255,.16); --glass-lo:rgba(0,0,0,.35); --glass-shadow:rgba(0,0,0,.45);
+  color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 var(--text);font-variant-numeric:tabular-nums}
+a{color:var(--link);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* ---------- Liquid Glass: controls layer only (Apple HIG, Materials) ---------- */
+.glass{position:relative;isolation:isolate;
+  background:color-mix(in srgb,var(--glass-tint) 52%,transparent);
+  -webkit-backdrop-filter:blur(16px) saturate(185%);backdrop-filter:blur(16px) saturate(185%);
+  border:1px solid var(--glass-edge);
+  box-shadow:inset 0 1px 0 var(--glass-hi),inset 0 -1px 1px var(--glass-lo),0 10px 30px -12px var(--glass-shadow),0 1px 2px var(--glass-lo)}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;
+  background:linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,0) 45%),radial-gradient(120% 80% at 12% 0%,rgba(255,255,255,.22),transparent 60%)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .glass::before{opacity:.35}}
+:root[data-theme="dark"] .glass::before{opacity:.35}
+@media (prefers-reduced-transparency:reduce){.glass{background:var(--plate);-webkit-backdrop-filter:none;backdrop-filter:none}.glass::before{display:none}}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){.glass{background:var(--plate)}}
+
+nav.top{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);z-index:30;margin:12px auto 0;width:fit-content;max-width:calc(100% - 24px);border-radius:999px}
+nav.top .in{display:flex;align-items:center;gap:2px;padding:5px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+nav.top .in::-webkit-scrollbar{display:none}
+nav.top b{font:700 15px/1 var(--display);letter-spacing:-.01em;padding:0 12px 0 10px}
+@media (max-width:900px){nav.top b{display:none}nav.top a{padding:8px 9px}}
+nav.top a{color:var(--ink-2);text-decoration:none;font-size:14px;font-weight:500;padding:8px 12px;border-radius:999px;min-height:36px;display:inline-flex;align-items:center;transition:background .18s,color .18s}
+nav.top a:hover{color:var(--ink);background:color-mix(in srgb,var(--ink) 7%,transparent)}
+.theme-toggle{border:0;background:color-mix(in srgb,var(--ink) 8%,transparent);color:var(--ink);font:500 14px/1 var(--text);padding:0 14px;min-height:36px;border-radius:999px;cursor:pointer;margin-left:6px}
+.theme-toggle:hover{background:color-mix(in srgb,var(--ink) 13%,transparent)}
+
+/* ---------- hero ---------- */
+header.hero{padding-top:56px;padding-bottom:8px}
+h1{font:800 clamp(34px,5.4vw,68px)/.98 var(--display);letter-spacing:-.035em;margin:0 0 18px;max-width:17ch;text-wrap:balance}
+h2{font:800 clamp(26px,3vw,36px)/1.05 var(--display);letter-spacing:-.025em;margin:0 0 10px;text-wrap:balance}
+h3{font:700 18px/1.25 var(--display);letter-spacing:-.01em;margin:28px 0 10px}
+h4{font-family:var(--display)}
+.lede{font-size:clamp(17px,1.6vw,19px);color:var(--ink-2);max-width:62ch;margin:0 0 30px}
+.sub{color:var(--ink-2);max-width:70ch;margin:0 0 22px}
+.small{font-size:13px;color:var(--ink-3);line-height:1.5}
+
+.strip{display:flex;gap:2px;height:30px;margin:0 0 10px}
+.strip i{flex:1 1 0;border-radius:3px}
+.strip i:first-child{border-radius:8px 3px 3px 8px}.strip i:last-child{border-radius:3px 8px 8px 3px}
+.strip .s-ready{background:var(--key-ready)}.strip .s-needs_access{background:var(--key-access)}
+.strip .s-limited,.strip .s-not_buildable{background:var(--key-limited)}.strip .s-unknown{background:var(--key-unknown)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 22px;margin:0 0 34px;font-size:14px;color:var(--ink-2)}
+.legend span b{font:700 22px/1 var(--display);color:var(--ink);margin-right:6px;letter-spacing:-.02em}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:7px;vertical-align:1px}
+
+.board{background:var(--plate);border-radius:var(--r-plate);padding:18px;border:1px solid var(--rule)}
+.matrix{display:grid;grid-template-columns:168px repeat(10,minmax(0,1fr));gap:4px}
+.matrix .cat{font-size:13px;font-weight:500;color:var(--ink-2);display:flex;align-items:center;padding-right:10px;line-height:1.25}
+.cell{border:0;border-radius:var(--r-key);min-height:52px;padding:6px 7px;text-align:left;font:600 12px/1.15 var(--text);color:var(--key-ink);cursor:pointer;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:space-between;transition:transform .15s ease,box-shadow .15s ease;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18),inset 0 -2px 0 rgba(0,0,0,.14)}
+.cell:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.25),inset 0 -2px 0 rgba(0,0,0,.18),0 6px 14px -6px rgba(0,0,0,.45)}
+.cell .ck{display:flex;gap:3px;font:600 10px/1 var(--text);opacity:.92}
+.cell .ck em{font-style:normal;border:1px solid currentColor;border-radius:4px;padding:2px 4px}
+.b-ready{background:var(--key-ready)}.b-needs_access{background:var(--key-access)}
+.b-limited,.b-not_buildable{background:var(--key-limited)}.b-unknown{background:var(--key-unknown);color:var(--key-unknown-ink);box-shadow:inset 0 0 0 1px var(--rule)}
+.board-note{margin:12px 2px 0}
+@media (max-width:760px){.matrix{grid-template-columns:repeat(5,minmax(0,1fr))}.matrix .cat{grid-column:1/-1;padding-top:10px}.board{padding:12px}}
+@media (max-width:480px){.matrix{grid-template-columns:repeat(4,minmax(0,1fr))}.cell{font-size:11px;overflow-wrap:anywhere}}
+
+.after-hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;margin-top:40px;align-items:start}
+@media (max-width:960px){.after-hero{grid-template-columns:minmax(0,1fr);gap:20px}}
+.findings{margin:0;padding:0;list-style:none}
+.findings li{padding:14px 0 14px 18px;border-top:1px solid var(--rule);font-size:15.5px;position:relative;max-width:72ch}
+.findings li::before{content:"";position:absolute;left:0;top:23px;width:7px;height:7px;border-radius:2px;background:var(--ink-3)}
+.findings li:first-child{border-top:0}
+.facts{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 16px;align-items:baseline;background:var(--plate);border:1px solid var(--rule);border-radius:var(--r-plate);padding:20px 22px}
+.facts dt{font:800 30px/1 var(--display);letter-spacing:-.03em;text-align:right}
+.facts dd{margin:0;color:var(--ink-2);font-size:14.5px;line-height:1.35}
+
+/* ---------- content layer ---------- */
+section{padding:76px 0 8px}
+.grid2{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:1100px){.grid2{grid-template-columns:minmax(0,1fr);gap:20px}}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--rule);border-radius:var(--r-plate);background:var(--plate)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--rule-2);text-align:left;vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+th{font-weight:600;color:var(--ink-2);background:var(--plate-2);position:sticky;top:0;white-space:nowrap;font-size:13px}
+th[data-k]{cursor:pointer;user-select:none}
+th[data-k]:hover{color:var(--ink)}
+th .arrow{font-size:10px;margin-left:4px}
+tbody tr:hover td{background:var(--plate-2)}
+tfoot th,tfoot td{border-top:1px solid var(--rule);border-bottom:0}
+td.num,th.num{text-align:right}
+.heat td.h{text-align:center;font-weight:600}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:12.5px;font-weight:500;white-space:nowrap;margin:1px 3px 1px 0;line-height:1.5}
+.t-x{background:var(--plate-2);color:var(--ink);box-shadow:inset 0 0 0 1px var(--rule)}
+.t-ready,.t-yes,.t-available,.t-self_serve_free,.t-self_serve_trial,.t-correct,.t-agree{background:var(--ready-bg);color:var(--ready)}
+.t-needs_access,.t-paid_plan,.t-approval_required,.t-partner_or_sales,.t-restricted,.t-unknown_s,.t-partial{background:var(--access-bg);color:var(--access)}
+.t-limited,.t-not_buildable,.t-unavailable,.t-not_applicable{background:var(--limited-bg);color:var(--limited)}
+.t-unknown,.t-no,.t-unverifiable,.t-no_independent_evidence{background:var(--unknown-bg);color:var(--ink-2)}
+.t-wrong,.t-conflict,.t-disputed{background:var(--bad-bg);color:var(--bad)}
+.conf{display:inline-block;width:44px;height:6px;background:var(--rule-2);border-radius:3px;vertical-align:middle;margin-right:7px;overflow:hidden}
+.conf i{display:block;height:100%;background:var(--ink-3)}
+.linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--link);cursor:pointer;text-align:left;font-weight:600}
+.linkbtn:hover{text-decoration:underline;text-underline-offset:3px}
+
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;align-items:center}
+.controls input,.controls select,button.btn{font:inherit;font-size:14px;padding:8px 12px;border:1px solid var(--rule);border-radius:var(--r-ctl);background:var(--plate);color:var(--ink);min-height:40px}
+.controls input{min-width:200px;flex:1 1 220px}
+button.btn{cursor:pointer;font-weight:500}
+button.btn:hover{border-color:var(--ink-3)}
+button.btn:disabled{opacity:.45;cursor:default}
+#explorer .controls.glass{padding:8px;border-radius:18px;z-index:20}
+@media (min-width:1000px){#explorer .controls.glass{position:sticky;top:calc(env(safe-area-inset-top,0px) + 70px)}}
+#explorer .controls.glass input,#explorer .controls.glass select,#explorer .controls.glass .btn{background:color-mix(in srgb,var(--plate) 70%,transparent);border-color:color-mix(in srgb,var(--rule) 70%,transparent)}
+.pager{display:flex;gap:8px;align-items:center;justify-content:flex-end;margin:12px 0;font-size:14px;color:var(--ink-2)}
+
+.bars{display:grid;grid-template-columns:minmax(110px,auto) 1fr auto;gap:8px 12px;align-items:center;font-size:14px}
+.bar{height:12px;background:var(--rule-2);border-radius:6px;overflow:hidden;display:flex}
+.bar i{display:block;height:100%;border-radius:6px}
+.cols3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:900px){.cols3{grid-template-columns:minmax(0,1fr)}}
+.cols3>div{background:var(--plate);border:1px solid var(--rule);border-radius:var(--r-plate);padding:4px 20px 18px;min-width:0}
+.panel{background:var(--plate);border:1px solid var(--rule);border-radius:var(--r-plate);padding:18px 20px}
+
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:s;margin-top:10px;background:var(--plate);border:1px solid var(--rule);border-radius:var(--r-plate);overflow:hidden}
+@media (max-width:900px){.flow{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+@media (max-width:560px){.flow{grid-template-columns:minmax(0,1fr)}}
+.step{padding:18px 18px 20px;border-right:1px solid var(--rule-2);border-bottom:1px solid var(--rule-2)}
+.step::before{counter-increment:s;content:counter(s);font:800 13px/1 var(--display);color:var(--link);display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:color-mix(in srgb,var(--link) 12%,transparent)}
+.step h4{margin:10px 0 6px;font-size:16px}
+.step p{margin:0;font-size:14px;color:var(--ink-2)}
+.step .human{display:block;margin-top:10px;font-size:13px;color:var(--access);font-weight:500}
+pre{background:var(--plate);border:1px solid var(--rule);border-radius:var(--r-plate);padding:16px 18px;overflow-x:auto;font-size:13px;line-height:1.6}
+code{font-family:var(--mono);font-size:.92em}
+
+.acc{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));margin:12px 0 8px;background:var(--plate);border:1px solid var(--rule);border-radius:var(--r-plate);overflow:hidden}
+.acc .st{padding:16px 18px;border-right:1px solid var(--rule-2)}
+.acc .st:last-child{border-right:0;background:var(--plate-2)}
+.acc .st b{display:block;font:800 40px/1.05 var(--display);letter-spacing:-.035em}
+.acc .st span{font-size:13px;color:var(--ink-2)}
+
+dialog{border:1px solid var(--rule);border-radius:20px;padding:0;max-width:900px;width:calc(100% - 32px);background:var(--plate);color:var(--ink);max-height:88vh;box-shadow:0 30px 80px -20px rgba(0,0,0,.5)}
+dialog::backdrop{background:rgba(8,12,18,.42);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.dlg-h{display:flex;justify-content:space-between;gap:16px;align-items:start;padding:20px 24px;border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--plate);z-index:1}
+.dlg-b{padding:8px 24px 24px}
+.kv{display:grid;grid-template-columns:190px 1fr;gap:8px 18px;font-size:14.5px;margin:14px 0}
+@media (max-width:600px){.kv{grid-template-columns:1fr;gap:2px 0}.kv dd{margin-bottom:8px}}
+.kv dt{color:var(--ink-3)}
+.kv dd{margin:0}
+.ev{border-top:1px solid var(--rule-2);padding:10px 0;font-size:13.5px}
+.ev q{display:block;color:var(--ink-2);margin-top:4px;quotes:none;font-style:normal;word-break:break-word;border-left:2px solid var(--rule);padding-left:10px}
+footer{padding:48px 0 64px;color:var(--ink-3);font-size:13px}
+.notice{border-left:3px solid var(--access);padding:8px 14px;background:var(--access-bg);border-radius:0 var(--r-ctl) var(--r-ctl) 0;font-size:14px;max-width:90ch}
+ul{padding-left:20px}
+li{margin:4px 0}
+</style>
+</head>
+<body>
+<nav class="top glass" aria-label="Sections"><div class="in">
+  <b>Toolkit readiness</b>
+  <a href="#patterns">Patterns</a><a href="#opps">Build next</a><a href="#explorer">All apps</a>
+  <a href="#agent">Agent</a><a href="#verify">Accuracy</a><a href="#limits">Limits</a><a href="#downloads">Data</a>
+  <button class="theme-toggle" id="theme" type="button" aria-label="Switch light or dark theme">Theme</button>
+</div></nav>
+
+<header class="wrap hero">
+  <h1 id="title">Which of these 100 apps could become an agent toolkit today?</h1>
+  <p class="lede" id="lede"></p>
+  <div class="strip" id="strip" role="img"></div>
+  <div class="legend" id="legend"></div>
+  <div class="board">
+    <div class="matrix" id="matrix" role="grid" aria-label="All 100 apps by category, colored by buildability"></div>
+  </div>
+  <p class="small board-note">One key per app from the brief, grouped by category. C marks an existing Composio toolkit; M marks a vendor-published MCP server. Select a key to see its evidence.</p>
+  <div class="after-hero">
+    <div>
+      <h3 style="margin-top:0">What the data says</h3>
+      <ul class="findings" id="headlines"></ul>
+    </div>
+    <dl class="facts" id="kpis"></dl>
+  </div>
+</header>
+
+<main>
+<section id="patterns" class="wrap">
+  <h2>Patterns by category</h2>
+  <p class="sub">Counts out of 10 apps per category. Unknowns are counted, not dropped, so a row can sum to less than 10 for any single attribute.</p>
+  <div class="tbl-wrap"><table class="heat" id="catTable"></table></div>
+  <div class="cols3" style="margin-top:28px">
+    <div><h3>Auth methods documented</h3><div class="bars" id="authBars"></div><p class="small" id="authNote"></p></div>
+    <div><h3>Developer access</h3><div class="bars" id="accessBars"></div></div>
+    <div><h3>Most common blockers</h3><div class="bars" id="blockBars"></div></div>
+  </div>
+  <div class="cols3" style="margin-top:12px">
+    <div><h3>API interfaces seen</h3><div class="bars" id="typeBars"></div></div>
+    <div><h3>MCP and Composio coverage</h3><div class="bars" id="mcpBars"></div><p class="small">Three separate facts. A Composio toolkit is not a vendor MCP server, and neither is a community server.</p></div>
+    <div><h3>Confidence</h3><div class="bars" id="confBars"></div><p class="small">Rubric: docs found, auth evidence, access evidence, API evidence, registry checks, verification outcome. See Methodology.</p></div>
+  </div>
+</section>
+
+<section id="opps" class="wrap">
+  <h2>Where to build next</h2>
+  <p class="sub">Easy wins are apps with a documented API, self-serve credentials and no Composio toolkit yet. Outreach targets have an API behind a paid plan, approval or partner gate. Score rubric shown under the tables; it ranks, it does not measure.</p>
+  <div class="grid2">
+    <div><h3>Easy wins (not yet in Composio)</h3><div class="tbl-wrap"><table id="easyTable"></table></div></div>
+    <div><h3>Needs outreach or a paid account</h3><div class="tbl-wrap"><table id="outreachTable"></table></div></div>
+  </div>
+  <p class="small" id="rubric"></p>
+</section>
+
+<section id="explorer" class="wrap">
+  <h2>All 100 apps</h2>
+  <p class="sub">Search, filter, sort by any column, and open a row for every claim with its source link and excerpt.</p>
+  <div class="controls glass" role="search">
+    <label class="small" for="q" style="position:absolute;left:-9999px">Search apps</label>
+    <input id="q" type="search" placeholder="Search app, description, blocker…" aria-label="Search apps">
+    <select id="fCat" aria-label="Filter by category"></select>
+    <select id="fAuth" aria-label="Filter by authentication"></select>
+    <select id="fAccess" aria-label="Filter by developer access"></select>
+    <select id="fMcp" aria-label="Filter by MCP status"></select>
+    <select id="fBuild" aria-label="Filter by buildability"></select>
+    <button class="btn" id="reset" type="button">Clear filters</button>
+    <button class="btn" id="csv" type="button">Export CSV</button>
+  </div>
+  <div class="tbl-wrap"><table id="appTable"></table></div>
+  <div class="pager"><span id="count"></span><button class="btn" id="prev" type="button">Previous</button><button class="btn" id="next" type="button">Next</button></div>
+</section>
+
+<section id="agent" class="wrap">
+  <h2>The agent</h2>
+  <p class="sub" id="agentLede">A LangGraph pipeline in Python researches each app from public sources, extracts claims only where an official page supports them, cross-checks registries, then a separate pass looks for disjoint evidence. Every claim keeps its URL and excerpt.</p>
+  <div class="flow" id="flow"></div>
+  <h3>Run it</h3>
+<pre><code>python -m venv .venv; .\.venv\Scripts\Activate.ps1; pip install -r requirements.txt
+python scripts/make_input.py                 # the 100 apps from the brief -> data/apps_input.json
+python -m src.main research --ids 81,15      # small test run (Stripe, Pylon)
+python -m src.main all                       # full run: research -> verify -> review -> insights -> report (resumable)
+python -m src.main recheck --ids 81          # re-research one app with a fresh fetch</code></pre>
+  <h3>Run record</h3>
+  <div class="tbl-wrap"><table id="runTable"></table></div>
+</section>
+
+<section id="verify" class="wrap">
+  <h2>How accurate is it?</h2>
+  <p class="sub" id="verifyLede"></p>
+  <div id="accBlocks"></div>
+  <div id="humanCheck"></div>
+  <h3>Field-level results on the hold-out sample</h3>
+  <div class="tbl-wrap"><table id="fieldAcc"></table></div>
+  <h3>Every miss, by stage</h3>
+  <div class="tbl-wrap"><table id="missTable"></table></div>
+  <div class="cols3" style="margin-top:24px">
+    <div><h3>Automated independent pass</h3><div class="bars" id="autoBars"></div><p class="small">Disjoint pages only: different search queries, every pass-1 URL excluded. "Disputed" records went to review.</p></div>
+    <div><h3>Who made the corrections</h3><div class="bars" id="corrBars"></div><p class="small">One pipeline, several checking stages. Each bar is that stage's share of all logged corrections.</p></div>
+    <div><h3>Open validation issues</h3><div id="issues" class="small"></div></div>
+  </div>
+  <h3>Before and after: corrections log</h3>
+  <div class="controls"><select id="fCorr" aria-label="Filter corrections by field"></select></div>
+  <div class="tbl-wrap" style="max-height:440px;overflow:auto"><table id="corrTable"></table></div>
+  <h3>Spot-check checklist</h3>
+  <ul id="humanList"></ul>
+</section>
+
+<section id="limits" class="wrap">
+  <h2>Limitations</h2>
+  <ul id="limitsList" style="max-width:90ch"></ul>
+</section>
+
+<section id="downloads" class="wrap">
+  <h2>Downloads and sources</h2>
+  <p><a href="results.json" download>results.json</a>, <a href="results.csv" download>results.csv</a>, <a href="verification_report.md" download>verification_report.md</a>, <button class="linkbtn" id="dlEmbedded" type="button">Download the dataset embedded in this page</button></p>
+  <p class="small">Primary sources used across the run: vendor documentation (linked per app in the detail view), the official MCP Registry at <a href="https://registry.modelcontextprotocol.io/" rel="noopener">registry.modelcontextprotocol.io</a>, Composio toolkit pages at <a href="https://composio.dev/toolkits" rel="noopener">composio.dev/toolkits</a>, and GitHub organisation searches.</p>
+</section>
+</main>
+
+<dialog id="dlg" aria-labelledby="dlgTitle"><div class="dlg-h"><div><h2 id="dlgTitle" style="font-size:24px"></h2><div id="dlgSub" class="small"></div></div>
+<button class="btn" id="dlgClose" type="button" aria-label="Close details">Close</button></div><div class="dlg-b" id="dlgBody"></div></dialog>
+
+<script id="data" type="application/json">/*__DATA__*/null</script>
+<script>
+(function(){
+"use strict";
+const D = JSON.parse(document.getElementById('data').textContent);
+const R = D.records, I = D.insights, V = D.verification;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const LBL = {ready:'Buildable now', needs_access:'Needs access', limited:'Limited', not_buildable:'Not buildable', unknown:'Unresolved',
+  self_serve_free:'Self-serve (free)', self_serve_trial:'Self-serve (trial)', paid_plan:'Paid plan', approval_required:'Approval required',
+  partner_or_sales:'Partner / sales', not_applicable:'No API', available:'Available', restricted:'Restricted', unavailable:'None', yes:'Yes', no:'No'};
+const lbl = v => LBL[v] || v;
+const tag = (v, text) => `<span class="tag t-${esc(v)}">${esc(text ?? lbl(v))}</span>`;
+const pct = (n, d) => d ? Math.round(100*n/d) + '%' : '–';
+const BCOL = {ready:'var(--ready)', needs_access:'var(--access)', limited:'var(--limited)', not_buildable:'var(--limited)', unknown:'var(--none)'};
+const short = s => s.replace(/\s*\(.*?\)/,'').replace('Salesforce Commerce Cloud','SF Commerce Cloud').replace('Amazon Selling Partner','Amazon SP-API');
+const host = u => { try { return new URL(u).host.replace(/^www\./,''); } catch(e){ return u; } };
+
+// theme
+const root = document.documentElement;
+try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch(e) {}
+$('#theme').onclick = () => { const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark ? 'light' : 'dark'; try { localStorage.setItem('theme', root.dataset.theme); } catch(e) {} };
+
+// ---------- hero ----------
+const N = R.length, cats = I.categories;
+const b = k => (I.buildability[k] || {n:0}).n;
+const runDate = (D.meta.run_at || '').slice(0,10);
+$('#lede').textContent = `${b('ready')} of ${N} can be built today with self-serve credentials. ${b('needs_access')} have an API behind a paid plan, approval or partner gate, ` +
+  `${b('limited') + b('not_buildable')} have no hosted API worth wrapping, and ${b('unknown')} stayed unresolved. Researched by an agent from public docs on ${runDate}; every claim links to its source.`;
+const acc = V.accuracy && (V.accuracy.holdout_sample || V.accuracy.audit_sample);
+const kp = [[I.mcp.composio_yes.n, 'already have a Composio toolkit'], [I.mcp.official_yes.n, 'ship their own MCP server'],
+  [I.evidence.total_items.toLocaleString('en'), 'claims, each with a source link and excerpt']];
+if (acc) kp.push([Math.round(100*acc.final.accuracy)+'%', `of ${acc.final.total.n} field checks correct on the ${V.accuracy.holdout_sample ? 'held-out' : 'audit'} sample`]);
+$('#kpis').innerHTML = kp.map(([v,t]) => `<dt>${esc(v)}</dt><dd>${esc(t)}</dd>`).join('');
+$('#headlines').innerHTML = I.headlines.map(h => `<li>${esc(h)}</li>`).join('');
+const ORDER = ['ready','needs_access','limited','not_buildable','unknown'];
+$('#strip').innerHTML = [...R].sort((x, y) => ORDER.indexOf(x.toolkit_buildability) - ORDER.indexOf(y.toolkit_buildability) || x.id - y.id)
+  .map(r => `<i class="s-${r.toolkit_buildability}" title="${esc(r.app_name)}"></i>`).join('');
+$('#strip').setAttribute('aria-label', `${b('ready')} buildable now, ${b('needs_access')} need access, ${b('limited') + b('not_buildable')} no hosted API, ${b('unknown')} unresolved`);
+const KEYC = {ready:'var(--key-ready)', needs_access:'var(--key-access)', limited:'var(--key-limited)', unknown:'var(--key-unknown)'};
+$('#legend').innerHTML = [['ready','buildable now'],['needs_access','need a paid plan, approval or partner deal'],['limited','have no hosted API'],['unknown','unresolved']]
+  .map(([k, t]) => `<span><i style="background:${KEYC[k]}"></i><b>${k==='limited' ? b('limited')+b('not_buildable') : b(k)}</b>${t}</span>`).join('');
+let mh = '';
+cats.forEach(c => { mh += `<div class="cat">${esc(c)}</div>`;
+  R.filter(r => r.category === c).forEach(r => mh += `<button class="cell b-${r.toolkit_buildability}" data-id="${r.id}" title="${esc(r.app_name)}: ${esc(lbl(r.toolkit_buildability))}">` +
+    `<span>${esc(short(r.app_name))}</span><span class="ck">${r.existing_composio_toolkit==='yes'?'<em>C</em>':''}${r.official_mcp_status==='yes'?'<em>M</em>':''}</span></button>`); });
+$('#matrix').innerHTML = mh;
+
+// ---------- patterns ----------
+const cols = [['n','Apps'],['open','Self-serve'],['gated','Gated'],['oauth2','OAuth2'],['api_key_or_token','Key / token'],['api_available','Public API'],
+  ['official_mcp','Vendor MCP'],['composio','Composio'],['ready','Buildable now'],['needs_access','Needs access'],['avg_confidence','Avg. confidence']];
+const heat = (v, max) => { const a = Math.min(1, v/max); return `background:color-mix(in srgb, var(--ready) ${Math.round(a*28)}%, transparent)`; };
+$('#catTable').innerHTML = `<thead><tr><th>Category</th>${cols.map(c => `<th class="num">${c[1]}</th>`).join('')}</tr></thead><tbody>` +
+  cats.map(c => { const x = I.by_category[c]; return `<tr><td>${esc(c)}</td>${cols.map(([k]) => k==='avg_confidence' ? `<td class="num">${x[k].toFixed(2)}</td>` :
+    `<td class="h" style="${k==='n'?'':heat(x[k], x.n)}">${x[k]}</td>`).join('')}</tr>`; }).join('') +
+  `</tbody><tfoot><tr><th>Easiest → hardest</th><td colspan="${cols.length}" class="small">${I.category_ease_rank.map(esc).join(', ')}</td></tr></tfoot>`;
+function bars(el, entries, total, color){
+  const max = Math.max(1, ...entries.map(e => e[1]));
+  $(el).innerHTML = entries.map(([k,v,c]) => `<span>${esc(lbl(k))}</span><span class="bar" role="img" aria-label="${esc(lbl(k))}: ${v} of ${total}"><i style="width:${100*v/max}%;background:${c||color||'var(--ink-3)'}"></i></span><span>${v}<span class="small">/${total}</span></span>`).join('');
+}
+bars('#authBars', Object.entries(I.auth_counts).concat([['No auth evidence', I.auth_unknown, 'var(--none)']]), N);
+$('#authNote').textContent = 'Apps can document several methods, so bars sum to more than ' + N + '.';
+const AC = {self_serve_free:'var(--ready)',self_serve_trial:'var(--ready)',paid_plan:'var(--access)',approval_required:'var(--access)',partner_or_sales:'var(--access)',not_applicable:'var(--limited)',unknown:'var(--none)'};
+bars('#accessBars', Object.entries(I.access).map(([k,v]) => [k, v.n, AC[k]]), N);
+bars('#blockBars', Object.entries(I.blockers).slice(0,7).map(([k,v]) => [k.length>60?k.slice(0,58)+'…':k, v, 'var(--access)']), N);
+bars('#typeBars', Object.entries(I.api_types), N);
+bars('#mcpBars', [['Composio toolkit', I.mcp.composio_yes.n, 'var(--ready)'],['Vendor (official) MCP', I.mcp.official_yes.n, 'var(--link)'],['Community MCP (registry)', I.mcp.community_yes.n, 'var(--limited)']], N);
+bars('#confBars', [['high', I.confidence.high, 'var(--ready)'],['medium', I.confidence.medium, 'var(--access)'],['low', I.confidence.low, 'var(--bad)']], N);
+
+// ---------- opportunities ----------
+function oppTable(el, rows){
+  $(el).innerHTML = `<thead><tr><th>App</th><th>Auth</th><th>Access</th><th>Vendor MCP</th><th class="num">Score</th></tr></thead><tbody>` +
+    (rows.length ? rows.map(o => `<tr><td><button class="linkbtn" data-id="${o.id}">${esc(o.app)}</button><div class="small">${esc(o.category)}</div></td>` +
+      `<td>${o.auth.slice(0,2).map(a => tag('x', a)).join('')}</td><td>${tag(o.access)}</td><td>${tag(o.official_mcp)}</td><td class="num">${o.score}</td></tr>`).join('')
+      : `<tr><td colspan="5" class="small">No app met this bar.</td></tr>`) + '</tbody>';
+}
+oppTable('#easyTable', I.opportunities.new_easy_wins.slice(0,10));
+oppTable('#outreachTable', I.opportunities.needs_outreach.slice(0,10));
+$('#rubric').textContent = 'Score: ' + I.opportunities.rubric + ` ${I.opportunities.already_in_composio} apps already have a Composio toolkit and are excluded from easy wins.`;
+
+// ---------- explorer ----------
+const F = {q:'', cat:'', auth:'', access:'', mcp:'', build:''};
+let sortK = 'id', sortDir = 1, page = 0; const PS = 25;
+const opt = (el, label, vals) => { $(el).innerHTML = `<option value="">${label}</option>` + vals.map(v => `<option value="${esc(v)}">${esc(lbl(v))}</option>`).join(''); };
+opt('#fCat', 'All categories', cats);
+opt('#fAuth', 'Any auth', [...new Set(R.flatMap(r => r.authentication_methods))].sort());
+opt('#fAccess', 'Any access', [...new Set(R.map(r => r.developer_access))]);
+$('#fMcp').innerHTML = '<option value="">Any MCP / Composio</option><option value="official">Vendor MCP: yes</option><option value="community">Community MCP: yes</option><option value="composio">Composio toolkit: yes</option><option value="nocomposio">No Composio toolkit</option>';
+opt('#fBuild', 'Any buildability', ['ready','needs_access','limited','not_buildable','unknown'].filter(v => R.some(r => r.toolkit_buildability === v)));
+const COLS = [['app_name','Application'],['category','Category'],['authentication_methods','Authentication'],['public_api_status','API'],['developer_access','Developer access'],
+  ['api_types','API type'],['official_mcp_status','Vendor MCP'],['existing_composio_toolkit','Composio'],['toolkit_buildability','Buildability'],['confidence_score','Confidence']];
+function filtered(){
+  const q = F.q.toLowerCase();
+  return R.filter(r => (!q || (r.app_name + ' ' + r.product_description + ' ' + r.integration_blockers.join(' ') + ' ' + r.category).toLowerCase().includes(q))
+    && (!F.cat || r.category === F.cat) && (!F.auth || r.authentication_methods.includes(F.auth)) && (!F.access || r.developer_access === F.access)
+    && (!F.build || r.toolkit_buildability === F.build)
+    && (!F.mcp || (F.mcp==='official' ? r.official_mcp_status==='yes' : F.mcp==='community' ? r.community_mcp_status==='yes' : F.mcp==='composio' ? r.existing_composio_toolkit==='yes' : r.existing_composio_toolkit!=='yes')))
+    .sort((a,b) => { const x = a[sortK], y = b[sortK]; const xs = Array.isArray(x) ? x.join(',') : x, ys = Array.isArray(y) ? y.join(',') : y;
+      return (xs > ys ? 1 : xs < ys ? -1 : a.id - b.id) * sortDir; });
+}
+function renderTable(){
+  const rows = filtered(); const pages = Math.max(1, Math.ceil(rows.length/PS)); page = Math.min(page, pages-1);
+  $('#appTable').innerHTML = `<thead><tr>${COLS.map(([k,t]) => `<th data-k="${k}" scope="col" aria-sort="${sortK===k?(sortDir>0?'ascending':'descending'):'none'}" tabindex="0">${t}<span class="arrow">${sortK===k?(sortDir>0?'▲':'▼'):''}</span></th>`).join('')}</tr></thead><tbody>` +
+    rows.slice(page*PS, page*PS+PS).map(r => `<tr><td><button class="linkbtn" data-id="${r.id}">${esc(r.app_name)}</button></td><td class="small">${esc(r.category)}</td>` +
+      `<td>${r.authentication_methods.length ? r.authentication_methods.map(a => tag('x', a)).join('') : tag('unknown')}</td><td>${tag(r.public_api_status)}</td><td>${tag(r.developer_access)}</td>` +
+      `<td class="small">${esc(r.api_types.join(', ') || '–')}</td><td>${tag(r.official_mcp_status)}</td><td>${tag(r.existing_composio_toolkit)}</td><td>${tag(r.toolkit_buildability)}</td>` +
+      `<td><span class="conf"><i style="width:${r.confidence_score*100}%"></i></span><span class="small">${r.confidence_score.toFixed(2)}</span></td></tr>`).join('') +
+    (rows.length ? '' : `<tr><td colspan="${COLS.length}">No apps match these filters. Clear a filter to widen the list.</td></tr>`) + '</tbody>';
+  $('#count').textContent = `${rows.length} of ${N} apps, page ${page+1} of ${pages}`;
+  $('#prev').disabled = page === 0; $('#next').disabled = page >= pages-1;
+  document.querySelectorAll('#appTable th[data-k]').forEach(th => { const go = () => { const k = th.dataset.k; sortDir = sortK === k ? -sortDir : 1; sortK = k; renderTable(); };
+    th.onclick = go; th.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } }; });
+}
+[['#q','q','input'],['#fCat','cat','change'],['#fAuth','auth','change'],['#fAccess','access','change'],['#fMcp','mcp','change'],['#fBuild','build','change']]
+  .forEach(([el,k,ev]) => $(el).addEventListener(ev, e => { F[k] = e.target.value; page = 0; renderTable(); }));
+$('#reset').onclick = () => { Object.keys(F).forEach(k => F[k] = ''); ['#q','#fCat','#fAuth','#fAccess','#fMcp','#fBuild'].forEach(s => $(s).value = ''); page = 0; renderTable(); };
+$('#prev').onclick = () => { page--; renderTable(); }; $('#next').onclick = () => { page++; renderTable(); };
+function download(name, text, type){ const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], {type})); a.download = name; document.body.appendChild(a); a.click(); a.remove(); }
+const csvCell = v => { const s = Array.isArray(v) ? v.join('; ') : String(v ?? ''); return /[",\n]/.test(s) ? '"' + s.replace(/"/g,'""') + '"' : s; };
+$('#csv').onclick = () => { const K = ['id','app_name','category','product_description','official_website','developer_docs_url','public_api_status','authentication_methods','developer_access',
+  'api_types','official_mcp_status','official_mcp_url','community_mcp_status','existing_composio_toolkit','composio_toolkit_identifier','toolkit_buildability','toolkit_buildability_reason',
+  'integration_blockers','confidence_score','verification_status'];
+  download('apps_filtered.csv', [K.join(',')].concat(filtered().map(r => K.map(k => csvCell(r[k])).join(','))).join('\n'), 'text/csv'); };
+$('#dlEmbedded').onclick = () => download('results_embedded.json', JSON.stringify(R, null, 1), 'application/json');
+
+// ---------- detail ----------
+const FIELD_NAMES = {authentication_methods:'Authentication', developer_access:'Developer access', public_api_status:'Public API', api_types:'API types',
+  official_mcp_status:'Vendor MCP', community_mcp_status:'Community MCP', existing_composio_toolkit:'Composio toolkit', product_description:'Description', toolkit_buildability:'Buildability'};
+function openDetail(id){
+  const r = R.find(x => x.id === +id); if (!r) return;
+  $('#dlgTitle').textContent = r.app_name;
+  $('#dlgSub').innerHTML = `${esc(r.category)}, #${r.id} &nbsp;${tag(r.toolkit_buildability)} ${tag(r.verification_status.replace(/_/g,' '), r.verification_status.replace(/_/g,' '))}`;
+  const link = u => u ? `<a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(host(u))}</a>` : '<span class="small">not found</span>';
+  const ev = {}; r.evidence.forEach(e => (ev[e.field] = ev[e.field] || []).push(e));
+  const audit = (D.audit && D.audit.apps[r.id]) || (D.holdout && D.holdout.apps[r.id]);
+  let h = `<p>${esc(r.product_description || 'No description retrieved from an official page.')}</p><dl class="kv">` +
+    `<dt>Website / docs</dt><dd>${link(r.official_website)}, ${link(r.developer_docs_url)}</dd>` +
+    `<dt>Public API</dt><dd>${tag(r.public_api_status)} <span class="small">surface: ${esc(r.api_surface_breadth)}</span></dd>` +
+    `<dt>Authentication</dt><dd>${r.authentication_methods.map(a => tag('x',a)).join('') || tag('unknown')}</dd>` +
+    `<dt>Developer access</dt><dd>${tag(r.developer_access)} <span class="small">approval required: ${esc(r.approval_required)}</span></dd>` +
+    `<dt>API types</dt><dd>${esc(r.api_types.join(', ') || '–')}</dd>` +
+    `<dt>Vendor MCP</dt><dd>${tag(r.official_mcp_status)} ${r.official_mcp_url ? link(r.official_mcp_url) : ''}</dd>` +
+    `<dt>Community MCP</dt><dd>${tag(r.community_mcp_status)} <span class="small">${esc(r.community_mcp_examples.slice(0,3).join(', '))}</span></dd>` +
+    `<dt>Composio toolkit</dt><dd>${tag(r.existing_composio_toolkit)} ${r.composio_toolkit_identifier ? `<a href="https://composio.dev/toolkits/${esc(r.composio_toolkit_identifier.split(' ')[0])}" target="_blank" rel="noopener noreferrer">${esc(r.composio_toolkit_identifier)}</a>` : ''}</dd>` +
+    `<dt>Verdict</dt><dd>${esc(r.toolkit_buildability_reason)}</dd>` +
+    `<dt>Blockers</dt><dd>${esc(r.integration_blockers.join('; ') || 'none recorded')}</dd>` +
+    `<dt>Confidence</dt><dd>${r.confidence_score.toFixed(2)} (${esc(r.confidence_label)}), ${r.pages_fetched} official pages read</dd></dl>`;
+  if (audit) h += `<h3>Browser audit</h3><p class="small">Checked by the AI audit (live vendor pages, not the pipeline cache) on ${esc((D.holdout && D.holdout.apps[r.id]) ? D.holdout.checked_at : D.audit.checked_at)}.</p><ul>` +
+    Object.entries(audit.fields).map(([f,t]) => `<li>${esc(FIELD_NAMES[f]||f)}: ${esc(t.value ?? t.primary.join(', '))} — <a href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">${esc(host(t.url))}</a> ${esc(t.note||'')}</li>`).join('') + '</ul>';
+  if (r.corrections.length) h += `<h3>Corrections</h3><div class="tbl-wrap"><table><thead><tr><th>Field</th><th>Before</th><th>After</th><th>Stage</th><th>Why</th></tr></thead><tbody>` +
+    r.corrections.map(c => `<tr><td>${esc(c.field)}</td><td>${esc(JSON.stringify(c.before))}</td><td>${esc(JSON.stringify(c.after))}</td><td>${esc(c.stage)}</td><td>${esc(c.reason)}${c.evidence_url ? ' ' + link(c.evidence_url) : ''}</td></tr>`).join('') + '</tbody></table></div>';
+  h += `<h3>Evidence (${r.evidence.length})</h3>` + Object.entries(ev).map(([f, list]) => `<h4 style="margin:14px 0 2px;font-size:14px">${esc(FIELD_NAMES[f]||f)}</h4>` +
+    list.slice(0,6).map(e => `<div class="ev">${esc(e.claim)} <span class="small">${esc(e.source_type.replace(/_/g,' '))}, ${esc(e.stage)}</span><br>${link(e.url)} <span class="small">${esc(e.url.slice(0,110))}</span>${e.excerpt ? `<q>“${esc(e.excerpt)}”</q>` : ''}</div>`).join('')).join('');
+  if (r.errors.length) h += `<h3>Pipeline notes</h3><ul class="small">${r.errors.slice(0,8).map(e => `<li>${esc(e)}</li>`).join('')}</ul>`;
+  $('#dlgBody').innerHTML = h; $('#dlg').showModal(); $('#dlgClose').focus();
+}
+document.addEventListener('click', e => { const t = e.target.closest('[data-id]'); if (t) openDetail(t.dataset.id); });
+$('#dlgClose').onclick = () => $('#dlg').close();
+$('#dlg').addEventListener('click', e => { if (e.target === $('#dlg')) $('#dlg').close(); });
+
+// ---------- agent ----------
+const STEPS = [
+ ['Trusted input','The 100 apps, categories and hints copied from the brief\'s tables. IDs never come from a model.','Curated official domains and docs entry points for ~85 apps.'],
+ ['Research','Seeds, the brief hint, the homepage, two Tavily web searches per app (keyless DuckDuckGo/Bing when no key is set), then link mining on docs pages. Up to 14 pages per app.',''],
+ ['Fetch','Cached, polite HTTP with retries and jitter. JS-only or bot-walled docs are re-read through a rendering reader.',''],
+ ['Identity check','A page counts as evidence only if it sits on one of the app\'s official hosts. This is what stops "Mermaid" docs from a coral-reef nonprofit.','Ambiguous names (Paygent Connect, fanbasis) were left for a person.'],
+ ['Extract','Rules over official pages for auth, access gates, API types, MCP mentions. Each hit stores URL + excerpt; no hit means unknown.',''],
+ ['Registries','Official MCP Registry (vendor namespace = official), vendor GitHub orgs, and the Composio toolkit catalog through the Composio Python SDK. Three separate facts.',''],
+ ['Independent pass','New search queries, every pass-1 URL excluded, same extractor on the new pages only. Agreement or conflict per field.',''],
+ ['Review + audit','Disputed and low-confidence records reviewed against the docs in a browser; corrections logged with before/after. Two audit samples measure accuracy.',''],
+];
+$('#flow').innerHTML = STEPS.map(([t,p,hm]) => `<div class="step"><h4>${esc(t)}</h4><p>${esc(p)}</p>${hm ? `<span class="human">Human input: ${esc(hm)}</span>` : ''}</div>`).join('');
+const m = D.meta, rs = D.run_stats || {};
+const runRows = [['Run finished', m.run_at],['Extraction', m.extraction],['LLM', m.llm_provider],['Search', m.search_provider],['Composio registry', m.composio_registry],
+  ['Packages', m.packages && Object.entries(m.packages).map(([k,v]) => k+' '+v).join(', ')],['Python', m.python],
+  ['Official pages read', R.reduce((s,r) => s + r.pages_fetched, 0)]].concat(Object.entries(rs));
+$('#runTable').innerHTML = '<tbody>' + runRows.filter(r => r[1] !== undefined && r[1] !== null).map(([k,v]) => `<tr><th scope="row" style="position:static">${esc(k)}</th><td>${esc(v)}</td></tr>`).join('') + '</tbody>';
+
+// ---------- verification ----------
+const A = V.accuracy || {};
+const STN = {rules_v1:'First run (rules v1)', pass1:'Rules v2 (tuned on sample A)', after_auto_verify:'+ independent pass', final:'+ review (final)'};
+function accBlock(title, blk, sample, note){
+  if (!blk) return '';
+  return `<h3>${esc(title)} — ${Object.keys(sample.apps).length} apps, ${blk.final.total.n} field checks</h3><p class="small">${esc(sample.method)} ${esc(note)}</p>` +
+    `<div class="acc">${Object.entries(blk).map(([k,s]) => `<div class="st"><b>${Math.round(100*s.accuracy)}%</b><span>${esc(STN[k]||k)}<br>${s.total.correct} correct, ${s.total.wrong} wrong, ${s.total.unknown} unknown</span></div>`).join('')}</div>` +
+    `<p class="small">Apps: ${Object.values(sample.apps).map(a => esc(a.app)).join(', ')}</p>`;
+}
+$('#accBlocks').innerHTML =
+  accBlock('Hold-out sample B', A.holdout_sample, D.holdout || {apps:{}}, 'Audited after the review stage was frozen, so the final number here is the honest one.') +
+  accBlock('Audit sample A', A.audit_sample, D.audit || {apps:{}}, 'Audited first; review then used these findings, so A\'s final column is not an independent measure.');
+const HC = D.human_check || [];
+if (HC.length) {
+  const ok = HC.filter(h => h.verdict === 'correct').length, bad = HC.filter(h => h.verdict === 'wrong'), apps = new Set(HC.map(h => h.app)).size;
+  const who = [...new Set(HC.map(h => h.checked_by).filter(Boolean))].join(', '), when = [...new Set(HC.map(h => h.checked_on).filter(Boolean))].join(', ');
+  $('#humanCheck').innerHTML = `<h3>Hand check (sample C): ${apps} apps, ${HC.length} field checks</h3>` +
+    `<p class="small">A third random sample, drawn from apps outside A and B, checked by hand against the vendor docs${who ? ' by ' + esc(who) : ''}${when ? ' on ' + esc(when) : ''}.</p>` +
+    `<div class="acc"><div class="st"><b>${Math.round(100*ok/HC.length)}%</b><span>${ok} correct, ${bad.length} wrong, ${HC.length - ok - bad.length} unclear</span></div></div>` +
+    (bad.length ? `<div class="tbl-wrap"><table><thead><tr><th>App</th><th>Field</th><th>Agent said</th><th>Correct value</th><th>Note</th></tr></thead><tbody>` +
+      bad.map(h => `<tr><td><button class="linkbtn" data-id="${esc(h.id)}">${esc(h.app)}</button></td><td>${esc(FIELD_NAMES[h.field]||h.field)}</td><td>${esc(h.agent_says)}</td><td>${esc(h.correct_value)}</td><td>${esc(h.note)}</td></tr>`).join('') +
+      '</tbody></table></div>' : '');
+}
+$('#verifyLede').textContent = A.holdout_sample
+  ? `Accuracy is counted per field check (API status, auth, access, vendor MCP, Composio). "Unknown" is counted as not-correct but shown separately from wrong. Sample A drove fixes; sample B was held out to measure the result.`
+  : 'Audit results are not available in this build.';
+const fa = A.holdout_sample ? A.holdout_sample : A.audit_sample;
+if (fa) {
+  $('#fieldAcc').innerHTML = `<thead><tr><th>Field</th>${Object.keys(fa).map(k => `<th class="num">${esc(STN[k]||k)}</th>`).join('')}</tr></thead><tbody>` +
+    Object.keys(fa.final.fields).map(f => `<tr><td>${esc(FIELD_NAMES[f]||f)}</td>${Object.values(fa).map(s => { const x = s.fields[f];
+      return `<td class="num">${x.correct}/${x.n} <span class="small">(${x.wrong} wrong, ${x.unknown} unknown)</span></td>`; }).join('')}</tr>`).join('') + '</tbody>';
+  const miss = [];
+  [['A', A.audit_sample], ['B', A.holdout_sample]].forEach(([s, blk]) => blk && Object.entries(blk).forEach(([st, x]) =>
+    Object.entries(x.fields).forEach(([f, v]) => v.misses.forEach(mm => miss.push([s, st, f, mm])))));
+  $('#missTable').innerHTML = `<thead><tr><th>Sample</th><th>Stage</th><th>App</th><th>Field</th><th>Agent said</th><th>Docs say</th><th>Result</th></tr></thead><tbody>` +
+    miss.map(([s, st, f, mm]) => `<tr><td>${s}</td><td>${esc(STN[st]||st)}</td><td><button class="linkbtn" data-id="${mm.id}">${esc(mm.app)}</button></td><td>${esc(FIELD_NAMES[f]||f)}</td>` +
+      `<td>${esc(JSON.stringify(mm.got))}</td><td>${esc(JSON.stringify(mm.expected))}</td><td>${tag(mm.result)}</td></tr>`).join('') + '</tbody>';
+}
+bars('#autoBars', Object.entries(V.auto_status || {}).map(([k,v]) => [k.replace(/_/g,' '), v, k==='agree'?'var(--ready)':k==='disputed'?'var(--bad)':'var(--none)']), N);
+const cs = V.corrections || {}; const byStage = {}; cs.forEach(c => byStage[c.stage] = (byStage[c.stage]||0) + 1);
+const STAGE_NAMES = {verify: 'Automated registry re-check', review: 'Review against vendor docs'};
+bars('#corrBars', Object.entries(byStage).map(([k, v]) => [STAGE_NAMES[k] || k, v]), cs.length, 'var(--link)');
+const ri = Object.entries(V.record_issues || {});
+$('#issues').innerHTML = (ri.length || V.dataset_issues.length) ? '<ul>' + ri.map(([k,v]) => `<li>#${esc(k)} ${esc((R.find(r=>r.id==k)||{}).app_name)}: ${esc(v.join('; ').replace(/validation: /g,''))}</li>`).join('') +
+  V.dataset_issues.map(x => `<li>${esc(x)}</li>`).join('') + '</ul>' : '<p>None. All 100 records pass schema, identity and contradiction checks.</p>';
+opt('#fCorr', 'All fields', [...new Set(cs.map(c => c.field))]);
+function renderCorr(){ const f = $('#fCorr').value;
+  $('#corrTable').innerHTML = `<thead><tr><th>App</th><th>Field</th><th>Before</th><th>After</th><th>Stage</th><th>Reason and source</th></tr></thead><tbody>` +
+    cs.filter(c => !f || c.field === f).map(c => `<tr><td><button class="linkbtn" data-id="${c.id}">${esc(c.app)}</button></td><td>${esc(c.field)}</td><td>${esc(JSON.stringify(c.before))}</td><td>${esc(JSON.stringify(c.after))}</td><td>${esc(c.stage)}</td>` +
+      `<td>${esc(c.reason)} ${c.evidence_url ? `<a href="${esc(c.evidence_url)}" target="_blank" rel="noopener noreferrer">${esc(host(c.evidence_url))}</a>` : ''}</td></tr>`).join('') + '</tbody>'; }
+$('#fCorr').onchange = renderCorr; renderCorr();
+$('#humanList').innerHTML = ['Open 10 random rows; click each evidence link and confirm the excerpt is on the page and supports the claim.',
+  'Re-check every "Needs access" verdict against the vendor\'s pricing or partner page.',
+  'Confirm identity for fanbasis (now redirects to commas.com), Paygent Connect, iPayX and Waterfall.io.',
+  'Spot-check five "Vendor MCP: yes" rows: is the server really published by the vendor?',
+  'Spot-check five Composio matches on composio.dev/toolkits, especially parent-platform matches such as LinkedIn Ads → LinkedIn.'].map(x => `<li>${esc(x)}</li>`).join('');
+
+$('#limitsList').innerHTML = [
+ 'No LLM key was available, so extraction is rule-based. It is precise where docs use standard words ("OAuth 2.0", "API key") and weak on access policy, which is often written as prose on pricing pages. The review stage exists to fix exactly that.',
+ 'Some docs are gated behind a login or partner portal (e.g. enterprise APIs). Where we could not read them, the record says unknown or restricted rather than guessing.',
+ 'Search used Tavily (free tier). Search only proposes pages; a page counts as evidence only if it is on an official vendor host. A missing result is never treated as proof that something does not exist.',
+ '"Vendor MCP: unknown" means no vendor MCP was found in the MCP Registry, the vendor\'s GitHub org or the pages read. Vendors also announce MCP servers in blogs we did not crawl.',
+ 'Composio coverage was read from the full toolkit catalog through the Composio Python SDK. "No" means no toolkit in the catalog matched the app by slug or name.',
+ 'Vendor policies change. Everything here reflects the run date; use "recheck" to refresh one app.',
+ 'Accuracy is measured on samples (A and B), not on all 100. The hold-out sample is small, so treat its percentage as a range, not a point.',
+ 'API surface breadth is a proxy: the count of API-reference links on the docs pages read, not a count of endpoints.'
+].map(x => `<li>${esc(x)}</li>`).join('');
+renderTable();
+})();
+</script>
+</body>
+</html>

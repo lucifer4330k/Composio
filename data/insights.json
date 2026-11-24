@@ -1,0 +1,875 @@
+{
+ "n": 100,
+ "categories": [
+  "CRM and Sales",
+  "Support and Helpdesk",
+  "Communications and Messaging",
+  "Marketing, Ads, Email and Social",
+  "Ecommerce",
+  "Data, SEO and Scraping",
+  "Developer, Infra and Data platforms",
+  "Productivity and Project Management",
+  "Finance and Fintech",
+  "AI, Research and Media-native"
+ ],
+ "auth_counts": {
+  "OAuth2": 70,
+  "Bearer/access token": 63,
+  "API key": 62,
+  "Basic": 25,
+  "JWT": 19,
+  "HMAC/signed request": 8
+ },
+ "auth_unknown": 4,
+ "primary_auth": {
+  "OAuth2": {
+   "n": 70,
+   "of": 100,
+   "pct": 70.0
+  },
+  "API key / token": {
+   "n": 26,
+   "of": 100,
+   "pct": 26.0
+  },
+  "unknown": {
+   "n": 4,
+   "of": 100,
+   "pct": 4.0
+  }
+ },
+ "access": {
+  "self_serve_free": {
+   "n": 64,
+   "of": 100,
+   "pct": 64.0
+  },
+  "partner_or_sales": {
+   "n": 16,
+   "of": 100,
+   "pct": 16.0
+  },
+  "approval_required": {
+   "n": 6,
+   "of": 100,
+   "pct": 6.0
+  },
+  "unknown": {
+   "n": 5,
+   "of": 100,
+   "pct": 5.0
+  },
+  "paid_plan": {
+   "n": 4,
+   "of": 100,
+   "pct": 4.0
+  },
+  "self_serve_trial": {
+   "n": 3,
+   "of": 100,
+   "pct": 3.0
+  },
+  "not_applicable": {
+   "n": 2,
+   "of": 100,
+   "pct": 2.0
+  }
+ },
+ "access_buckets": {
+  "open": {
+   "n": 67,
+   "of": 100,
+   "pct": 67.0
+  },
+  "gated": {
+   "n": 26,
+   "of": 100,
+   "pct": 26.0
+  },
+  "unknown_or_na": {
+   "n": 7,
+   "of": 100,
+   "pct": 7.0
+  }
+ },
+ "api_status": {
+  "available": {
+   "n": 79,
+   "of": 100,
+   "pct": 79.0
+  },
+  "restricted": {
+   "n": 15,
+   "of": 100,
+   "pct": 15.0
+  },
+  "unknown": {
+   "n": 4,
+   "of": 100,
+   "pct": 4.0
+  },
+  "unavailable": {
+   "n": 2,
+   "of": 100,
+   "pct": 2.0
+  }
+ },
+ "api_types": {
+  "REST": 82,
+  "Webhooks": 75,
+  "SDK": 72,
+  "CLI": 49,
+  "GraphQL": 20,
+  "WebSocket": 14,
+  "SQL/Query API": 3,
+  "gRPC": 3,
+  "SOAP": 2
+ },
+ "buildability": {
+  "ready": {
+   "n": 65,
+   "of": 100,
+   "pct": 65.0
+  },
+  "needs_access": {
+   "n": 26,
+   "of": 100,
+   "pct": 26.0
+  },
+  "unknown": {
+   "n": 7,
+   "of": 100,
+   "pct": 7.0
+  },
+  "limited": {
+   "n": 2,
+   "of": 100,
+   "pct": 2.0
+  }
+ },
+ "mcp": {
+  "official_yes": {
+   "n": 56,
+   "of": 100,
+   "pct": 56.0
+  },
+  "community_yes": {
+   "n": 88,
+   "of": 100,
+   "pct": 88.0
+  },
+  "composio_yes": {
+   "n": 79,
+   "of": 100,
+   "pct": 79.0
+  },
+  "composio_no": {
+   "n": 21,
+   "of": 100,
+   "pct": 21.0
+  },
+  "official_but_no_composio": [
+   "DealCloud",
+   "Vonage",
+   "Squarespace",
+   "fanbasis",
+   "SE Ranking",
+   "iPayX",
+   "Mermaid CLI"
+  ],
+  "composio_but_no_official": {
+   "n": 30,
+   "of": 100,
+   "pct": 30.0
+  }
+ },
+ "blockers": {
+  "Partner program / contact-sales gate": 14,
+  "Marketplace listing needs vendor review (private use is self-serve)": 11,
+  "No official API documentation found": 4,
+  "App review / developer-token approval required before production access": 4,
+  "API access tied to a paid plan": 3,
+  "Access path not documented publicly": 3,
+  "App review / approval before production use": 3,
+  "Possible partner/sales gate (single weak signal)": 2,
+  "No hosted API; local CLI or library only": 2
+ },
+ "by_category": {
+  "CRM and Sales": {
+   "n": 10,
+   "open": 9,
+   "gated": 1,
+   "access_unknown": 0,
+   "oauth2": 10,
+   "api_key_or_token": 9,
+   "api_available": 8,
+   "official_mcp": 6,
+   "community_mcp": 8,
+   "composio": 9,
+   "ready": 8,
+   "needs_access": 1,
+   "limited_or_not": 0,
+   "unknown": 1,
+   "avg_confidence": 0.79
+  },
+  "Support and Helpdesk": {
+   "n": 10,
+   "open": 6,
+   "gated": 3,
+   "access_unknown": 1,
+   "oauth2": 7,
+   "api_key_or_token": 10,
+   "api_available": 8,
+   "official_mcp": 4,
+   "community_mcp": 9,
+   "composio": 8,
+   "ready": 6,
+   "needs_access": 3,
+   "limited_or_not": 0,
+   "unknown": 1,
+   "avg_confidence": 0.81
+  },
+  "Communications and Messaging": {
+   "n": 10,
+   "open": 9,
+   "gated": 1,
+   "access_unknown": 0,
+   "oauth2": 7,
+   "api_key_or_token": 8,
+   "api_available": 9,
+   "official_mcp": 5,
+   "community_mcp": 8,
+   "composio": 9,
+   "ready": 9,
+   "needs_access": 1,
+   "limited_or_not": 0,
+   "unknown": 0,
+   "avg_confidence": 0.83
+  },
+  "Marketing, Ads, Email and Social": {
+   "n": 10,
+   "open": 2,
+   "gated": 6,
+   "access_unknown": 2,
+   "oauth2": 8,
+   "api_key_or_token": 8,
+   "api_available": 9,
+   "official_mcp": 3,
+   "community_mcp": 9,
+   "composio": 8,
+   "ready": 2,
+   "needs_access": 6,
+   "limited_or_not": 0,
+   "unknown": 2,
+   "avg_confidence": 0.81
+  },
+  "Ecommerce": {
+   "n": 10,
+   "open": 6,
+   "gated": 4,
+   "access_unknown": 0,
+   "oauth2": 8,
+   "api_key_or_token": 9,
+   "api_available": 8,
+   "official_mcp": 2,
+   "community_mcp": 9,
+   "composio": 3,
+   "ready": 6,
+   "needs_access": 4,
+   "limited_or_not": 0,
+   "unknown": 0,
+   "avg_confidence": 0.76
+  },
+  "Data, SEO and Scraping": {
+   "n": 10,
+   "open": 7,
+   "gated": 2,
+   "access_unknown": 1,
+   "oauth2": 3,
+   "api_key_or_token": 9,
+   "api_available": 7,
+   "official_mcp": 8,
+   "community_mcp": 8,
+   "composio": 7,
+   "ready": 6,
+   "needs_access": 2,
+   "limited_or_not": 1,
+   "unknown": 1,
+   "avg_confidence": 0.84
+  },
+  "Developer, Infra and Data platforms": {
+   "n": 10,
+   "open": 9,
+   "gated": 1,
+   "access_unknown": 0,
+   "oauth2": 8,
+   "api_key_or_token": 10,
+   "api_available": 9,
+   "official_mcp": 8,
+   "community_mcp": 10,
+   "composio": 10,
+   "ready": 9,
+   "needs_access": 1,
+   "limited_or_not": 0,
+   "unknown": 0,
+   "avg_confidence": 0.92
+  },
+  "Productivity and Project Management": {
+   "n": 10,
+   "open": 8,
+   "gated": 2,
+   "access_unknown": 0,
+   "oauth2": 9,
+   "api_key_or_token": 10,
+   "api_available": 8,
+   "official_mcp": 8,
+   "community_mcp": 9,
+   "composio": 10,
+   "ready": 8,
+   "needs_access": 2,
+   "limited_or_not": 0,
+   "unknown": 0,
+   "avg_confidence": 0.86
+  },
+  "Finance and Fintech": {
+   "n": 10,
+   "open": 5,
+   "gated": 3,
+   "access_unknown": 2,
+   "oauth2": 6,
+   "api_key_or_token": 7,
+   "api_available": 5,
+   "official_mcp": 6,
+   "community_mcp": 9,
+   "composio": 7,
+   "ready": 5,
+   "needs_access": 3,
+   "limited_or_not": 0,
+   "unknown": 2,
+   "avg_confidence": 0.74
+  },
+  "AI, Research and Media-native": {
+   "n": 10,
+   "open": 6,
+   "gated": 3,
+   "access_unknown": 1,
+   "oauth2": 4,
+   "api_key_or_token": 8,
+   "api_available": 8,
+   "official_mcp": 6,
+   "community_mcp": 9,
+   "composio": 8,
+   "ready": 6,
+   "needs_access": 3,
+   "limited_or_not": 1,
+   "unknown": 0,
+   "avg_confidence": 0.85
+  }
+ },
+ "category_ease_rank": [
+  "Communications and Messaging",
+  "Developer, Infra and Data platforms",
+  "CRM and Sales",
+  "Productivity and Project Management",
+  "Data, SEO and Scraping",
+  "Support and Helpdesk",
+  "Ecommerce",
+  "AI, Research and Media-native",
+  "Finance and Fintech",
+  "Marketing, Ads, Email and Social"
+ ],
+ "confidence": {
+  "high": 74,
+  "medium": 24,
+  "low": 2,
+  "low_apps": [
+   "Paygent Connect",
+   "PitchBook"
+  ]
+ },
+ "evidence": {
+  "total_items": 2496,
+  "records_with_auth_evidence": 98,
+  "records_with_access_evidence": 96,
+  "records_with_docs_url": 97
+ },
+ "opportunities": {
+  "new_easy_wins": [
+   {
+    "id": 37,
+    "app": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "score": 10.56,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "API key"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [],
+    "reason": "Documented API, self-serve credentials, auth: API key."
+   },
+   {
+    "id": 16,
+    "app": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "score": 10.08,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "API key"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [],
+    "reason": "Documented API, self-serve credentials, auth: API key."
+   },
+   {
+    "id": 44,
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "score": 10.08,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "JWT",
+     "OAuth2",
+     "Bearer/access token"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [],
+    "reason": "Documented API, self-serve credentials, auth: JWT, OAuth2, Bearer/access token."
+   },
+   {
+    "id": 59,
+    "app": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "score": 10.08,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "API key"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [],
+    "reason": "Documented API, self-serve credentials, auth: API key."
+   },
+   {
+    "id": 83,
+    "app": "Binance",
+    "category": "Finance and Fintech",
+    "score": 10.08,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "API key",
+     "HMAC/signed request"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [
+     "Marketplace listing needs vendor review (private use is self-serve)"
+    ],
+    "reason": "Documented API, self-serve credentials, auth: API key, HMAC/signed request."
+   },
+   {
+    "id": 95,
+    "app": "Reducto",
+    "category": "AI, Research and Media-native",
+    "score": 10.08,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "API key",
+     "Bearer/access token"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [],
+    "reason": "Documented API, self-serve credentials, auth: API key, Bearer/access token."
+   },
+   {
+    "id": 30,
+    "app": "Vonage",
+    "category": "Communications and Messaging",
+    "score": 10.0,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "yes",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "JWT",
+     "Basic",
+     "API key",
+     "Bearer/access token"
+    ],
+    "confidence": 1.0,
+    "blockers": [],
+    "reason": "Documented API, self-serve credentials, auth: JWT, Basic, API key."
+   },
+   {
+    "id": 52,
+    "app": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "score": 9.03,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "yes",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "API key"
+    ],
+    "confidence": 0.65,
+    "blockers": [],
+    "reason": "Documented API, self-serve credentials, auth: API key."
+   },
+   {
+    "id": 85,
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "score": 8.74,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "yes",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "API key"
+    ],
+    "confidence": 0.8,
+    "blockers": [],
+    "reason": "Documented API, self-serve credentials, auth: API key."
+   },
+   {
+    "id": 47,
+    "app": "Ecwid",
+    "category": "Ecommerce",
+    "score": 8.61,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "OAuth2",
+     "API key"
+    ],
+    "confidence": 0.55,
+    "blockers": [
+     "Marketplace listing needs vendor review (private use is self-serve)"
+    ],
+    "reason": "Documented API, self-serve credentials, auth: OAuth2, API key."
+   },
+   {
+    "id": 50,
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "score": 7.98,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "yes",
+    "buildability": "ready",
+    "access": "self_serve_free",
+    "auth": [
+     "API key"
+    ],
+    "confidence": 0.6,
+    "blockers": [],
+    "reason": "Documented API, self-serve credentials, auth: API key."
+   }
+  ],
+  "needs_outreach": [
+   {
+    "id": 15,
+    "app": "Pylon",
+    "category": "Support and Helpdesk",
+    "score": 8.16,
+    "max": 11,
+    "composio": "yes",
+    "composio_id": "pylon_mcp (provider_mcp)",
+    "official_mcp": "unknown",
+    "buildability": "needs_access",
+    "access": "paid_plan",
+    "auth": [
+     "Bearer/access token",
+     "JWT"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [
+     "API access tied to a paid plan"
+    ],
+    "reason": "API exists but credentials are gated (paid plan)."
+   },
+   {
+    "id": 96,
+    "app": "Devin",
+    "category": "AI, Research and Media-native",
+    "score": 8.16,
+    "max": 11,
+    "composio": "yes",
+    "composio_id": "devin_mcp (provider_mcp)",
+    "official_mcp": "unknown",
+    "buildability": "needs_access",
+    "access": "paid_plan",
+    "auth": [
+     "API key",
+     "Bearer/access token"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [
+     "API access tied to a paid plan"
+    ],
+    "reason": "API exists but credentials are gated (paid plan)."
+   },
+   {
+    "id": 31,
+    "app": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "score": 8.0,
+    "max": 11,
+    "composio": "yes",
+    "composio_id": "googleads",
+    "official_mcp": "yes",
+    "buildability": "needs_access",
+    "access": "approval_required",
+    "auth": [
+     "OAuth2",
+     "Bearer/access token"
+    ],
+    "confidence": 1.0,
+    "blockers": [
+     "App review / developer-token approval required before production access"
+    ],
+    "reason": "API exists but credentials are gated (approval required)."
+   },
+   {
+    "id": 38,
+    "app": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "score": 8.0,
+    "max": 11,
+    "composio": "yes",
+    "composio_id": "pinterest",
+    "official_mcp": "yes",
+    "buildability": "needs_access",
+    "access": "approval_required",
+    "auth": [
+     "OAuth2",
+     "Bearer/access token"
+    ],
+    "confidence": 1.0,
+    "blockers": [
+     "App review / developer-token approval required before production access"
+    ],
+    "reason": "API exists but credentials are gated (approval required)."
+   },
+   {
+    "id": 53,
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "score": 7.36,
+    "max": 11,
+    "composio": "yes",
+    "composio_id": "ahrefs",
+    "official_mcp": "yes",
+    "buildability": "needs_access",
+    "access": "paid_plan",
+    "auth": [
+     "API key",
+     "OAuth2",
+     "Bearer/access token"
+    ],
+    "confidence": 0.8,
+    "blockers": [
+     "App review / developer-token approval required before production access"
+    ],
+    "reason": "API exists but credentials are gated (paid plan)."
+   },
+   {
+    "id": 45,
+    "app": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "score": 7.2,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "needs_access",
+    "access": "partner_or_sales",
+    "auth": [
+     "OAuth2",
+     "Bearer/access token",
+     "HMAC/signed request",
+     "JWT"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [
+     "Possible partner/sales gate (single weak signal)"
+    ],
+    "reason": "API exists but credentials are gated (partner or sales)."
+   },
+   {
+    "id": 91,
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "score": 7.04,
+    "max": 11,
+    "composio": "yes",
+    "composio_id": "notebook_lm",
+    "official_mcp": "unknown",
+    "buildability": "needs_access",
+    "access": "paid_plan",
+    "auth": [
+     "OAuth2"
+    ],
+    "confidence": 0.7000000000000001,
+    "blockers": [
+     "API access tied to a paid plan"
+    ],
+    "reason": "API exists but credentials are gated (paid plan)."
+   },
+   {
+    "id": 32,
+    "app": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "score": 6.6,
+    "max": 11,
+    "composio": "yes",
+    "composio_id": "metaads",
+    "official_mcp": "unknown",
+    "buildability": "needs_access",
+    "access": "approval_required",
+    "auth": [
+     "OAuth2"
+    ],
+    "confidence": 0.7000000000000001,
+    "blockers": [
+     "App review / approval before production use"
+    ],
+    "reason": "API exists but credentials are gated (approval required)."
+   },
+   {
+    "id": 33,
+    "app": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "score": 6.6,
+    "max": 11,
+    "composio": "yes",
+    "composio_id": "linkedin (parent_platform)",
+    "official_mcp": "unknown",
+    "buildability": "needs_access",
+    "access": "approval_required",
+    "auth": [
+     "OAuth2",
+     "API key",
+     "Bearer/access token"
+    ],
+    "confidence": 0.7000000000000001,
+    "blockers": [
+     "App review / developer-token approval required before production access"
+    ],
+    "reason": "API exists but credentials are gated (approval required)."
+   },
+   {
+    "id": 39,
+    "app": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "score": 6.16,
+    "max": 11,
+    "composio": "yes",
+    "composio_id": "threads",
+    "official_mcp": "unknown",
+    "buildability": "needs_access",
+    "access": "approval_required",
+    "auth": [
+     "OAuth2"
+    ],
+    "confidence": 0.7000000000000001,
+    "blockers": [
+     "App review / approval before production use"
+    ],
+    "reason": "API exists but credentials are gated (approval required)."
+   },
+   {
+    "id": 49,
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "score": 6.16,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "needs_access",
+    "access": "approval_required",
+    "auth": [
+     "OAuth2"
+    ],
+    "confidence": 0.7000000000000001,
+    "blockers": [
+     "App review / approval before production use"
+    ],
+    "reason": "API exists but credentials are gated (approval required)."
+   },
+   {
+    "id": 42,
+    "app": "WooCommerce",
+    "category": "Ecommerce",
+    "score": 5.76,
+    "max": 11,
+    "composio": "no",
+    "composio_id": null,
+    "official_mcp": "unknown",
+    "buildability": "needs_access",
+    "access": "partner_or_sales",
+    "auth": [
+     "API key",
+     "Basic",
+     "HMAC/signed request"
+    ],
+    "confidence": 0.9000000000000001,
+    "blockers": [
+     "Partner program / contact-sales gate"
+    ],
+    "reason": "API exists but credentials are gated (partner or sales)."
+   }
+  ],
+  "already_in_composio": 79,
+  "rubric": "score = API(0-3) + access(0-3) + auth simplicity(0-3) + breadth(1-2) - 0.5 if vendor MCP exists; x(0.6+0.4*confidence). Max 11."
+ },
+ "headlines": [
+  "OAuth2 is the most common primary auth method (70/100 apps). Counting every supported method, OAuth2 appears in 70/100 and API keys in 62/100; many apps offer both.",
+  "67/100 apps let a developer self-serve credentials; 26/100 are gated (paid plan, approval or partner/sales); 7 could not be established or have no API.",
+  "Most self-serve category: CRM and Sales (9/10). Most gated: Marketing, Ads, Email and Social (6/10).",
+  "Buildable today with self-serve access: 65/100; needs access/outreach: 26/100; limited or not buildable: 2/100; unresolved: 7/100.",
+  "Most common blocker: Partner program / contact-sales gate (14 apps).",
+  "Composio already has a toolkit for 79/100; vendors ship an official MCP server for 56/100. For 30 apps Composio has a toolkit but no vendor MCP server was found: a Composio toolkit and a vendor MCP are separate facts."
+ ]
+}

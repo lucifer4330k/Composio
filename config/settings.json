@@ -1,0 +1,9 @@
+{
+  "concurrency": 4,
+  "per_host_concurrency": 2,
+  "http_retries": 3,
+  "per_app_timeout_s": 900,
+  "verify_timeout_s": 600,
+  "max_pages_per_app": 14,
+  "audit_sample_seed": 20261123
+}

@@ -1,0 +1,4221 @@
+{
+ "automated": {
+  "4": {
+   "id": 4,
+   "app": "Attio",
+   "independent_pages": [
+    "https://docs.attio.com/mcp/overview",
+    "https://docs.attio.com/rest-api/overview"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "3": {
+   "id": 3,
+   "app": "Pipedrive",
+   "independent_pages": [
+    "https://devcommunity.pipedrive.com/t/oauth-authorization-step-4-and-step-5-getting-the-tokens/7821",
+    "https://support.pipedrive.com/en/article/how-can-i-find-my-personal-api-key",
+    "https://devcommunity.pipedrive.com/t/using-api-key-and-api-secret-to-authorize-api-actions-in-my-app/3323",
+    "https://devcommunity.pipedrive.com/t/server-based-access-to-pipedrive-api/1360",
+    "https://devcommunity.pipedrive.com/t/cant-post-person-with-sandbox-api-key/2831",
+    "https://devcommunity.pipedrive.com/t/introducing-token-based-rate-limits-for-api-usage-what-you-need-to-know/18647"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "5": {
+   "id": 5,
+   "app": "Twenty",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "6": {
+   "id": 6,
+   "app": "Podio",
+   "independent_pages": [
+    "https://developers.podio.com/examples/webhooks",
+    "https://developers.podio.com/index/overview"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "8": {
+   "id": 8,
+   "app": "Close",
+   "independent_pages": [
+    "https://developer.close.com/api/overview/api-key-authentication",
+    "https://help.close.com/integrations/api-keys-oauth"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "9": {
+   "id": 9,
+   "app": "Copper",
+   "independent_pages": [
+    "https://developer.copper.com/companies/overview.html",
+    "https://developer.copper.com/opportunities/overview.html",
+    "https://developer.copper.com/projects/overview.html",
+    "https://developer.copper.com/tags/overview.html"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "10": {
+   "id": 10,
+   "app": "DealCloud",
+   "independent_pages": [
+    "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+    "https://api.docs.dealcloud.com/sdk/intapp-rest-client/reference/models",
+    "https://api.docs.dealcloud.com/sdk/python-1.X/reference/constants",
+    "https://www.intapp.com/dealcloud/comparison",
+    "https://www.intapp.com/dealcloud/enterprise-offering",
+    "https://www.intapp.com/dealcloud/permissions-and-user-groups"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "1": {
+   "id": 1,
+   "app": "Salesforce",
+   "independent_pages": [
+    "https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html",
+    "https://www.salesforce.com/pricing/?bc=OTH"
+   ],
+   "checks": {
+    "authentication_methods": "unverifiable",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "2": {
+   "id": 2,
+   "app": "HubSpot",
+   "independent_pages": [
+    "https://community.hubspot.com/t/authentication-credentials-not-found/63030",
+    "https://community.hubspot.com/t/authentication-credentials-not-found-this-api-supports-oauth-2-0-authentication-and-you-can-find-mo/126809",
+    "https://community.hubspot.com/t/how-can-i-replace-my-api-key-with-oauth-and-remain-automated/64953",
+    "https://community.hubspot.com/t/access-to-paid-features-as-a-developer/109731"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "11": {
+   "id": 11,
+   "app": "Zendesk",
+   "independent_pages": [
+    "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+    "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+    "https://developer.zendesk.com/documentation/authentication/oauth-migration/",
+    "https://developer.zendesk.com/api-reference/ticketing/oauth/oauth_tokens/",
+    "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+    "https://www.zendesk.com/in/pricing/#georedirect"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "13": {
+   "id": 13,
+   "app": "Freshdesk",
+   "independent_pages": [
+    "https://developers.freshdesk.com/api/",
+    "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key-",
+    "https://support.freshdesk.com/support/solutions/articles/215517-how-to-find-your-api-key",
+    "https://support.freshdesk.com/support/solutions/articles/50000011778-understanding-freshdesk-pricing-plans",
+    "https://www.freshworks.com/freshdesk/pricing/",
+    "https://developers.freshworks.com/docs/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "12": {
+   "id": 12,
+   "app": "Intercom",
+   "independent_pages": [
+    "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication/setting-up-oauth",
+    "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens/retrieveauthtoken",
+    "https://developers.intercom.com/docs/publish-to-the-app-store/intercom-developer-terms",
+    "https://developers.intercom.com/docs/references/2.11/rest-api/api.intercom.io/companies"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "14": {
+   "id": 14,
+   "app": "Front",
+   "independent_pages": [
+    "https://dev.frontapp.com/reference/api-terminology-101",
+    "https://dev.frontapp.com/reference/plugin-sdk-api",
+    "https://dev.frontapp.com/reference/buildcanceltokensource",
+    "https://dev.frontapp.com/reference/plugin-sdk-cancel-token"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "16": {
+   "id": 16,
+   "app": "LiveAgent",
+   "independent_pages": [
+    "https://www.liveagent.com/pricing/",
+    "https://faq.liveagent.com/703689-General",
+    "https://www.liveagent.com/features/api/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "17": {
+   "id": 17,
+   "app": "Plain",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "7": {
+   "id": 7,
+   "app": "Zoho CRM",
+   "independent_pages": [
+    "https://help.zoho.com/portal/en/community/topic/how-to-get-api-key-for-external-access",
+    "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+    "https://www.zoho.com/en-us/crm/zohocrm-pricing.html"
+   ],
+   "checks": {
+    "authentication_methods": "conflict",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "15": {
+   "id": 15,
+   "app": "Pylon",
+   "independent_pages": [
+    "https://www.usepylon.com/pylon-facts",
+    "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+    "https://docs.usepylon.com/pylon-docs/developer/api/conventions",
+    "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+    "https://docs.usepylon.com/pylon-docs/developer/api/errors"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "filled_by_verify",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "19": {
+   "id": 19,
+   "app": "Gorgias",
+   "independent_pages": [
+    "https://developers.gorgias.com/docs/building-a-high-quality-gorgias-app",
+    "https://developers.gorgias.com/docs/1-register-on-developer-portal"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "20": {
+   "id": 20,
+   "app": "Gladly",
+   "independent_pages": [
+    "https://developer.gladly.com/rest/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "18": {
+   "id": 18,
+   "app": "Help Scout",
+   "independent_pages": [
+    "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "https://developer.helpscout.com/docs-api/",
+    "https://www.helpscout.com/pricing/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "22": {
+   "id": 22,
+   "app": "Twilio",
+   "independent_pages": [
+    "https://www.twilio.com/docs/global-infrastructure/manage-regional-api-credentials",
+    "https://www.twilio.com/docs/glossary/what-is-an-api-key",
+    "https://www.twilio.com/docs/iam/api-keys"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "23": {
+   "id": 23,
+   "app": "Zoho Cliq",
+   "independent_pages": [
+    "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+    "https://www.zoho.com/cliq/help/restapi/v2/introduction/#overview",
+    "https://help.zoho.com/portal/en/community/topic/deprecation-of-authtokens-effective-for-zoho-cliq-apis-from-1st-march-2021",
+    "https://www.zoho.com/cliq/pricing.html",
+    "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "https://www.zoho.com/cliq/help/restapi/v3/postman/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "filled_by_verify",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "24": {
+   "id": 24,
+   "app": "Lark (Larksuite)",
+   "independent_pages": [
+    "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/authen-v1/oidc-access_token/create",
+    "https://open.larksuite.com/document/common-capabilities/sso/web-application-sso/web-app-overview?lang=en-US",
+    "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+    "https://open.larksuite.com/document/uMzNwEjLzcDMx4yM3ATM/ucDN3QjL3QzN04yN0cDN",
+    "https://www.larksuite.com/hc/en-US/articles/497171699982-overview-of-lark-plans",
+    "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/bitable-v1/app-role/advanced-permission-guide"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "21": {
+   "id": 21,
+   "app": "Slack",
+   "independent_pages": [
+    "https://docs.slack.dev/apis/web-api/",
+    "https://docs.slack.dev/authentication/installing-with-oauth/",
+    "https://docs.slack.dev/authentication/tokens/",
+    "https://slack.com/intl/en-in/pricing",
+    "https://slack.com/intl/en-in/pricing/paid-vs-free",
+    "https://docs.slack.dev"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "27": {
+   "id": 27,
+   "app": "Telegram",
+   "independent_pages": [
+    "https://core.telegram.org/api/obtaining_api_id",
+    "https://core.telegram.org/mtproto/auth_key"
+   ],
+   "checks": {
+    "authentication_methods": "unverifiable",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "partial"
+  },
+  "25": {
+   "id": 25,
+   "app": "Pumble",
+   "independent_pages": [
+    "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "https://pumble.com/pro-plan",
+    "https://pumble.com/enterprise"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "29": {
+   "id": 29,
+   "app": "Aircall",
+   "independent_pages": [
+    "https://developer.aircall.io/docs/your-first-api-call",
+    "https://aircall.io/pricing/",
+    "https://support.aircall.io/en-gb/articles/30599733509277",
+    "https://developer.aircall.io/docs/plan-your-integration"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "26": {
+   "id": 26,
+   "app": "Discord",
+   "independent_pages": [
+    "https://github.com/discord/discord-api-docs/discussions/3581",
+    "https://docs.discord.com/developers/platform/webhooks",
+    "https://docs.discord.com/developers/bots/overview",
+    "https://docs.discord.com/developers/discord-social-sdk/overview",
+    "https://docs.discord.com/developers/activities/overview"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "31": {
+   "id": 31,
+   "app": "Google Ads",
+   "independent_pages": [
+    "https://developers.google.com/google-ads/api/rest/auth",
+    "https://developers.google.com/google-ads/api/docs/oauth/credential-management"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "32": {
+   "id": 32,
+   "app": "Meta Ads",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "34": {
+   "id": 34,
+   "app": "GoHighLevel",
+   "independent_pages": [
+    "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+    "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html",
+    "https://marketplace.gohighlevel.com/docs/Authorization/DeveloperGlossary/index.html",
+    "https://www.gohighlevel.com/pricing",
+    "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+    "https://help.gohighlevel.com/support/solutions/articles/155000000136-how-to-get-started-with-the-developer-s-marketplace"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "28": {
+   "id": 28,
+   "app": "WhatsApp Business",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "35": {
+   "id": 35,
+   "app": "Mailchimp",
+   "independent_pages": [
+    "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+    "https://mailchimp.com/help/about-api-keys/",
+    "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app",
+    "https://mailchimp.com/developer/marketing/api/root/list"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "36": {
+   "id": 36,
+   "app": "Klaviyo",
+   "independent_pages": [
+    "https://community.klaviyo.com/developer-group-64/oauth-replacing-api-keys-16376",
+    "https://community.klaviyo.com/accounts-and-settings-2/getting-account-details-using-account-api-with-oauth-access-token-15523",
+    "https://developers.klaviyo.com/en/reference",
+    "https://developers.klaviyo.com/en/reference"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "37": {
+   "id": 37,
+   "app": "systeme.io",
+   "independent_pages": [
+    "https://help.systeme.io/article/134-how-to-generate-api-key-from-sendgrid",
+    "https://help.systeme.io/article/2967-how-to-integrate-secure-and-pay-with-systeme-io",
+    "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+    "https://systeme.io/circle-alternative",
+    "https://freetemplates.systeme.io/free-plan"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "39": {
+   "id": 39,
+   "app": "Threads (Meta)",
+   "independent_pages": [
+    "https://www.threads.com/@developedbyumair/post/C8W1K1iNwns?hl=en"
+   ],
+   "checks": {
+    "authentication_methods": "unverifiable",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "partial"
+  },
+  "38": {
+   "id": 38,
+   "app": "Pinterest",
+   "independent_pages": [
+    "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+    "https://github.com/pinterest/api-quickstart/blob/main/README.md",
+    "https://developers.pinterest.com/docs/getting-started/connect-app/",
+    "https://developers.pinterest.com/docs/api/v5/oauth-token",
+    "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "https://policy.pinterest.com/en-gb/developer-guidelines"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "40": {
+   "id": 40,
+   "app": "SendGrid",
+   "independent_pages": [
+    "https://support.sendgrid.com/hc/en-us/articles/360041831393-How-to-Upgrade-or-Change-your-SendGrid-Pricing-Plan",
+    "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/list-all-authenticated-domains",
+    "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/add-an-ip-to-an-authenticated-domain",
+    "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/remove-an-ip-from-an-authenticated-domain",
+    "https://www.twilio.com/docs/sendgrid/api-reference/domain-authentication/validate-a-domain-authentication"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "42": {
+   "id": 42,
+   "app": "WooCommerce",
+   "independent_pages": [
+    "https://woocommerce.com/document/woocommerce-rest-api/",
+    "https://developer.woocommerce.com/2024/01/17/the-woocommerce-legacy-rest-api-extension-is-now-available-in-wordpress-org/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "41": {
+   "id": 41,
+   "app": "Shopify",
+   "independent_pages": [
+    "https://community.shopify.com/t/how-do-i-get-my-shopify-store-api-and-password/236986",
+    "https://community.shopify.com/t/admin-api-key-for-personal-use-devtools-not-showing-it-as-documentation-says/581876",
+    "https://community.shopify.com/t/how-to-get-shopify-access-token-sent-to-dev-dashboard/573988",
+    "https://shopify.dev/docs/apps/build/authentication-authorization/manage-credentials",
+    "https://shopify.dev/docs/apps/build/authentication-authorization/client-credentials-grant?lang=node",
+    "https://help.shopify.com/en/manual/apps/about-apps"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "44": {
+   "id": 44,
+   "app": "Salesforce Commerce Cloud",
+   "independent_pages": [
+    "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/oauth.html",
+    "https://www.salesforce.com/commerce/pricing/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "43": {
+   "id": 43,
+   "app": "BigCommerce",
+   "independent_pages": [
+    "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication/post-auth-backend",
+    "https://www.bigcommerce.com/pricing/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "45": {
+   "id": 45,
+   "app": "Magento (Adobe Commerce)",
+   "independent_pages": [
+    "https://developer.adobe.com/commerce/webapi/rest/",
+    "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server",
+    "https://developer.adobe.com/commerce/webapi/rest/authentication/user",
+    "https://developer.adobe.com/commerce/webapi/rest/use-rest/anonymous-api-security",
+    "https://developer.adobe.com/commerce/webapi/graphql/usage/api-response"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "46": {
+   "id": 46,
+   "app": "Squarespace",
+   "independent_pages": [
+    "https://forum.squarespace.com/topic/173464-developer-api-keys-missing-update-option",
+    "https://www.squarespace.com/pricing"
+   ],
+   "checks": {
+    "authentication_methods": "unverifiable",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "partial"
+  },
+  "47": {
+   "id": 47,
+   "app": "Ecwid",
+   "independent_pages": [
+    "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API",
+    "https://developers.ecwid.com"
+   ],
+   "checks": {
+    "authentication_methods": "unverifiable",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "48": {
+   "id": 48,
+   "app": "Gumroad",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "49": {
+   "id": 49,
+   "app": "Amazon Selling Partner",
+   "independent_pages": [
+    "https://github.com/amzn/selling-partner-api-samples/discussions/112",
+    "https://sellercentral.amazon.com/seller-forums/discussions/t/35f70b2ecd7b8f3e96c4fa88589083bc",
+    "https://github.com/amzn/selling-partner-api-models/discussions/3680",
+    "https://sellercentral.amazon.com/seller-forums/discussions/t/5adafa812a7635f65fb9de7e1cdf1e3b"
+   ],
+   "checks": {
+    "authentication_methods": "filled_by_verify",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "50": {
+   "id": 50,
+   "app": "fanbasis",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "51": {
+   "id": 51,
+   "app": "DataForSEO",
+   "independent_pages": [
+    "https://docs.dataforseo.com/v3/auth/",
+    "https://dataforseo.com/dataforseo-alternatives",
+    "https://dataforseo.com/apis/serp-api"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "30": {
+   "id": 30,
+   "app": "Vonage",
+   "independent_pages": [
+    "https://api.support.vonage.com/hc/en-us/articles/10670829386396-How-to-find-my-Video-API-Authentication-Credentials",
+    "https://developer.vonage.com/en/auth/camara",
+    "https://developer.vonage.com/en/dashboard/control/api-settings",
+    "https://www.vonage.com/communications-apis/pricing",
+    "https://www.vonage.com/communications-apis/services/support",
+    "https://www.vonage.com/communications-apis/voice/pricing"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "52": {
+   "id": 52,
+   "app": "SE Ranking",
+   "independent_pages": [
+    "https://seranking.com/api/data/getting-started/",
+    "https://seranking.com/api/how-to-get-api/",
+    "https://help.seranking.com/hc/en-us/articles/21487397355420-API-pricing",
+    "https://seranking.com/api/rate-limits/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "54": {
+   "id": 54,
+   "app": "MrScraper",
+   "independent_pages": [
+    "https://docs.mrscraper.com/docs/getting-started/overview",
+    "https://docs.mrscraper.com/docs/residential-proxy/configuration/authentication",
+    "https://docs.mrscraper.com/docs/getting-started/billing",
+    "https://docs.mrscraper.com/docs/residential-proxy/getting-started/overview",
+    "https://docs.mrscraper.com/docs/integrations/webhook"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "55": {
+   "id": 55,
+   "app": "Apify",
+   "independent_pages": [
+    "https://apify.com/parseforge/crunchbase-funding-scraper/api/cli",
+    "https://docs.apify.com/api/v2/actor-oauth-connections-get",
+    "https://docs.apify.com/api/v2/actor-o-auth-accounts-get",
+    "https://docs.apify.com/api/v2/actor-o-auth-account-get",
+    "https://docs.apify.com/api/v2/webhooks-webhooks"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "33": {
+   "id": 33,
+   "app": "LinkedIn Ads",
+   "independent_pages": [
+    "https://business.linkedin.com/marketing-solutions/marketing-partners/become-a-partner/marketing-developer-program/terms-and-conditions",
+    "https://www.linkedin.com/developers/news/featured-updates/q2-2025-verified-on-linkedin-api"
+   ],
+   "checks": {
+    "authentication_methods": "unverifiable",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "partial"
+  },
+  "53": {
+   "id": 53,
+   "app": "Ahrefs",
+   "independent_pages": [
+    "https://ahrefs.com/academy/api-course/lesson-2",
+    "https://ahrefs.com/seo-api"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "58": {
+   "id": 58,
+   "app": "Sherlock",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "56": {
+   "id": 56,
+   "app": "Firecrawl",
+   "independent_pages": [
+    "https://github.com/firecrawl/firecrawl/issues/557",
+    "https://www.firecrawl.dev/glossary/web-search-apis/search-apis-free-tiers-testing",
+    "https://docs.firecrawl.dev/rate-limits"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "59": {
+   "id": 59,
+   "app": "Waterfall.io",
+   "independent_pages": [
+    "https://www.waterfall.io/book-a-call"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "60": {
+   "id": 60,
+   "app": "Clay",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "61": {
+   "id": 61,
+   "app": "GitHub",
+   "independent_pages": [
+    "https://docs.github.com/en/enterprise-server@3.20/rest/authentication/authenticating-to-the-rest-api",
+    "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure",
+    "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+    "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+    "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "57": {
+   "id": 57,
+   "app": "Bright Data",
+   "independent_pages": [
+    "https://docs.brightdata.com/products/mcp-server/remote/oauth",
+    "https://docs.brightdata.com/products/cli/installation",
+    "https://brightdata.com/pricing/crawl-api",
+    "https://brightdata.com/pricing/serp"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "65": {
+   "id": 65,
+   "app": "Supabase",
+   "independent_pages": [
+    "https://supabase.com/docs/guides/integrations/build-a-supabase-oauth-integration",
+    "https://supabase.com/docs/guides/platform/billing-on-supabase",
+    "https://supabase.com/docs/guides/api/securing-your-api"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "66": {
+   "id": 66,
+   "app": "Neo4j",
+   "independent_pages": [
+    "https://neo4j.com/labs/agent-memory/reference/authentication/",
+    "https://neo4j.com/docs/http-api/2026.10/authentication-authorization/",
+    "https://neo4j.com/docs/mcp/2/authentication/",
+    "https://neo4j.com/docs/query-api/2/authentication-authorization/",
+    "https://neo4j.com/pricing/",
+    "https://community.neo4j.com/t/neo4j-aura-on-gcp-financial-use-cases-and-pricing/58285"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "67": {
+   "id": 67,
+   "app": "Snowflake",
+   "independent_pages": [
+    "https://docs.snowflake.com/en/user-guide/api-authentication",
+    "https://docs.snowflake.com/en/developer"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "68": {
+   "id": 68,
+   "app": "MongoDB Atlas",
+   "independent_pages": [
+    "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "https://www.mongodb.com/docs/atlas/configure-api-access/",
+    "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+    "https://www.mongodb.com/services/support/atlas-support-plans",
+    "https://www.mongodb.com/docs/atlas/api/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "69": {
+   "id": 69,
+   "app": "Datadog",
+   "independent_pages": [
+    "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+    "https://docs.datadoghq.com/account_management/api-app-keys/",
+    "https://docs.datadoghq.com/account_management/billing/pricing/",
+    "https://www.datadoghq.com/pricing/",
+    "https://www.datadoghq.com/pricing/list/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "64": {
+   "id": 64,
+   "app": "Cloudflare",
+   "independent_pages": [
+    "https://developers.cloudflare.com/fundamentals/api/get-started/keys/",
+    "https://developers.cloudflare.com/fundamentals/api/get-started/token-formats/",
+    "https://developers.cloudflare.com/r2/api/tokens/",
+    "https://developers.cloudflare.com/api/overview/",
+    "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "https://community.cloudflare.com/t/using-api-token-to-create-signing-key-possible/200637",
+    "https://developers.cloudflare.com/workers/platform/pricing/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "70": {
+   "id": 70,
+   "app": "Sentry",
+   "independent_pages": [
+    "https://github.com/getsentry/sentry-oauth-example",
+    "https://docs.sentry.io/cli/configuration/",
+    "https://docs.sentry.io/security-legal-pii/security/token-formats/",
+    "https://docs.sentry.io/api/auth/",
+    "https://docs.sentry.io/account/auth-tokens/",
+    "https://sentry.io/pricing/?"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "63": {
+   "id": 63,
+   "app": "Netlify",
+   "independent_pages": [
+    "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+    "https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/",
+    "https://answers.netlify.com/t/netlify-api-oauth-with-authorization-code/121248",
+    "https://answers.netlify.com/t/oauth-application-with-response-type-code/26467",
+    "https://answers.netlify.com/t/api-keys-and-environment-variables-on-netlify/3865",
+    "https://www.netlify.com/pricing/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "62": {
+   "id": 62,
+   "app": "Vercel",
+   "independent_pages": [
+    "https://vercel.com/connect/api-key",
+    "https://vercel.com/docs/connect/concepts/authentication",
+    "https://community.vercel.com/t/how-to-get-access-token-using-the-rest-api/8539",
+    "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+    "https://vercel.com/ai-gateway"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "71": {
+   "id": 71,
+   "app": "Notion",
+   "independent_pages": [
+    "https://developers.notion.com/reference/request-limits",
+    "https://www.notion.com/help/create-integrations-with-the-notion-api"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "74": {
+   "id": 74,
+   "app": "Jira",
+   "independent_pages": [
+    "https://developer.atlassian.com/server/jira/platform/jira-rest-api-example-oauth-authentication-6291692/",
+    "https://community.atlassian.com/forums/discussion/1532811/authenticating-jira-rest-api-via-office-365-oauth",
+    "https://community.developer.atlassian.com/t/creating-jira-issues-oauth-access-token-vs-api-key/75151",
+    "https://developer.atlassian.com/cloud/confluence/oauth-2-3lo-apps/",
+    "https://community.atlassian.com/forums/discussion/2955396/use-rest-api-with-jira-instance-on-free-plan",
+    "https://community.atlassian.com/forums/discussion/3118599/what-permissions-or-setup-are-needed-for-a-managed-user-to-use-jira-cloud-rest-api-on-basic-plan"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "76": {
+   "id": 76,
+   "app": "Monday.com",
+   "independent_pages": [
+    "https://developer.monday.com/apps/docs/manage-user-tokens-and-credentials",
+    "https://developer.monday.com/apps/docs/credentials",
+    "https://developer.monday.com/apps/docs/oauth",
+    "https://developer.monday.com/apps/docs/authorization-url-migration-guide",
+    "https://developer.monday.com/api-reference/docs/rate-limits"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "77": {
+   "id": 77,
+   "app": "ClickUp",
+   "independent_pages": [
+    "https://developer.clickup.com/docs/apis-available-by-plan",
+    "https://developer.clickup.com/reference/getaccesstoken",
+    "https://developer.clickup.com/docs/open-api-spec"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "78": {
+   "id": 78,
+   "app": "Coda",
+   "independent_pages": [
+    "https://coda.io/packs/build/latest/guides/basics/authentication"
+   ],
+   "checks": {
+    "authentication_methods": "filled_by_verify",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "partial"
+  },
+  "73": {
+   "id": 73,
+   "app": "Linear",
+   "independent_pages": [
+    "https://github.com/linear/linear/issues/1126"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "75": {
+   "id": 75,
+   "app": "Asana",
+   "independent_pages": [
+    "https://forum.asana.com/t/asana-api-personal-token/165995",
+    "https://forum.asana.com/t/how-access-tokens-work/793483",
+    "https://forum.asana.com/t/can-free-version-asana-connect-to-our-app/73510",
+    "https://forum.asana.com/t/personal-access-token-security-limits/1096056"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "72": {
+   "id": 72,
+   "app": "Airtable",
+   "independent_pages": [
+    "https://community.airtable.com/development-apis-11/authentication-for-personal-access-tokens-not-working-4472",
+    "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "79": {
+   "id": 79,
+   "app": "Smartsheet",
+   "independent_pages": [
+    "https://community.smartsheet.com/discussion/123693/how-to-create-permanent-api-key-after-authenticate-by-oauth2/p1",
+    "https://community.smartsheet.com/en/discussion/113329/using-smartsheet-api-to-access-user-data-outside-of-my-own-account"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "80": {
+   "id": 80,
+   "app": "Harvest",
+   "independent_pages": [
+    "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "https://help.getharvest.com/api-v1/authentication/authentication/server-side-apps/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "84": {
+   "id": 84,
+   "app": "Paygent Connect",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "82": {
+   "id": 82,
+   "app": "Plaid",
+   "independent_pages": [
+    "https://plaid.com/docs/api/oauth/",
+    "https://plaid.com/docs/api/",
+    "https://plaid.com/docs/auth/partnerships/frame/",
+    "https://plaid.com/docs/auth/partnerships/increase/",
+    "https://plaid.com/docs/api/products/auth/",
+    "https://plaid.com/pricing/"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "81": {
+   "id": 81,
+   "app": "Stripe",
+   "independent_pages": [
+    "https://stripe.com/in/resources/more/api-call-pricing",
+    "https://stripe.com/in/pricing"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "85": {
+   "id": 85,
+   "app": "iPayX",
+   "independent_pages": [
+    "https://www.ipayx.ai/dashboard"
+   ],
+   "checks": {
+    "authentication_methods": "unverifiable",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "partial"
+  },
+  "88": {
+   "id": 88,
+   "app": "Brex",
+   "independent_pages": [
+    "https://developer.brex.com/guides/api-launch-stages",
+    "https://www.brex.com/journal/building-the-brex-api"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "83": {
+   "id": 83,
+   "app": "Binance",
+   "independent_pages": [
+    "https://www.binance.com/en/support/faq/detail/360002502072",
+    "https://github.com/binance/binance-skills-hub/blob/main/skills/binance/fiat/references/sapi-endpoints.md",
+    "https://developers.binance.com/en/landingpage/oauth",
+    "https://www.binance.com/en/academy/articles/what-are-api-keys-and-security-types"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "87": {
+   "id": 87,
+   "app": "Xero",
+   "independent_pages": [
+    "https://developer.xero.com/faq/getting-started",
+    "https://developer.xero.com/documentation/guides/oauth2/limits"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "91": {
+   "id": 91,
+   "app": "NotebookLM",
+   "independent_pages": [
+    "https://docs.cloud.google.com/sdk/gcloud/reference/auth/login"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "90": {
+   "id": 90,
+   "app": "PitchBook",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "92": {
+   "id": 92,
+   "app": "Otter AI",
+   "independent_pages": [
+    "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "94": {
+   "id": 94,
+   "app": "Consensus",
+   "independent_pages": [
+    "https://docs.consensus.app/api-reference/quick-search",
+    "https://docs.consensus.app/api-reference/start-a-thread",
+    "https://docs.consensus.app/api-reference/poll-a-thread",
+    "https://docs.consensus.app/api-reference/add-a-follow-up"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "89": {
+   "id": 89,
+   "app": "Ramp",
+   "independent_pages": [
+    "https://support.ramp.com/what-to-do-if-oauth-credentials-are-leaked/",
+    "https://support.ramp.com/accessing-the-developer-api/",
+    "https://ramp.com/developer-tools"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "96": {
+   "id": 96,
+   "app": "Devin",
+   "independent_pages": [
+    "https://docs.devin.ai/desktop/accounts/api-reference/analytics-v2-introduction",
+    "https://docs.devin.ai/api-reference/v3/notes/organizations-knowledge-notes",
+    "https://docs.devin.ai/api-reference/v2/organizations/organization-members"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "93": {
+   "id": 93,
+   "app": "Fathom",
+   "independent_pages": [
+    "https://developers.fathom.ai/sdks/oauth",
+    "https://developers.fathom.ai/sdks/authentication",
+    "https://developers.fathom.ai/api-reference/team-members/list-team-members",
+    "https://developers.fathom.ai/faq"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "97": {
+   "id": 97,
+   "app": "higgsfield",
+   "independent_pages": [
+    "https://open.higgsfield.ai/quick-start",
+    "https://docs.higgsfield.ai/docs",
+    "https://github.com/higgsfield-ai/cli/issues/72"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "98": {
+   "id": 98,
+   "app": "Mermaid CLI",
+   "independent_pages": [
+    "https://mermaid.ai/pricing",
+    "https://mermaid.js.org/intro/"
+   ],
+   "checks": {
+    "authentication_methods": "unverifiable",
+    "developer_access": "conflict",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "disputed"
+  },
+  "99": {
+   "id": 99,
+   "app": "YouTube Transcript",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "95": {
+   "id": 95,
+   "app": "Reducto",
+   "independent_pages": [
+    "https://docs.reducto.ai/studio-account",
+    "https://docs.reducto.ai/mcp-server",
+    "https://docs.reducto.ai/reference/rate-limits",
+    "https://docs.reducto.ai/reference/checking-api-health",
+    "https://docs.reducto.ai/reference/usage-export-api"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "unverifiable",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  },
+  "100": {
+   "id": 100,
+   "app": "Grain",
+   "independent_pages": [],
+   "checks": {
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "no_independent_evidence"
+  },
+  "86": {
+   "id": 86,
+   "app": "QuickBooks",
+   "independent_pages": [
+    "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account",
+    "https://developer.intuit.com/app/developer/qbo/docs/learn/learn-about-graphql",
+    "https://developer.intuit.com/app/developer/qbo/docs/develop/sandboxes",
+    "https://developer.intuit.com/app/developer/qbo/docs/learn/rest-api-features"
+   ],
+   "checks": {
+    "authentication_methods": "agree",
+    "developer_access": "agree",
+    "existing_composio_toolkit": "agree"
+   },
+   "status": "agree"
+  }
+ },
+ "accuracy": {
+  "audit_sample": {
+   "rules_v1": {
+    "fields": {
+     "public_api_status": {
+      "correct": 11,
+      "wrong": 1,
+      "unknown": 8,
+      "n": 20,
+      "misses": [
+       {
+        "id": "10",
+        "app": "DealCloud",
+        "got": "available",
+        "expected": "restricted",
+        "result": "wrong"
+       },
+       {
+        "id": "21",
+        "app": "Slack",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "49",
+        "app": "Amazon Selling Partner",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "87",
+        "app": "Xero",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "85",
+        "app": "iPayX",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "92",
+        "app": "Otter AI",
+        "got": "unknown",
+        "expected": "restricted",
+        "result": "unknown"
+       },
+       {
+        "id": "94",
+        "app": "Consensus",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       }
+      ]
+     },
+     "authentication_methods": {
+      "correct": 4,
+      "wrong": 7,
+      "unknown": 8,
+      "n": 19,
+      "misses": [
+       {
+        "id": "4",
+        "app": "Attio",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "JWT",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "API key"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "10",
+        "app": "DealCloud",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "HMAC/signed request",
+         "JWT",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "API key"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "13",
+        "app": "Freshdesk",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "JWT",
+         "OAuth2"
+        ],
+        "expected": [
+         "API key"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "21",
+        "app": "Slack",
+        "got": [],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": [],
+        "expected": [
+         "OAuth2",
+         "Bearer/access token"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "49",
+        "app": "Amazon Selling Partner",
+        "got": [],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "51",
+        "app": "DataForSEO",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token"
+        ],
+        "expected": [
+         "Basic"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "71",
+        "app": "Notion",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "JWT",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "Bearer/access token"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "73",
+        "app": "Linear",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "HMAC/signed request",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "API key"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "87",
+        "app": "Xero",
+        "got": [],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": [],
+        "expected": [
+         "API key"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "85",
+        "app": "iPayX",
+        "got": [],
+        "expected": [
+         "API key"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "92",
+        "app": "Otter AI",
+        "got": [],
+        "expected": [
+         "API key"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "94",
+        "app": "Consensus",
+        "got": [],
+        "expected": [
+         "API key"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "91",
+        "app": "NotebookLM",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "JWT",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "wrong"
+       }
+      ]
+     },
+     "developer_access": {
+      "correct": 7,
+      "wrong": 4,
+      "unknown": 9,
+      "n": 20,
+      "misses": [
+       {
+        "id": "12",
+        "app": "Intercom",
+        "got": "approval_required",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "21",
+        "app": "Slack",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "23",
+        "app": "Zoho Cliq",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "49",
+        "app": "Amazon Selling Partner",
+        "got": "unknown",
+        "expected": "approval_required",
+        "result": "unknown"
+       },
+       {
+        "id": "71",
+        "app": "Notion",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "73",
+        "app": "Linear",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "87",
+        "app": "Xero",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "85",
+        "app": "iPayX",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "92",
+        "app": "Otter AI",
+        "got": "unknown",
+        "expected": "partner_or_sales",
+        "result": "unknown"
+       },
+       {
+        "id": "94",
+        "app": "Consensus",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "91",
+        "app": "NotebookLM",
+        "got": "self_serve_free",
+        "expected": "paid_plan",
+        "result": "wrong"
+       }
+      ]
+     },
+     "official_mcp_status": {
+      "correct": 8,
+      "wrong": 0,
+      "unknown": 7,
+      "n": 15,
+      "misses": [
+       {
+        "id": "21",
+        "app": "Slack",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "87",
+        "app": "Xero",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "85",
+        "app": "iPayX",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "92",
+        "app": "Otter AI",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "94",
+        "app": "Consensus",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       }
+      ]
+     },
+     "existing_composio_toolkit": {
+      "correct": 14,
+      "wrong": 1,
+      "unknown": 5,
+      "n": 20,
+      "misses": [
+       {
+        "id": "21",
+        "app": "Slack",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "87",
+        "app": "Xero",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "85",
+        "app": "iPayX",
+        "got": "unknown",
+        "expected": "no",
+        "result": "unknown"
+       },
+       {
+        "id": "92",
+        "app": "Otter AI",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "91",
+        "app": "NotebookLM",
+        "got": "no",
+        "expected": "yes",
+        "result": "wrong"
+       }
+      ]
+     }
+    },
+    "total": {
+     "correct": 44,
+     "wrong": 13,
+     "unknown": 37,
+     "n": 94
+    },
+    "accuracy": 0.468
+   },
+   "pass1": {
+    "fields": {
+     "public_api_status": {
+      "correct": 14,
+      "wrong": 4,
+      "unknown": 2,
+      "n": 20,
+      "misses": [
+       {
+        "id": "10",
+        "app": "DealCloud",
+        "got": "available",
+        "expected": "restricted",
+        "result": "wrong"
+       },
+       {
+        "id": "13",
+        "app": "Freshdesk",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "73",
+        "app": "Linear",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "92",
+        "app": "Otter AI",
+        "got": "available",
+        "expected": "restricted",
+        "result": "wrong"
+       }
+      ]
+     },
+     "authentication_methods": {
+      "correct": 10,
+      "wrong": 7,
+      "unknown": 2,
+      "n": 19,
+      "misses": [
+       {
+        "id": "4",
+        "app": "Attio",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "API key"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "13",
+        "app": "Freshdesk",
+        "got": [
+         "API key",
+         "OAuth2"
+        ],
+        "expected": [
+         "API key"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "23",
+        "app": "Zoho Cliq",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": [
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "Bearer/access token"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "49",
+        "app": "Amazon Selling Partner",
+        "got": [],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "51",
+        "app": "DataForSEO",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token"
+        ],
+        "expected": [
+         "Basic"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "71",
+        "app": "Notion",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "JWT",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "Bearer/access token"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": [],
+        "expected": [
+         "API key"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "91",
+        "app": "NotebookLM",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "JWT",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "wrong"
+       }
+      ]
+     },
+     "developer_access": {
+      "correct": 11,
+      "wrong": 7,
+      "unknown": 2,
+      "n": 20,
+      "misses": [
+       {
+        "id": "13",
+        "app": "Freshdesk",
+        "got": "partner_or_sales",
+        "expected": "self_serve_trial",
+        "result": "wrong"
+       },
+       {
+        "id": "23",
+        "app": "Zoho Cliq",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "49",
+        "app": "Amazon Selling Partner",
+        "got": "self_serve_free",
+        "expected": "approval_required",
+        "result": "wrong"
+       },
+       {
+        "id": "73",
+        "app": "Linear",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "87",
+        "app": "Xero",
+        "got": "approval_required",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "92",
+        "app": "Otter AI",
+        "got": "self_serve_free",
+        "expected": "partner_or_sales",
+        "result": "wrong"
+       },
+       {
+        "id": "91",
+        "app": "NotebookLM",
+        "got": "self_serve_free",
+        "expected": "paid_plan",
+        "result": "wrong"
+       }
+      ]
+     },
+     "official_mcp_status": {
+      "correct": 11,
+      "wrong": 0,
+      "unknown": 4,
+      "n": 15,
+      "misses": [
+       {
+        "id": "4",
+        "app": "Attio",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "21",
+        "app": "Slack",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "75",
+        "app": "Asana",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       }
+      ]
+     },
+     "existing_composio_toolkit": {
+      "correct": 20,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 20,
+      "misses": []
+     }
+    },
+    "total": {
+     "correct": 66,
+     "wrong": 18,
+     "unknown": 10,
+     "n": 94
+    },
+    "accuracy": 0.702
+   },
+   "after_auto_verify": {
+    "fields": {
+     "public_api_status": {
+      "correct": 14,
+      "wrong": 4,
+      "unknown": 2,
+      "n": 20,
+      "misses": [
+       {
+        "id": "10",
+        "app": "DealCloud",
+        "got": "available",
+        "expected": "restricted",
+        "result": "wrong"
+       },
+       {
+        "id": "13",
+        "app": "Freshdesk",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "73",
+        "app": "Linear",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       },
+       {
+        "id": "92",
+        "app": "Otter AI",
+        "got": "available",
+        "expected": "restricted",
+        "result": "wrong"
+       }
+      ]
+     },
+     "authentication_methods": {
+      "correct": 10,
+      "wrong": 8,
+      "unknown": 1,
+      "n": 19,
+      "misses": [
+       {
+        "id": "4",
+        "app": "Attio",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "API key"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "13",
+        "app": "Freshdesk",
+        "got": [
+         "API key",
+         "OAuth2"
+        ],
+        "expected": [
+         "API key"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "23",
+        "app": "Zoho Cliq",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": [
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "Bearer/access token"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "49",
+        "app": "Amazon Selling Partner",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "51",
+        "app": "DataForSEO",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token"
+        ],
+        "expected": [
+         "Basic"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "71",
+        "app": "Notion",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "JWT",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2",
+         "Bearer/access token"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": [],
+        "expected": [
+         "API key"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "91",
+        "app": "NotebookLM",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "JWT",
+         "OAuth2"
+        ],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "wrong"
+       }
+      ]
+     },
+     "developer_access": {
+      "correct": 12,
+      "wrong": 7,
+      "unknown": 1,
+      "n": 20,
+      "misses": [
+       {
+        "id": "13",
+        "app": "Freshdesk",
+        "got": "partner_or_sales",
+        "expected": "self_serve_trial",
+        "result": "wrong"
+       },
+       {
+        "id": "24",
+        "app": "Lark (Larksuite)",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "49",
+        "app": "Amazon Selling Partner",
+        "got": "self_serve_free",
+        "expected": "approval_required",
+        "result": "wrong"
+       },
+       {
+        "id": "73",
+        "app": "Linear",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "87",
+        "app": "Xero",
+        "got": "approval_required",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": "unknown",
+        "expected": "self_serve_free",
+        "result": "unknown"
+       },
+       {
+        "id": "92",
+        "app": "Otter AI",
+        "got": "self_serve_free",
+        "expected": "partner_or_sales",
+        "result": "wrong"
+       },
+       {
+        "id": "91",
+        "app": "NotebookLM",
+        "got": "self_serve_free",
+        "expected": "paid_plan",
+        "result": "wrong"
+       }
+      ]
+     },
+     "official_mcp_status": {
+      "correct": 11,
+      "wrong": 0,
+      "unknown": 4,
+      "n": 15,
+      "misses": [
+       {
+        "id": "4",
+        "app": "Attio",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "21",
+        "app": "Slack",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "75",
+        "app": "Asana",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "50",
+        "app": "fanbasis",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       }
+      ]
+     },
+     "existing_composio_toolkit": {
+      "correct": 20,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 20,
+      "misses": []
+     }
+    },
+    "total": {
+     "correct": 67,
+     "wrong": 19,
+     "unknown": 8,
+     "n": 94
+    },
+    "accuracy": 0.713
+   },
+   "final": {
+    "fields": {
+     "public_api_status": {
+      "correct": 20,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 20,
+      "misses": []
+     },
+     "authentication_methods": {
+      "correct": 19,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 19,
+      "misses": []
+     },
+     "developer_access": {
+      "correct": 20,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 20,
+      "misses": []
+     },
+     "official_mcp_status": {
+      "correct": 15,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 15,
+      "misses": []
+     },
+     "existing_composio_toolkit": {
+      "correct": 20,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 20,
+      "misses": []
+     }
+    },
+    "total": {
+     "correct": 94,
+     "wrong": 0,
+     "unknown": 0,
+     "n": 94
+    },
+    "accuracy": 1.0
+   }
+  },
+  "holdout_sample": {
+   "rules_v1": {
+    "fields": {
+     "public_api_status": {
+      "correct": 6,
+      "wrong": 2,
+      "unknown": 2,
+      "n": 10,
+      "misses": [
+       {
+        "id": "19",
+        "app": "Gorgias",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": "unknown",
+        "expected": "restricted",
+        "result": "unknown"
+       },
+       {
+        "id": "66",
+        "app": "Neo4j",
+        "got": "unknown",
+        "expected": "available",
+        "result": "unknown"
+       }
+      ]
+     },
+     "authentication_methods": {
+      "correct": 4,
+      "wrong": 4,
+      "unknown": 2,
+      "n": 10,
+      "misses": [
+       {
+        "id": "8",
+        "app": "Close",
+        "got": [
+         "API key",
+         "Basic",
+         "Bearer/access token",
+         "HMAC/signed request",
+         "OAuth2"
+        ],
+        "expected": [
+         "API key",
+         "OAuth2"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": [],
+        "expected": [
+         "OAuth2"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "52",
+        "app": "SE Ranking",
+        "got": [
+         "API key",
+         "OAuth2"
+        ],
+        "expected": [
+         "API key"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "54",
+        "app": "MrScraper",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "Bearer/access token"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "66",
+        "app": "Neo4j",
+        "got": [],
+        "expected": [
+         "Basic"
+        ],
+        "result": "unknown"
+       },
+       {
+        "id": "72",
+        "app": "Airtable",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "result": "wrong"
+       }
+      ]
+     },
+     "developer_access": {
+      "correct": 4,
+      "wrong": 4,
+      "unknown": 1,
+      "n": 9,
+      "misses": [
+       {
+        "id": "8",
+        "app": "Close",
+        "got": "partner_or_sales",
+        "expected": "self_serve_trial",
+        "result": "wrong"
+       },
+       {
+        "id": "19",
+        "app": "Gorgias",
+        "got": "partner_or_sales",
+        "expected": "self_serve_trial",
+        "result": "wrong"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": "unknown",
+        "expected": "partner_or_sales",
+        "result": "unknown"
+       },
+       {
+        "id": "52",
+        "app": "SE Ranking",
+        "got": "self_serve_free",
+        "expected": "paid_plan",
+        "result": "wrong"
+       }
+      ]
+     },
+     "official_mcp_status": {
+      "correct": 6,
+      "wrong": 0,
+      "unknown": 2,
+      "n": 8,
+      "misses": [
+       {
+        "id": "9",
+        "app": "Copper",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "66",
+        "app": "Neo4j",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       }
+      ]
+     },
+     "existing_composio_toolkit": {
+      "correct": 8,
+      "wrong": 0,
+      "unknown": 2,
+      "n": 10,
+      "misses": [
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": "unknown",
+        "expected": "no",
+        "result": "unknown"
+       },
+       {
+        "id": "66",
+        "app": "Neo4j",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       }
+      ]
+     }
+    },
+    "total": {
+     "correct": 28,
+     "wrong": 10,
+     "unknown": 9,
+     "n": 47
+    },
+    "accuracy": 0.596
+   },
+   "pass1": {
+    "fields": {
+     "public_api_status": {
+      "correct": 7,
+      "wrong": 3,
+      "unknown": 0,
+      "n": 10,
+      "misses": [
+       {
+        "id": "19",
+        "app": "Gorgias",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": "available",
+        "expected": "restricted",
+        "result": "wrong"
+       }
+      ]
+     },
+     "authentication_methods": {
+      "correct": 7,
+      "wrong": 3,
+      "unknown": 0,
+      "n": 10,
+      "misses": [
+       {
+        "id": "54",
+        "app": "MrScraper",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "Bearer/access token"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "66",
+        "app": "Neo4j",
+        "got": [
+         "Basic",
+         "Bearer/access token",
+         "JWT"
+        ],
+        "expected": [
+         "Basic"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "72",
+        "app": "Airtable",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "result": "wrong"
+       }
+      ]
+     },
+     "developer_access": {
+      "correct": 5,
+      "wrong": 4,
+      "unknown": 0,
+      "n": 9,
+      "misses": [
+       {
+        "id": "19",
+        "app": "Gorgias",
+        "got": "partner_or_sales",
+        "expected": "self_serve_trial",
+        "result": "wrong"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": "self_serve_free",
+        "expected": "partner_or_sales",
+        "result": "wrong"
+       },
+       {
+        "id": "52",
+        "app": "SE Ranking",
+        "got": "self_serve_free",
+        "expected": "paid_plan",
+        "result": "wrong"
+       }
+      ]
+     },
+     "official_mcp_status": {
+      "correct": 6,
+      "wrong": 0,
+      "unknown": 2,
+      "n": 8,
+      "misses": [
+       {
+        "id": "9",
+        "app": "Copper",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       }
+      ]
+     },
+     "existing_composio_toolkit": {
+      "correct": 10,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 10,
+      "misses": []
+     }
+    },
+    "total": {
+     "correct": 35,
+     "wrong": 10,
+     "unknown": 2,
+     "n": 47
+    },
+    "accuracy": 0.745
+   },
+   "after_auto_verify": {
+    "fields": {
+     "public_api_status": {
+      "correct": 7,
+      "wrong": 3,
+      "unknown": 0,
+      "n": 10,
+      "misses": [
+       {
+        "id": "19",
+        "app": "Gorgias",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": "available",
+        "expected": "restricted",
+        "result": "wrong"
+       }
+      ]
+     },
+     "authentication_methods": {
+      "correct": 7,
+      "wrong": 3,
+      "unknown": 0,
+      "n": 10,
+      "misses": [
+       {
+        "id": "54",
+        "app": "MrScraper",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "Bearer/access token"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "66",
+        "app": "Neo4j",
+        "got": [
+         "Basic",
+         "Bearer/access token",
+         "JWT"
+        ],
+        "expected": [
+         "Basic"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "72",
+        "app": "Airtable",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "result": "wrong"
+       }
+      ]
+     },
+     "developer_access": {
+      "correct": 5,
+      "wrong": 4,
+      "unknown": 0,
+      "n": 9,
+      "misses": [
+       {
+        "id": "19",
+        "app": "Gorgias",
+        "got": "partner_or_sales",
+        "expected": "self_serve_trial",
+        "result": "wrong"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": "self_serve_free",
+        "expected": "partner_or_sales",
+        "result": "wrong"
+       },
+       {
+        "id": "52",
+        "app": "SE Ranking",
+        "got": "self_serve_free",
+        "expected": "paid_plan",
+        "result": "wrong"
+       }
+      ]
+     },
+     "official_mcp_status": {
+      "correct": 6,
+      "wrong": 0,
+      "unknown": 2,
+      "n": 8,
+      "misses": [
+       {
+        "id": "9",
+        "app": "Copper",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       }
+      ]
+     },
+     "existing_composio_toolkit": {
+      "correct": 10,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 10,
+      "misses": []
+     }
+    },
+    "total": {
+     "correct": 35,
+     "wrong": 10,
+     "unknown": 2,
+     "n": 47
+    },
+    "accuracy": 0.745
+   },
+   "final": {
+    "fields": {
+     "public_api_status": {
+      "correct": 7,
+      "wrong": 3,
+      "unknown": 0,
+      "n": 10,
+      "misses": [
+       {
+        "id": "19",
+        "app": "Gorgias",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "restricted",
+        "expected": "available",
+        "result": "wrong"
+       },
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": "available",
+        "expected": "restricted",
+        "result": "wrong"
+       }
+      ]
+     },
+     "authentication_methods": {
+      "correct": 7,
+      "wrong": 3,
+      "unknown": 0,
+      "n": 10,
+      "misses": [
+       {
+        "id": "54",
+        "app": "MrScraper",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "Bearer/access token"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "66",
+        "app": "Neo4j",
+        "got": [
+         "Basic",
+         "Bearer/access token",
+         "JWT"
+        ],
+        "expected": [
+         "Basic"
+        ],
+        "result": "wrong"
+       },
+       {
+        "id": "72",
+        "app": "Airtable",
+        "got": [
+         "API key",
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "expected": [
+         "Bearer/access token",
+         "OAuth2"
+        ],
+        "result": "wrong"
+       }
+      ]
+     },
+     "developer_access": {
+      "correct": 5,
+      "wrong": 4,
+      "unknown": 0,
+      "n": 9,
+      "misses": [
+       {
+        "id": "19",
+        "app": "Gorgias",
+        "got": "partner_or_sales",
+        "expected": "self_serve_trial",
+        "result": "wrong"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "partner_or_sales",
+        "expected": "self_serve_free",
+        "result": "wrong"
+       },
+       {
+        "id": "44",
+        "app": "Salesforce Commerce Cloud",
+        "got": "self_serve_free",
+        "expected": "partner_or_sales",
+        "result": "wrong"
+       },
+       {
+        "id": "52",
+        "app": "SE Ranking",
+        "got": "self_serve_free",
+        "expected": "paid_plan",
+        "result": "wrong"
+       }
+      ]
+     },
+     "official_mcp_status": {
+      "correct": 6,
+      "wrong": 0,
+      "unknown": 2,
+      "n": 8,
+      "misses": [
+       {
+        "id": "9",
+        "app": "Copper",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       },
+       {
+        "id": "42",
+        "app": "WooCommerce",
+        "got": "unknown",
+        "expected": "yes",
+        "result": "unknown"
+       }
+      ]
+     },
+     "existing_composio_toolkit": {
+      "correct": 10,
+      "wrong": 0,
+      "unknown": 0,
+      "n": 10,
+      "misses": []
+     }
+    },
+    "total": {
+     "correct": 35,
+     "wrong": 10,
+     "unknown": 2,
+     "n": 47
+    },
+    "accuracy": 0.745
+   }
+  }
+ },
+ "dataset_issues": [],
+ "record_issues": {
+  "4": [
+   "validation: evidence: official MCP claimed without URL"
+  ],
+  "21": [
+   "validation: evidence: official MCP claimed without URL"
+  ],
+  "31": [
+   "validation: identity: official_website support.google.com is not an official host for Google Ads"
+  ],
+  "33": [
+   "validation: identity: official_website learn.microsoft.com is not an official host for LinkedIn Ads"
+  ],
+  "38": [
+   "validation: identity: official_website github.com is not an official host for Pinterest"
+  ],
+  "40": [
+   "validation: identity: official_website www.twilio.com is not an official host for SendGrid"
+  ],
+  "45": [
+   "validation: identity: official_website developer.adobe.com is not an official host for Magento (Adobe Commerce)"
+  ],
+  "49": [
+   "validation: identity: official_website github.com is not an official host for Amazon Selling Partner"
+  ],
+  "50": [
+   "validation: evidence: official MCP claimed without URL",
+   "validation: evidence: API available but no docs URL",
+   "validation: identity: evidence marked official from foreign host apidocs.fan"
+  ],
+  "58": [
+   "validation: identity: official_website github.com is not an official host for Sherlock"
+  ],
+  "75": [
+   "validation: evidence: official MCP claimed without URL"
+  ],
+  "83": [
+   "validation: identity: official_website github.com is not an official host for Binance"
+  ],
+  "98": [
+   "validation: identity: official_website github.com is not an official host for Mermaid CLI"
+  ]
+ },
+ "corrections": [
+  {
+   "field": "authentication_methods",
+   "before": [
+    "OAuth2",
+    "API key",
+    "Bearer/access token",
+    "Basic"
+   ],
+   "after": [
+    "OAuth2",
+    "API key"
+   ],
+   "reason": "audit sample A: OAuth 2.0 auth-code flow or a workspace API key",
+   "stage": "review",
+   "evidence_url": "https://docs.attio.com/rest-api/guides/authentication",
+   "id": 4,
+   "app": "Attio"
+  },
+  {
+   "field": "official_mcp_status",
+   "before": "unknown",
+   "after": "yes",
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://docs.attio.com/mcp/overview",
+   "id": 4,
+   "app": "Attio"
+  },
+  {
+   "field": "public_api_status",
+   "before": "available",
+   "after": "restricted",
+   "reason": "audit sample A: docs public; credentials only for DealCloud (Intapp) customers",
+   "stage": "review",
+   "evidence_url": "https://api.docs.dealcloud.com/",
+   "id": 10,
+   "app": "DealCloud"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "API key",
+    "OAuth2"
+   ],
+   "after": [
+    "OAuth2",
+    "API key"
+   ],
+   "reason": "audit sample A: OAuth2 client-credentials using client_id + apiKey",
+   "stage": "review",
+   "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+   "id": 10,
+   "app": "DealCloud"
+  },
+  {
+   "field": "developer_access",
+   "before": "self_serve_free",
+   "after": "self_serve_trial",
+   "reason": "development uses a Zendesk trial or a sponsored account",
+   "stage": "review",
+   "evidence_url": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+   "id": 11,
+   "app": "Zendesk"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "OAuth2",
+    "API key",
+    "Bearer/access token",
+    "HMAC/signed request"
+   ],
+   "after": [
+    "OAuth2",
+    "Bearer/access token"
+   ],
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+   "id": 12,
+   "app": "Intercom"
+  },
+  {
+   "field": "public_api_status",
+   "before": "restricted",
+   "after": "available",
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://developers.freshdesk.com/api/",
+   "id": 13,
+   "app": "Freshdesk"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "API key",
+    "OAuth2"
+   ],
+   "after": [
+    "API key"
+   ],
+   "reason": "audit sample A: personal API key sent as HTTP Basic username",
+   "stage": "review",
+   "evidence_url": "https://developers.freshdesk.com/api/",
+   "id": 13,
+   "app": "Freshdesk"
+  },
+  {
+   "field": "developer_access",
+   "before": "partner_or_sales",
+   "after": "self_serve_trial",
+   "reason": "audit sample A: trial accounts get 50 calls/min",
+   "stage": "review",
+   "evidence_url": "https://developers.freshdesk.com/api/",
+   "id": 13,
+   "app": "Freshdesk"
+  },
+  {
+   "field": "developer_access",
+   "before": "unknown",
+   "after": "paid_plan",
+   "reason": "pass 1 found no access signal; independent pass did",
+   "stage": "verify",
+   "evidence_url": "https://www.usepylon.com/pylon-facts",
+   "id": 15,
+   "app": "Pylon"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "Bearer/access token",
+    "OAuth2"
+   ],
+   "after": [
+    "OAuth2"
+   ],
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://docs.slack.dev/authentication",
+   "id": 21,
+   "app": "Slack"
+  },
+  {
+   "field": "official_mcp_status",
+   "before": "unknown",
+   "after": "yes",
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://docs.slack.dev/ai/slack-mcp-server/",
+   "id": 21,
+   "app": "Slack"
+  },
+  {
+   "field": "developer_access",
+   "before": "unknown",
+   "after": "self_serve_free",
+   "reason": "pass 1 found no access signal; independent pass did",
+   "stage": "verify",
+   "evidence_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+   "id": 23,
+   "app": "Zoho Cliq"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "OAuth2",
+    "Bearer/access token",
+    "API key"
+   ],
+   "after": [
+    "OAuth2"
+   ],
+   "reason": "audit sample A: REST API follows OAuth 2.0 only",
+   "stage": "review",
+   "evidence_url": "https://www.zoho.com/cliq/help/restapi/v2/",
+   "id": 23,
+   "app": "Zoho Cliq"
+  },
+  {
+   "field": "public_api_status",
+   "before": "unknown",
+   "after": "available",
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://open.larksuite.com/document/",
+   "id": 24,
+   "app": "Lark (Larksuite)"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "OAuth2"
+   ],
+   "after": [
+    "OAuth2",
+    "Bearer/access token"
+   ],
+   "reason": "audit sample A: App ID + App Secret -> tenant_access_token; OAuth 2.0 for user_access_token",
+   "stage": "review",
+   "evidence_url": "https://github.com/larksuite/lark-openapi-mcp",
+   "id": 24,
+   "app": "Lark (Larksuite)"
+  },
+  {
+   "field": "developer_access",
+   "before": "partner_or_sales",
+   "after": "self_serve_free",
+   "reason": "audit sample A: create an app in the open platform console",
+   "stage": "review",
+   "evidence_url": "https://github.com/larksuite/lark-openapi-mcp",
+   "id": 24,
+   "app": "Lark (Larksuite)"
+  },
+  {
+   "field": "product_description",
+   "before": "",
+   "after": "Lark (Larksuite): team collaboration suite (messaging, docs, calendar) with the Lark Developer open platform.",
+   "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+   "stage": "review",
+   "evidence_url": "https://open.larksuite.com/",
+   "id": 24,
+   "app": "Lark (Larksuite)"
+  },
+  {
+   "field": "developer_access",
+   "before": "approval_required",
+   "after": "self_serve_free",
+   "reason": "anyone can create an app and bot token in the developer portal; verification applies only to larger bots",
+   "stage": "review",
+   "evidence_url": "https://discord.com/developers/docs/quick-start/getting-started",
+   "id": 26,
+   "app": "Discord"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "OAuth2",
+    "Bearer/access token",
+    "JWT"
+   ],
+   "after": [
+    "OAuth2",
+    "Bearer/access token"
+   ],
+   "reason": "OAuth2 for user auth, bot token for bot calls; the JWT hit was page noise",
+   "stage": "review",
+   "evidence_url": "https://discord.com/developers/docs/quick-start/getting-started",
+   "id": 26,
+   "app": "Discord"
+  },
+  {
+   "field": "developer_access",
+   "before": "unknown",
+   "after": "self_serve_free",
+   "reason": "bot token from BotFather, no approval",
+   "stage": "review",
+   "evidence_url": "https://core.telegram.org/bots/tutorial",
+   "id": 27,
+   "app": "Telegram"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "OAuth2"
+   ],
+   "after": [
+    "Bearer/access token"
+   ],
+   "reason": "bot token sent in the request URL; the OAuth2 hit is not Bot API auth",
+   "stage": "review",
+   "evidence_url": "https://core.telegram.org/bots/tutorial",
+   "id": 27,
+   "app": "Telegram"
+  },
+  {
+   "field": "public_api_status",
+   "before": "restricted",
+   "after": "available",
+   "reason": "Cloud API get-started: create a Meta app, generate an access token, send a test message",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+   "id": 28,
+   "app": "WhatsApp Business"
+  },
+  {
+   "field": "developer_access",
+   "before": "partner_or_sales",
+   "after": "self_serve_free",
+   "reason": "test messages need only a Meta developer account and a temporary access token (production needs business verification)",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+   "id": 28,
+   "app": "WhatsApp Business"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [],
+   "after": [
+    "Bearer/access token"
+   ],
+   "reason": "access token in the Authorization header",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+   "id": 28,
+   "app": "WhatsApp Business"
+  },
+  {
+   "field": "product_description",
+   "before": "",
+   "after": "WhatsApp Business Platform: Cloud API for businesses to send and receive WhatsApp messages.",
+   "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+   "id": 28,
+   "app": "WhatsApp Business"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [],
+   "after": [
+    "OAuth2"
+   ],
+   "reason": "Marketing API uses Facebook Login access tokens (OAuth2)",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/marketing-api/get-started/authorization",
+   "id": 32,
+   "app": "Meta Ads"
+  },
+  {
+   "field": "developer_access",
+   "before": "unknown",
+   "after": "approval_required",
+   "reason": "apps request permissions through App Review; Full Access needs a usage threshold",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/marketing-api/get-started/authorization",
+   "id": 32,
+   "app": "Meta Ads"
+  },
+  {
+   "field": "product_description",
+   "before": "",
+   "after": "Meta Ads: Marketing API for creating and managing ads and reporting on Facebook and Instagram.",
+   "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/marketing-api/get-started/authorization",
+   "id": 32,
+   "app": "Meta Ads"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [],
+   "after": [
+    "OAuth2"
+   ],
+   "reason": "Threads API uses OAuth user access tokens",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/threads/get-started",
+   "id": 39,
+   "app": "Threads (Meta)"
+  },
+  {
+   "field": "developer_access",
+   "before": "unknown",
+   "after": "approval_required",
+   "reason": "permissions for users without an app role must pass App Review",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/threads/get-started",
+   "id": 39,
+   "app": "Threads (Meta)"
+  },
+  {
+   "field": "product_description",
+   "before": "",
+   "after": "Threads (Meta): API for publishing posts and reading replies and insights on Threads.",
+   "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+   "stage": "review",
+   "evidence_url": "https://developers.facebook.com/docs/threads/get-started",
+   "id": 39,
+   "app": "Threads (Meta)"
+  },
+  {
+   "field": "developer_access",
+   "before": "unknown",
+   "after": "self_serve_free",
+   "reason": "register an OAuth application yourself",
+   "stage": "review",
+   "evidence_url": "https://gumroad.com/api",
+   "id": 48,
+   "app": "Gumroad"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [],
+   "after": [
+    "API key",
+    "Bearer/access token",
+    "OAuth2"
+   ],
+   "reason": "pass 1 found no auth evidence; independent pass did",
+   "stage": "verify",
+   "evidence_url": "https://github.com/amzn/selling-partner-api-samples/discussions/112",
+   "id": 49,
+   "app": "Amazon Selling Partner"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "API key",
+    "Bearer/access token",
+    "OAuth2"
+   ],
+   "after": [
+    "OAuth2"
+   ],
+   "reason": "audit sample A: Login with Amazon (LWA) OAuth",
+   "stage": "review",
+   "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer",
+   "id": 49,
+   "app": "Amazon Selling Partner"
+  },
+  {
+   "field": "developer_access",
+   "before": "self_serve_free",
+   "after": "approval_required",
+   "reason": "audit sample A: Amazon evaluates the Developer Profile and may grant or deny access",
+   "stage": "review",
+   "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer",
+   "id": 49,
+   "app": "Amazon Selling Partner"
+  },
+  {
+   "field": "public_api_status",
+   "before": "unknown",
+   "after": "available",
+   "reason": "audit sample A: fanbasis.com redirects to commas.com: 'FanBasis is now Commas'",
+   "stage": "review",
+   "evidence_url": "https://apidocs.fan/",
+   "id": 50,
+   "app": "fanbasis"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [],
+   "after": [
+    "API key"
+   ],
+   "reason": "audit sample A: API key from dashboard Account -> API Keys",
+   "stage": "review",
+   "evidence_url": "https://apidocs.fan/quick-start",
+   "id": 50,
+   "app": "fanbasis"
+  },
+  {
+   "field": "developer_access",
+   "before": "unknown",
+   "after": "self_serve_free",
+   "reason": "audit sample A: self-serve account + sandbox environment",
+   "stage": "review",
+   "evidence_url": "https://apidocs.fan/quick-start",
+   "id": 50,
+   "app": "fanbasis"
+  },
+  {
+   "field": "official_mcp_status",
+   "before": "unknown",
+   "after": "yes",
+   "reason": "audit sample A: docs have an MCP section",
+   "stage": "review",
+   "evidence_url": "https://apidocs.fan/",
+   "id": 50,
+   "app": "fanbasis"
+  },
+  {
+   "field": "product_description",
+   "before": "",
+   "after": "fanbasis (now Commas): API to collect payments and manage subscriptions; docs at apidocs.fan.",
+   "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+   "stage": "review",
+   "evidence_url": "https://apidocs.fan/",
+   "id": 50,
+   "app": "fanbasis"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "API key",
+    "Basic",
+    "Bearer/access token"
+   ],
+   "after": [
+    "Basic"
+   ],
+   "reason": "audit sample A: Basic authentication is the only way; API login/password from dashboard",
+   "stage": "review",
+   "evidence_url": "https://docs.dataforseo.com/v3/auth/",
+   "id": 51,
+   "app": "DataForSEO"
+  },
+  {
+   "field": "developer_access",
+   "before": "self_serve_free",
+   "after": "self_serve_trial",
+   "reason": "audit sample A: free account, then pay-as-you-go",
+   "stage": "review",
+   "evidence_url": "https://docs.dataforseo.com/v3/auth/",
+   "id": 51,
+   "app": "DataForSEO"
+  },
+  {
+   "field": "developer_access",
+   "before": "approval_required",
+   "after": "paid_plan",
+   "reason": "API is available on eligible paid plans; other plans get limited free test queries",
+   "stage": "review",
+   "evidence_url": "https://docs.ahrefs.com/docs/api/reference/introduction",
+   "id": 53,
+   "app": "Ahrefs"
+  },
+  {
+   "field": "developer_access",
+   "before": "unknown",
+   "after": "not_applicable",
+   "reason": "no API credentials exist; installed locally",
+   "stage": "review",
+   "evidence_url": "https://github.com/sherlock-project/sherlock",
+   "id": 58,
+   "app": "Sherlock"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "API key",
+    "JWT",
+    "OAuth2",
+    "Bearer/access token"
+   ],
+   "after": [
+    "API key"
+   ],
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://supabase.com/docs/guides/api/api-keys",
+   "id": 65,
+   "app": "Supabase"
+  },
+  {
+   "field": "product_description",
+   "before": "",
+   "after": "Snowflake: cloud data platform for warehousing, SQL analytics and data sharing.",
+   "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+   "stage": "review",
+   "evidence_url": "https://docs.snowflake.com/",
+   "id": 67,
+   "app": "Snowflake"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "Bearer/access token",
+    "OAuth2",
+    "JWT",
+    "Basic",
+    "API key"
+   ],
+   "after": [
+    "OAuth2",
+    "Bearer/access token"
+   ],
+   "reason": "audit sample A: internal integration token / PAT, or OAuth 2.0 for public integrations",
+   "stage": "review",
+   "evidence_url": "https://developers.notion.com/docs/authorization",
+   "id": 71,
+   "app": "Notion"
+  },
+  {
+   "field": "public_api_status",
+   "before": "restricted",
+   "after": "available",
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://linear.app/developers",
+   "id": 73,
+   "app": "Linear"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "OAuth2",
+    "API key",
+    "Bearer/access token"
+   ],
+   "after": [
+    "OAuth2",
+    "API key"
+   ],
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://linear.app/developers/oauth-2-0-authentication",
+   "id": 73,
+   "app": "Linear"
+  },
+  {
+   "field": "developer_access",
+   "before": "partner_or_sales",
+   "after": "self_serve_free",
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://linear.app/developers",
+   "id": 73,
+   "app": "Linear"
+  },
+  {
+   "field": "developer_access",
+   "before": "partner_or_sales",
+   "after": "self_serve_free",
+   "reason": "Jira has a free plan (up to 10 users); OAuth apps are created in the self-serve developer console",
+   "stage": "review",
+   "evidence_url": "https://www.atlassian.com/software/jira/pricing",
+   "id": 74,
+   "app": "Jira"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "Bearer/access token",
+    "Basic",
+    "OAuth2",
+    "JWT",
+    "API key"
+   ],
+   "after": [
+    "OAuth2",
+    "Basic"
+   ],
+   "reason": "OAuth 2.0 (3LO) apps, or HTTP Basic with account email + API token; JWT/API-key/Bearer hits were not separate methods",
+   "stage": "review",
+   "evidence_url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+   "id": 74,
+   "app": "Jira"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "Bearer/access token",
+    "OAuth2",
+    "API key"
+   ],
+   "after": [
+    "OAuth2",
+    "Bearer/access token"
+   ],
+   "reason": "audit sample A: OAuth, personal access tokens; OIDC on top of OAuth",
+   "stage": "review",
+   "evidence_url": "https://developers.asana.com/docs/authentication",
+   "id": 75,
+   "app": "Asana"
+  },
+  {
+   "field": "official_mcp_status",
+   "before": "unknown",
+   "after": "yes",
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+   "id": 75,
+   "app": "Asana"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [],
+   "after": [
+    "API key",
+    "Basic",
+    "Bearer/access token",
+    "HMAC/signed request",
+    "OAuth2"
+   ],
+   "reason": "pass 1 found no auth evidence; independent pass did",
+   "stage": "verify",
+   "evidence_url": "https://coda.io/packs/build/latest/guides/basics/authentication",
+   "id": 78,
+   "app": "Coda"
+  },
+  {
+   "field": "public_api_status",
+   "before": "unknown",
+   "after": "available",
+   "reason": "documented REST API v1",
+   "stage": "review",
+   "evidence_url": "https://coda.io/developers/apis/v1",
+   "id": 78,
+   "app": "Coda"
+  },
+  {
+   "field": "developer_access",
+   "before": "unknown",
+   "after": "self_serve_free",
+   "reason": "API available to all users free of charge, in free and paid workspaces",
+   "stage": "review",
+   "evidence_url": "https://coda.io/developers/apis/v1",
+   "id": 78,
+   "app": "Coda"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "API key",
+    "Basic",
+    "Bearer/access token",
+    "HMAC/signed request",
+    "OAuth2"
+   ],
+   "after": [
+    "Bearer/access token"
+   ],
+   "reason": "API token as Bearer header",
+   "stage": "review",
+   "evidence_url": "https://coda.io/developers/apis/v1",
+   "id": 78,
+   "app": "Coda"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "API key",
+    "Bearer/access token"
+   ],
+   "after": [
+    "API key"
+   ],
+   "reason": "audit sample A: Authorization: Bearer ipx_live_...",
+   "stage": "review",
+   "evidence_url": "https://www.ipayx.ai/developers",
+   "id": 85,
+   "app": "iPayX"
+  },
+  {
+   "field": "product_description",
+   "before": "",
+   "after": "iPayX Protocol: FINTRAC-registered FX forensic audit layer with developer docs.",
+   "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+   "stage": "review",
+   "evidence_url": "https://ipayx.ai/docs",
+   "id": 85,
+   "app": "iPayX"
+  },
+  {
+   "field": "developer_access",
+   "before": "approval_required",
+   "after": "self_serve_free",
+   "reason": "audit sample A: free developer account with demo company",
+   "stage": "review",
+   "evidence_url": "https://developer.xero.com/documentation/getting-started-guide/",
+   "id": 87,
+   "app": "Xero"
+  },
+  {
+   "field": "product_description",
+   "before": "",
+   "after": "PitchBook: private-market data provider; the brief lists its research API (pricing page blocked automated reading).",
+   "reason": "official homepage could not be read by the pipeline; description from the vendor's docs page",
+   "stage": "review",
+   "evidence_url": "https://pitchbook.com/",
+   "id": 90,
+   "app": "PitchBook"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "OAuth2",
+    "JWT",
+    "API key",
+    "Basic",
+    "Bearer/access token"
+   ],
+   "after": [
+    "OAuth2"
+   ],
+   "reason": "audit sample A: Google Cloud user access token",
+   "stage": "review",
+   "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "id": 91,
+   "app": "NotebookLM"
+  },
+  {
+   "field": "developer_access",
+   "before": "self_serve_free",
+   "after": "paid_plan",
+   "reason": "audit sample A: requires an active NotebookLM Enterprise license",
+   "stage": "review",
+   "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+   "id": 91,
+   "app": "NotebookLM"
+  },
+  {
+   "field": "public_api_status",
+   "before": "available",
+   "after": "restricted",
+   "reason": "audit sample A: Public API for Enterprise customers; contact account manager",
+   "stage": "review",
+   "evidence_url": "https://help.otter.ai/hc/en-us/search?query=API",
+   "id": 92,
+   "app": "Otter AI"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "API key",
+    "Bearer/access token"
+   ],
+   "after": [
+    "API key"
+   ],
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://help.otter.ai/hc/en-us/search?query=API",
+   "id": 92,
+   "app": "Otter AI"
+  },
+  {
+   "field": "developer_access",
+   "before": "self_serve_free",
+   "after": "partner_or_sales",
+   "reason": "audit sample A: checked against the live vendor page",
+   "stage": "review",
+   "evidence_url": "https://help.otter.ai/hc/en-us/search?query=API",
+   "id": 92,
+   "app": "Otter AI"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "API key",
+    "Bearer/access token",
+    "OAuth2"
+   ],
+   "after": [
+    "API key"
+   ],
+   "reason": "audit sample A: x-api-key header",
+   "stage": "review",
+   "evidence_url": "https://consensus.app/home/api/",
+   "id": 94,
+   "app": "Consensus"
+  },
+  {
+   "field": "public_api_status",
+   "before": "available",
+   "after": "unavailable",
+   "reason": "Mermaid CLI is an open-source command-line renderer (mmdc); no hosted API",
+   "stage": "review",
+   "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+   "id": 98,
+   "app": "Mermaid CLI"
+  },
+  {
+   "field": "developer_access",
+   "before": "self_serve_free",
+   "after": "not_applicable",
+   "reason": "no API credentials exist; installed locally",
+   "stage": "review",
+   "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+   "id": 98,
+   "app": "Mermaid CLI"
+  },
+  {
+   "field": "authentication_methods",
+   "before": [
+    "Bearer/access token",
+    "API key"
+   ],
+   "after": [],
+   "reason": "no auth: local tool",
+   "stage": "review",
+   "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+   "id": 98,
+   "app": "Mermaid CLI"
+  },
+  {
+   "field": "api_types",
+   "before": [
+    "CLI",
+    "REST",
+    "Webhooks",
+    "SDK"
+   ],
+   "after": [
+    "CLI"
+   ],
+   "reason": "local command-line tool",
+   "stage": "review",
+   "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+   "id": 98,
+   "app": "Mermaid CLI"
+  }
+ ],
+ "consolidated_at": "2026-11-24T07:32:14Z"
+}
