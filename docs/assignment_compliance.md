@@ -19,6 +19,6 @@ Brief: https://composio.notion.site/AI-Product-Ops-Intern-The-take-home-assignme
 | Show accuracy moving from first pass to higher | stage columns: rules v1 → rules v2 → + independent pass → + review (A: 46.8% → 70.2% → 71.3%; B: 59.6% → 74.5%) | done |
 | Human checks | `data/human_check.csv` (sample C: 10 random apps outside A and B, 50 rows); shown on the page once filled | sheet ready; to be filled by a person |
 | Single self-explanatory HTML page | `output/index.html` | done |
-| Live link | https://claude.ai/artifact/35GswnWyyWBrBbgqAvCs7p (hosted copy of `output/index.html`) | done; downloads on the page work only when opened locally |
+| Live link | https://lucifer4330k.github.io/Composio/ (GitHub Pages, serves `output/index.html` from `main`) | done |
 | Source repo + README | this folder; README with run instructions | done; not pushed to a remote |
 | Say where the agent was wrong or an app defeated you | report verification + limitations sections | done |

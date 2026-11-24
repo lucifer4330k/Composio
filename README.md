@@ -8,7 +8,7 @@ agent toolkit today. Every claim carries the URL and an excerpt of the page that
 **Deliverable:** [`output/index.html`](output/index.html) — one self-contained page (dataset embedded, no server, no keys).
 Patterns first, then opportunities, the full 100-app explorer, how the agent works, and how accurate it is.
 
-**Live link:** https://claude.ai/artifact/35GswnWyyWBrBbgqAvCs7p (the same page, hosted).
+**Live link:** https://lucifer4330k.github.io/Composio/ (GitHub Pages, served from `output/` on `main`).
 
 <!--RESULTS-->
 ## Results (run of 2026-11-23/24, all 100 apps)
